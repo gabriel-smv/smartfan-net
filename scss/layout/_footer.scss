@@ -57,6 +57,16 @@ footer {
 
         .item-social-medial {
             text-align: right;
+
+            span {
+                color: $white-02;
+                transition: all .2s ease-out;
+
+                &:hover {
+                    color: $gray-01;
+                    transition: all .2s ease-in;
+                }
+            }
         }
 
         @include sm {

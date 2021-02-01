@@ -8536,6 +8536,7 @@ p strong {
 header {
   width: 100%;
   position: relative;
+  margin-bottom: 2.4rem;
   border-bottom: 2px solid #f37402;
 }
 
@@ -8775,6 +8776,16 @@ footer .footer-list .item-social-medial {
   text-align: right;
 }
 
+footer .footer-list .item-social-medial span {
+  color: #f5f5f5;
+  transition: all .2s ease-out;
+}
+
+footer .footer-list .item-social-medial span:hover {
+  color: #d3d3d3;
+  transition: all .2s ease-in;
+}
+
 @media (max-width: 767px) {
   footer .footer-list .item-contato {
     text-align: left;
@@ -8788,6 +8799,46 @@ footer .footer-list .item-social-medial {
   footer .footer-list .item-social-medial {
     order: 2;
   }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+}
+
+.nav a {
+  width: 100%;
+  color: #707070;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  padding: .8rem 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.nav a i {
+  margin-right: 1.6rem;
+}
+
+.nav a:hover {
+  border: 2px solid #707070;
+  transition: all .2s ease-in;
+}
+
+.nav a.active {
+  border: 2px solid #707070;
+  background-color: #707070;
+  color: #ffffff;
 }
 
 html {
