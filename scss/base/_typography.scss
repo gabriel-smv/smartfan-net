@@ -1,0 +1,22 @@
+body {
+  color: $black-01;
+  font: normal 125% / 1.4 $text-font-stack;
+}
+
+h1 {
+  @include font(2.4rem, 900, 1.4em);
+  text-align: left;
+}
+
+h2 {
+  @include font(2rem, 900, 1.4em);
+}
+
+p {
+  @include font(1.6rem, 400, 1.4em);
+
+  b,
+  strong {
+    font-weight: 700;
+  }
+}
