@@ -6,7 +6,13 @@
 //My Styles
 @import "abstract/mixins";
 @import "abstract/variables";
+
 @import "base/base";
 @import "base/fonts";
 @import "base/helpers";
 @import "base/typography";
+
+@import "layout/header";
+@import "layout/footer";
+
+@import "vendors/normalize";

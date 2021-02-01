@@ -1,0 +1,159 @@
+header {
+    width: 100%;
+    position: relative;
+    border-bottom: 2px solid $secondary-02;
+
+    .top-header {
+        width: 100%;
+        background-color: $white-02;
+        padding: 0.8rem 0;
+
+        .language-pick {
+            width: 100%;
+            @include flex(row, flex-end, center, center);
+
+            li {
+                @include font(1.4rem, 300, 1.2em);
+                margin: 0 .8rem;
+                position: relative;
+
+                b {
+                    font-weight: 900;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            input {
+                display: none;
+            }
+
+            input:checked~.language-dropdown-list {
+                display: block;
+            }
+
+            .language-dropdown {
+                position: relative;
+                margin-bottom: 0;
+                cursor: pointer;
+
+                img {
+                    opacity: 1;
+                }
+            }
+
+            .language-dropdown-list {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 0.5px solid $gray-02;
+                border-top: none;
+                transform: translate(25%, 40%);
+                z-index: 10;
+                display: none;
+
+                li {
+                    background-color: $white-01;
+                    transition: all 0.3s ease-in-out;
+                    margin: 0;
+
+                    a {
+                        width: auto;
+                        display: inline-block;
+                        padding: 0.8rem 1.6rem;
+                        cursor: pointer;
+
+                        img {
+                            height: 1.5rem;
+                        }
+                    }
+
+                    &:hover {
+                        background-color: $gray-01;
+                        transition: all 0.3s ease-in-out;
+
+                        a {
+                            color: $white-01;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-header {
+        &-list {
+            width: 100%;
+            padding: 1.6rem 0;
+            @include flex(row, center, center, center);
+
+            li {
+                padding: 0 3.2rem;
+                position: relative;
+
+                p {
+                    @include font(2rem, 400, 1.2em);
+                    color: $black-01;
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 0;
+                    position: relative;
+                    z-index: 1;
+
+                    strong {
+                        font-weight: 900;
+                        color: $secondary-01;
+                    }
+
+                    &:before {
+                        content: '';
+                        width: 100%;
+                        height: 1.2rem;
+                        background-color: $gray-01;
+                        @include absolute(auto, auto, 0, 0);
+                        z-index: -1;
+                    }
+                }
+            }
+
+            .logo {
+                a {
+                    display: inline-block;
+
+                    img {
+                        height: 4.5rem;
+                    }
+                }
+
+                &::before {
+                    content: '';
+                    width: 1px;
+                    height: 85%;
+                    border-radius: 10px;
+                    background-color: $black-01;
+                    @include absolute(50%, 0, auto, auto);
+                    transform: translate(50%, -50%);
+                }
+            }
+        }
+    }
+
+    @include sm {
+        .main-header {
+            &-list {
+                .logo {
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                .column-2 {
+                    display: none;
+                }
+            }
+        }
+    }
+}
