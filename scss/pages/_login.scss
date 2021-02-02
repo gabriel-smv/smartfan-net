@@ -1,0 +1,20 @@
+.column-login {
+    .btn-link {
+        margin-bottom: 2.4rem;
+    }
+
+    h2 {
+        margin: 3.2rem 0;
+        position: relative;
+
+        padding-top: 3.2rem;
+
+        &:before {
+            content: '';
+            width: 50%;
+            height: 1px;
+            background-color: $gray-01;
+            @include absolute(0, auto, auto, 25%);
+        }
+    }
+}

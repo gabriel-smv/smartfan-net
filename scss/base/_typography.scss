@@ -6,10 +6,11 @@ body {
 h1 {
   @include font(2.4rem, 900, 1.4em);
   text-align: left;
+  margin-bottom: .8rem;
 }
 
 h2 {
-  @include font(2rem, 900, 1.4em);
+  @include font(1.8rem, 900, 1.4em);
 }
 
 p {

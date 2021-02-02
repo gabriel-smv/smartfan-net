@@ -1,0 +1,60 @@
+form {
+    position: relative;
+    @include flex(column, flex-start, center, flex-start);
+
+    .container-input {
+        width: 100%;
+        @include flex(column, flex-start, flex-start, flex-start);
+        margin-bottom: 2.4rem;
+        position: relative;
+
+        input,
+        select {
+            width: 100%;
+            height: 4rem;
+            padding: .8rem;
+            background-color: $white-02;
+            border: none;
+            border-bottom: 2px solid $primary-01;
+
+            @include font(1.6rem, 700, 1em);
+            color: $black-01;
+
+            &:focus {
+                outline: none;
+                border-bottom: 2px solid $primary-02;
+            }
+
+            &:disabled {
+                background-color: $gray-01;
+                border-bottom-color: $gray-02;
+            }
+        }
+
+        label {
+            width: 100%;
+            text-align: left;
+            @include font(1.6rem, 400, 1em);
+            color: $black-01;
+
+            margin-bottom: .8rem;
+
+            &:disabled {
+                color: $gray-02;
+            }
+        }
+
+        .input-validate {
+            border-bottom: 2px solid $secondary-01;
+            color: $secondary-01;
+            position: relative;
+        }
+
+        span.input-validate {
+            @include font(1.2rem, 700, 1em);
+            border: none;
+            @include absolute(auto, 0, -.4rem, auto);
+            transform: translateY(100%);
+        }
+    }
+}
