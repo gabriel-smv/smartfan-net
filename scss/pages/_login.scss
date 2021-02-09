@@ -1,20 +1,140 @@
-.column-login {
-    .btn-link {
-        margin-bottom: 2.4rem;
+.header-login {
+    margin-bottom: 0;
+}
+
+.pg-login,
+.pg-registo {
+    .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
-    h2 {
-        margin: 3.2rem 0;
+    .column-login {
+        padding-top: 3.2rem;
+        padding-bottom: 3.2rem;
+        @include flex(column, flex-start, center, center);
+
+        .logo-smv {
+            height: auto;
+            margin-bottom: 3.2rem;
+            text-align: center;
+
+            img {
+                width: 20rem;
+                height: auto;
+            }
+        }
+
+        form {
+            margin-top: 1.6rem;
+        }
+
+        .container-btn {
+            @include flex(column, flex-start, center, center);
+            flex-wrap: wrap;
+            margin-top: .8rem;
+
+            .btn-link {
+                margin-bottom: 2.4rem;
+            }
+
+            h2 {
+                margin: 3.2rem 0;
+                position: relative;
+
+                padding-top: 3.2rem;
+
+                &:before {
+                    content: '';
+                    width: 50%;
+                    height: 1px;
+                    background-color: $gray-01;
+                    @include absolute(0, auto, auto, 25%);
+                }
+            }
+        }
+    }
+
+    .column-beneficios {
+        min-height: 100vh;
         position: relative;
 
-        padding-top: 3.2rem;
+        .background-img {
+            width: 110%;
+            height: 100%;
+            @include absolute(0, auto, auto, 0);
+            z-index: 1;
 
-        &:before {
-            content: '';
-            width: 50%;
-            height: 1px;
-            background-color: $gray-01;
-            @include absolute(0, auto, auto, 25%);
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+
+        .forma-img {
+            height: 100%;
+            width: 16rem;
+            @include absolute(0, auto, auto, 0);
+            z-index: 999;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .row {
+            @include flex(column, flex-start, center, center);
+            padding-top: 5.6rem;
+            z-index: 4;
+            position: relative;
+        }
+
+        h2 {
+            color: $white-01;
+            text-align: center;
+            margin-bottom: 2.4rem;
+        }
+
+        .beneficios-list {
+            @include flex(row, space-around, center, center);
+            flex-wrap: wrap;
+
+            li {
+                height: 14.8rem;
+                @include flex(column, flex-start, center, center);
+                border: 1px solid $gray-01;
+                border-radius: .8rem;
+                background-color: rgba(33, 33, 33, .4);
+                color: $gray-01;
+                padding: 1.6rem;
+                margin-bottom: 2.4rem;
+
+                i {
+                    margin-bottom: 1.6rem;
+                }
+
+                span {
+                    font-size: 5.6rem;
+                }
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+}
+
+.pg-registo {
+    .column-login {
+        .btn-link {
+            margin: 2.4rem 0 0;
         }
     }
 }

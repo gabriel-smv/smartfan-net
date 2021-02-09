@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header-login">
         <div class="top-header">
             <div class="container">
                 <div class="row">
@@ -41,58 +41,80 @@
                 </div>
             </div>
         </div>
-
-        <div class="main-header">
-            <div class="container">
-                <div class="row">
-                    <ul class="main-header-list">
-                        <li class="logo column-1">
-                            <a href="index.html">
-                                <img src="images/svg/smartFan-logo.svg" alt="">
-                            </a>
-                        </li>
-
-                        <li class="column-2">
-                            <p>The game<br> <strong>changer</strong></p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </header>
 
-    <main>
+    <main class="pg-login">
         <div class="container">
             <div class="row">
                 <section class="col-lg-3 offset-lg-1 column-login">
-                    <h1>Login</h1>
-
-                    <form>
-                        <div class="container-input">
-                            <label for="email">E-mail</label>
-                            <input type="email" id="email">
-                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                    <div class="row">
+                        <div class="logo-smv col-lg-12">
+                            <img src="images/svg/smartFan-logo.svg" alt="">
                         </div>
 
-                        <div class="container-input">
-                            <label for="password">Password</label>
-                            <input type="password" id="password">
-                            <span class="input-validate" style="display: none;">Obrigatório*</span>
-                        </div>
+                        <h1 class="col-lg-12">Login</h1>
 
-                        <a href="#" class="btn-link">Recuperar a password</a>
+                        <form class="row">
+                            <div class="container-input col-lg-12">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
 
-                        <a href="#" class="btn btn-primary btn-full">Entrar</a>
+                            <div class="container-input col-lg-12">
+                                <label for="password">Password</label>
+                                <input type="password" id="password">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
 
-                        <h2>Ainda não tens uma conta SmartFan?</h2>
-                        <a href="#" class="btn btn-secondary btn-icon btn-full">
-                            Registar <i><span class="icon-arrow-right"></span></i>
-                        </a>
-                    </form>
+                            <div class="container-btn col-lg-12">
+                                <a href="#" class="btn-link">Recuperar a password</a>
+
+                                <a href="#" class="btn btn-primary btn-full">Entrar</a>
+
+                                <h2>Ainda não tens uma conta SmartFan?</h2>
+                                <a href="registo.html" class="btn btn-secondary btn-icon btn-full">
+                                    Registar <i><span class="icon-arrow-right"></span></i>
+                                </a>
+                            </div>
+                        </form>
+                    </div>
                 </section>
 
-                <div class="col-lg-7 column-2">
+                <div class="col-lg-8 column-beneficios">
+                    <div class="container">
+                        <div class="row">
+                            <h2>Cria a tua conta e tens acesso a:</h2>
+                            <ul class="beneficios-list col-lg-8">
+                                <li class="col-lg-5">
+                                    <i><span class="icon-quotas"></span></i>
+                                    <h3>Pagamento de quotas do teu clube</h3>
+                                </li>
 
+                                <li class="col-lg-5">
+                                    <i><span class="icon-membership"></span></i>
+                                    <h3>Inscrição de sócio</h3>
+                                </li>
+
+                                <li class="col-lg-5">
+                                    <i><span class="icon-tickets"></span></i>
+                                    <h3>Compra de bilhetes</h3>
+                                </li>
+
+                                <li class="col-lg-5">
+                                    <i><span class="icon-shopping"></span></i>
+                                    <h3>Informações e Promoções exclusivas</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="forma-img">
+                        <img src="images/svg/forma-1.svg" alt="">
+                    </div>
+                    <div class="background-img">
+                        <img src="images/banner-login.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>

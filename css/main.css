@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .container,
 .container-fluid,
 .container-sm,
@@ -8335,6 +8336,7 @@ body {
   flex-direction: column;
   font-family: "Nunito Sans", sans-serif;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 section {
@@ -8510,17 +8512,33 @@ body {
 }
 
 h1 {
-  font-size: 2.4rem;
-  font-weight: 900;
+  width: 100%;
+  font-family: "Anton";
+  font-size: 3.2rem;
+  font-weight: 400;
   line-height: 1.4em;
   text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   margin-bottom: .8rem;
 }
 
 h2 {
-  font-size: 1.8rem;
-  font-weight: 900;
+  font-family: "Anton";
+  font-size: 2rem;
+  font-weight: 400;
   line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-family: "Anton";
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 p {
@@ -8653,16 +8671,17 @@ p strong {
 }
 
 form {
+  width: 100%;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
+  flex-wrap: wrap;
 }
 
 form .container-input {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -8681,7 +8700,7 @@ form .container-input select {
   border: none;
   border-bottom: 2px solid #1a7dd7;
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1em;
   color: #212121;
 }
@@ -8701,15 +8720,21 @@ form .container-input select:disabled {
 form .container-input label {
   width: 100%;
   text-align: left;
+  font-family: "Anton";
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1em;
+  text-transform: uppercase;
   color: #212121;
   margin-bottom: .8rem;
 }
 
 form .container-input label:disabled {
   color: #707070;
+}
+
+form .container-input .select-country {
+  margin-bottom: 0;
 }
 
 form .container-input .input-validate {
@@ -8729,6 +8754,127 @@ form .container-input span.input-validate {
   bottom: -0.4rem;
   left: auto;
   transform: translateY(100%);
+}
+
+.select-country {
+  width: 100%;
+  height: 4rem;
+  padding: .8rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: 2px solid #1a7dd7;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.select-country:focus {
+  outline: none;
+  border-bottom: 2px solid #03275a;
+}
+
+.select-country:disabled {
+  background-color: #d3d3d3;
+  border-bottom-color: #707070;
+}
+
+.select-country img {
+  opacity: 1;
+  width: 2.5rem;
+  height: auto;
+}
+
+.select-country p {
+  margin: 0 .4rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 400;
+  color: #707070;
+}
+
+#select-country-movel:checked ~ .country-list,
+#select-country-phone:checked ~ .country-list {
+  display: block;
+}
+
+#select-country-movel:checked ~ .select-country i,
+#select-country-phone:checked ~ .select-country i {
+  transform: rotate(180deg);
+  animation: rotateImg .3s ease-out;
+}
+
+.country-list {
+  width: 100%;
+  max-height: 28rem;
+  overflow-y: scroll;
+  display: none;
+  position: absolute;
+  top: 6rem;
+  right: 50%;
+  bottom: auto;
+  left: auto;
+  transform: translateX(50%);
+  background-color: #FFFFFF;
+  border: 1px solid #f34605;
+  border-radius: .25rem;
+  transition: all .3s ease-out;
+  z-index: 99;
+}
+
+.country-list::-webkit-scrollbar {
+  width: .8rem;
+  background: #d3d3d3;
+  border-radius: 1rem;
+}
+
+.country-list::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 1rem;
+  border-radius: 1rem;
+  background: #ffffff;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.country-list li {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 1.6rem;
+  cursor: pointer;
+}
+
+.country-list li img {
+  width: 2rem;
+  margin: 0 .5rem;
+}
+
+.country-list li span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0 .5rem;
+}
+
+.country-list li span:last-child {
+  font-weight: 900;
+}
+
+.country-list li:hover {
+  background-color: #f0f0f0;
+  transition: all .3s ease-out;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
 }
 
 header {
@@ -9039,17 +9185,71 @@ footer .footer-list .item-social-medial span:hover {
   color: #ffffff;
 }
 
-.column-login .btn-link {
+.header-login {
+  margin-bottom: 0;
+}
+
+.pg-login .row,
+.pg-registo .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.pg-login .column-login,
+.pg-registo .column-login {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-login .column-login .logo-smv,
+.pg-registo .column-login .logo-smv {
+  height: auto;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.pg-login .column-login .logo-smv img,
+.pg-registo .column-login .logo-smv img {
+  width: 20rem;
+  height: auto;
+}
+
+.pg-login .column-login form,
+.pg-registo .column-login form {
+  margin-top: 1.6rem;
+}
+
+.pg-login .column-login .container-btn,
+.pg-registo .column-login .container-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: .8rem;
+}
+
+.pg-login .column-login .container-btn .btn-link,
+.pg-registo .column-login .container-btn .btn-link {
   margin-bottom: 2.4rem;
 }
 
-.column-login h2 {
+.pg-login .column-login .container-btn h2,
+.pg-registo .column-login .container-btn h2 {
   margin: 3.2rem 0;
   position: relative;
   padding-top: 3.2rem;
 }
 
-.column-login h2:before {
+.pg-login .column-login .container-btn h2:before,
+.pg-registo .column-login .container-btn h2:before {
   content: '';
   width: 50%;
   height: 1px;
@@ -9059,6 +9259,115 @@ footer .footer-list .item-social-medial span:hover {
   right: auto;
   bottom: auto;
   left: 25%;
+}
+
+.pg-login .column-beneficios,
+.pg-registo .column-beneficios {
+  min-height: 100vh;
+  position: relative;
+}
+
+.pg-login .column-beneficios .background-img,
+.pg-registo .column-beneficios .background-img {
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: 1;
+}
+
+.pg-login .column-beneficios .background-img img,
+.pg-registo .column-beneficios .background-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.pg-login .column-beneficios .forma-img,
+.pg-registo .column-beneficios .forma-img {
+  height: 100%;
+  width: 16rem;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: 999;
+}
+
+.pg-login .column-beneficios .forma-img img,
+.pg-registo .column-beneficios .forma-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.pg-login .column-beneficios .row,
+.pg-registo .column-beneficios .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-top: 5.6rem;
+  z-index: 4;
+  position: relative;
+}
+
+.pg-login .column-beneficios h2,
+.pg-registo .column-beneficios h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.pg-login .column-beneficios .beneficios-list,
+.pg-registo .column-beneficios .beneficios-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.pg-login .column-beneficios .beneficios-list li,
+.pg-registo .column-beneficios .beneficios-list li {
+  height: 14.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border: 1px solid #d3d3d3;
+  border-radius: .8rem;
+  background-color: rgba(33, 33, 33, 0.4);
+  color: #d3d3d3;
+  padding: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.pg-login .column-beneficios .beneficios-list li i,
+.pg-registo .column-beneficios .beneficios-list li i {
+  margin-bottom: 1.6rem;
+}
+
+.pg-login .column-beneficios .beneficios-list li span,
+.pg-registo .column-beneficios .beneficios-list li span {
+  font-size: 5.6rem;
+}
+
+.pg-login .column-beneficios .beneficios-list li h3,
+.pg-registo .column-beneficios .beneficios-list li h3 {
+  text-align: center;
+}
+
+.pg-registo .column-login .btn-link {
+  margin: 2.4rem 0 0;
 }
 
 html {
