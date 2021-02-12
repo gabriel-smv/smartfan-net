@@ -9239,6 +9239,7 @@ footer .footer-list .item-social-medial span:hover {
 }
 
 .nav a.active::before {
+  width: 4px;
   background-color: #f34605;
   transform: scale(1, 1);
   transition: all 0.3s ease-in-out;
