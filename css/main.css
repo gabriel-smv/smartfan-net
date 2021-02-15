@@ -8520,6 +8520,7 @@ h1 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #03275a;
   margin-bottom: .8rem;
 }
 
@@ -8530,6 +8531,7 @@ h2 {
   line-height: 1.4em;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: #03275a;
 }
 
 h3 {
@@ -8559,10 +8561,11 @@ p strong {
   border-radius: 3.2rem;
   border: 1px solid #000000;
   color: #000000;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 900;
   line-height: 1.3em;
   text-align: center;
+  text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 
@@ -8748,7 +8751,7 @@ form .container-input label {
   font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
-  color: #212121;
+  color: #03275a;
   margin-bottom: .8rem;
 }
 
@@ -8909,6 +8912,20 @@ form .container-input span.input-validate {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@keyframes enterText {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -9201,7 +9218,6 @@ footer .footer-list .item-social-medial span:hover {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  border-left: 3px solid transparent;
   position: relative;
 }
 
@@ -9236,6 +9252,7 @@ footer .footer-list .item-social-medial span:hover {
 
 .nav a.active {
   color: #212121;
+  background-color: #f5f5f5;
 }
 
 .nav a.active::before {
@@ -9246,37 +9263,6 @@ footer .footer-list .item-social-medial span:hover {
 }
 
 .nav a.active:hover i span {
-  color: #212121;
-}
-
-.pg-userdata .nav a::before {
-  content: '';
-  width: calc(100% - 1.2rem);
-  height: 2px;
-  background-color: #707070;
-  position: absolute;
-  top: auto;
-  right: 0;
-  bottom: 0.2rem;
-  left: auto;
-  border-radius: 1rem;
-  transform: scale(0, 1);
-  transform-origin: 0 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.pg-userdata .nav a:hover::before {
-  transform: scale(1, 1);
-  transition: all 0.3s ease-in-out;
-}
-
-.pg-userdata .nav a.active::before {
-  background-color: #f34605;
-  transform: scale(1, 1);
-  transition: all 0.3s ease-in-out;
-}
-
-.pg-userdata .nav a.active:hover i span {
   color: #212121;
 }
 
@@ -9422,7 +9408,7 @@ footer .footer-list .item-social-medial span:hover {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 .pg-login .column-beneficios .forma-img,
@@ -9662,6 +9648,111 @@ footer .footer-list .item-social-medial span:hover {
 
 .pg-registo .column-login .btn-link {
   margin: 2.4rem 0 0;
+}
+
+.version-1 .column-beneficios .beneficios-list li {
+  border: 1px solid #f34605;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+.version-1 .column-beneficios .beneficios-list li span {
+  font-size: 7.2rem;
+}
+
+.version-1 .column-beneficios .beneficios-list li:hover {
+  transform: translateY(-8px);
+  background-color: rgba(243, 70, 5, 0.6);
+  box-shadow: 0px 8px 16px 4px rgba(243, 70, 5, 0.6);
+  transition: all .3s ease-out;
+}
+
+.version-2 .column-beneficios h2 {
+  margin-bottom: 4.8rem;
+}
+
+.version-2 .column-beneficios .beneficios-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.version-2 .column-beneficios .beneficios-list li {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid transparent;
+  border-radius: .8rem;
+  background-color: rgba(33, 33, 33, 0);
+  color: #f5f5f5;
+  padding: 0 1.2rem 3.2rem;
+  margin-bottom: 5.6rem;
+  transition: all .3s ease-out;
+  position: relative;
+}
+
+.version-2 .column-beneficios .beneficios-list li i {
+  margin-bottom: .8rem;
+}
+
+.version-2 .column-beneficios .beneficios-list li span {
+  font-size: 12.4rem;
+}
+
+.version-2 .column-beneficios .beneficios-list li h3 {
+  height: 3rem;
+  text-align: center;
+  display: none;
+  transition: all .3s ease-out;
+  position: absolute;
+  bottom: 0;
+}
+
+.version-2 .column-beneficios .beneficios-list li .bg-item {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  bottom: auto;
+  left: auto;
+  transform: translateX(50%);
+  opacity: .7;
+  z-index: -1;
+}
+
+.version-2 .column-beneficios .beneficios-list li .bg-item img {
+  height: 100%;
+}
+
+.version-2 .column-beneficios .beneficios-list li:hover {
+  background-color: rgba(33, 33, 33, 0);
+  transition: all .3s ease-out;
+}
+
+.version-2 .column-beneficios .beneficios-list li:hover h3 {
+  text-align: center;
+  display: block;
+  animation: enterText .4s ease-out;
+  transition: all .3s ease-out;
+}
+
+.pg-index-versions .container-btn {
+  margin-top: 8.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.pg-index-versions .container-btn .btn {
+  margin: 0 2.4rem;
 }
 
 html {
