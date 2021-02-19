@@ -8606,18 +8606,18 @@ p strong {
 }
 
 .btn-primary {
-  color: #f34605;
-  border: 1px solid #f34605;
+  color: #f37402;
+  border: 1px solid #f37402;
   transition: all 0.3s ease-in-out;
 }
 
 .btn-primary i span {
   display: block;
-  color: #f34605;
+  color: #f37402;
 }
 
 .btn-primary:hover {
-  background-color: #f34605;
+  background-color: #f37402;
   transition: all 0.3s ease-in-out;
 }
 
@@ -9276,6 +9276,54 @@ footer .footer-list .item-social-medial span:hover {
   align-content: center;
 }
 
+.header-login.version-3 {
+  --header-login-height: 8rem;
+  height: var(--header-login-height);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header-login.version-3 .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.header-login.version-3 .header-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.header-login.version-3 .header-list h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header-login.version-3 .header-list h2:before {
+  content: '';
+  width: 100%;
+  height: 1.2rem;
+  background-color: #f37402;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .pg-login .row,
 .pg-registo .row {
   display: flex;
@@ -9739,6 +9787,250 @@ footer .footer-list .item-social-medial span:hover {
   display: block;
   animation: enterText .4s ease-out;
   transition: all .3s ease-out;
+}
+
+.version-3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.version-3 .section-login {
+  padding-top: 1.6rem;
+}
+
+.version-3 .section-login .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+.version-3 .section-login .column-1 {
+  padding-bottom: 16rem;
+}
+
+.version-3 .section-login .column-1 p {
+  font-family: "Anton";
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.version-3 .section-login .column-1 p span {
+  position: relative;
+  z-index: 1;
+  margin-top: .4rem;
+}
+
+.version-3 .section-login .column-1 p span:before {
+  content: '';
+  width: 100%;
+  height: 40%;
+  background-color: #f37402;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.version-3 .section-login .column-login {
+  background-color: #ffffff;
+  padding: 2.4rem 4rem 20rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.version-3 .section-login .column-login h1 {
+  text-align: center;
+  color: #f37402;
+}
+
+.version-3 .section-login .column-login form label {
+  color: #f37402;
+}
+
+.version-3 .section-login .column-login .container-btn h2 {
+  margin: 2.4rem 0;
+  position: relative;
+  text-align: center;
+  padding-top: 2.4rem;
+}
+
+.version-3 .section-login .column-login .container-btn h2:before {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: #d3d3d3;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 25%;
+}
+
+.version-3 .section-beneficios {
+  width: 100%;
+  position: relative;
+  padding-bottom: 2rem;
+  padding-top: 20rem;
+  margin-top: -20rem;
+  z-index: 3;
+}
+
+.version-3 .section-beneficios .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding-top: 5.6rem;
+  z-index: 1;
+  position: relative;
+}
+
+.version-3 .section-beneficios .beneficios-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 8rem 0;
+  margin-bottom: 4rem;
+}
+
+.version-3 .section-beneficios .beneficios-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: #ffffff;
+  transition: all .3s ease-out;
+}
+
+.version-3 .section-beneficios .beneficios-list li i {
+  margin-bottom: 2.4rem;
+  background-color: #03275a;
+  border-radius: 50%;
+  padding: 1.6rem;
+}
+
+.version-3 .section-beneficios .beneficios-list li span {
+  font-size: 8.8rem;
+}
+
+.version-3 .section-beneficios .beneficios-list li h3 {
+  font-size: 2.4rem;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+@media (max-width: 992px) {
+  .version-3 .section-beneficios .beneficios-list .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-end;
+  }
+  .version-3 .section-beneficios .beneficios-list .forma-img {
+    width: 23rem;
+    left: -13rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .version-3 .section-beneficios .beneficios-list {
+    order: 1;
+    min-height: 16rem;
+  }
+  .version-3 .section-beneficios .beneficios-list .container {
+    display: none;
+  }
+  .version-3 .section-beneficios .beneficios-list .forma-img {
+    display: none;
+  }
+  .version-3 .section-beneficios .beneficios-list .footer-list {
+    display: none;
+  }
+  .version-3 .section-beneficios .beneficios-list .background-img {
+    width: calc(100% + 3rem);
+    position: absolute;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: -1.5rem;
+  }
+  .version-3 .section-beneficios .beneficios-list .background-img img {
+    object-position: center;
+  }
+}
+
+.version-3 .section-beneficios .powered-smv {
+  text-align: center;
+  height: 4.8rem;
+}
+
+.version-3 .section-beneficios .powered-smv a {
+  display: inline-block;
+  height: 100%;
+}
+
+.version-3 .section-beneficios .powered-smv a img {
+  height: 100%;
+  width: auto;
+}
+
+.version-3 .section-beneficios .background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: 0;
+}
+
+.version-3 .section-beneficios .background-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.version-3 .background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  z-index: -1;
+}
+
+.version-3 .background-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .pg-index-versions .container-btn {

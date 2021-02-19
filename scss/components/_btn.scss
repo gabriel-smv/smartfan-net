@@ -44,19 +44,19 @@
     }
 
     &-primary {
-        color: $secondary-01;
-        border: 1px solid $secondary-01;
+        color: $secondary-02;
+        border: 1px solid $secondary-02;
         transition: $transition-01;
 
         i {
             span {
                 display: block;
-                color: $secondary-01;
+                color: $secondary-02;
             }
         }
 
         &:hover {
-            background-color: $secondary-01;
+            background-color: $secondary-02;
             transition: $transition-01;
         }
     }
