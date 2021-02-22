@@ -70,6 +70,9 @@
                                 </div>
                             </form>
                         </div>
+                        <div class="forma-bg">
+                            <img src="images/forma-login.svg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,23 +83,45 @@
                 <div class="row">
                     <ul class="beneficios-list col-lg-10 col-md-10">
                         <li class="col-lg-3 col-md-2">
-                            <i><span class="icon-quotas"></span></i>
+                            <i>
+                                <span class="icon-quotas"></span>
+                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
+                            </i>
                             <h3>Pagamento de quotas</h3>
+                            <!-- Button trigger modal -->
+                            <a href="#quotas" class="btn btn-primary" data-toggle="modal">
+                                Saiba mais
+                            </a>
                         </li>
 
                         <li class="col-lg-3 col-md-2">
-                            <i><span class="icon-membership"></span></i>
+                            <i>
+                                <span class="icon-membership"></span>
+                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
+                            </i>
                             <h3>Inscrição de sócio</h3>
+                            <a href="" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"></a>
                         </li>
 
                         <li class="col-lg-3 col-md-2">
-                            <i><span class="icon-tickets"></span></i>
+                            <i>
+                                <span class="icon-tickets"></span>
+                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
+                            </i>
                             <h3>Compra de bilhetes</h3>
+                            <a href="" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"></a>
                         </li>
 
                         <li class="col-lg-3 col-md-2">
-                            <i><span class="icon-shopping"></span></i>
+                            <i>
+                                <span class="icon-shopping"></span>
+                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
+                            </i>
                             <h3>Promoções exclusivas</h3>
+                            <a href="" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"></a>
                         </li>
                     </ul>
 
@@ -118,11 +143,35 @@
         <div class="background-img">
             <img src="images/bg-version2.jpg" alt="">
         </div>
+
+        <!-- Modal -->
+        <div class="modal fade collapse" id="quotas" tabindex="-1" role="dialog" aria-labelledby="quotasLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="quotasLabel">Pague suas quotas!</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+
 
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
+
+    <script>$(document).ready(function () { $("#exampleModal").modal("show"); });</script>
 </body>
 
 </html>
