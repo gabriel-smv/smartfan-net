@@ -51,6 +51,20 @@ a span:focus {
   // }
 }
 
+.no-mobile {
+  @include md {
+    display: none !important;
+  }
+}
+
+.yes-mobile {
+  display: none !important;
+
+  @include md {
+    display: block !important;
+  }
+}
+
 .load-screen {
   width: 100%;
   height: 100%;

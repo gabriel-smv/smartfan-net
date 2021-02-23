@@ -444,6 +444,24 @@
                     }
                 }
             }
+
+            @include md {
+                p {
+                    font-size: 5.6rem;
+
+                    span {
+                        display: block;
+                    }
+                }
+            }
+
+            @include sm {
+                padding-bottom: 4rem;
+
+                p {
+                    font-size: 4rem;
+                }
+            }
         }
 
         .column-login {
@@ -491,6 +509,10 @@
                 img {
                     width: 100%;
                 }
+            }
+
+            @include sm {
+                padding: 2.4rem 1.6rem 8rem;
             }
         }
     }
@@ -543,44 +565,8 @@
                 h3 {
                     font-size: 2.4rem;
                     text-align: center;
-                    letter-spacing: 0
-                }
-            }
-
-            @include md {
-                .row {
-                    @include flex(column, flex-start, flex-end, flex-end);
-                }
-
-                .forma-img {
-                    width: 23rem;
-                    left: -13rem;
-                }
-            }
-
-            @include sm {
-                order: 1;
-                min-height: 16rem;
-
-                .container {
-                    display: none;
-                }
-
-                .forma-img {
-                    display: none;
-                }
-
-                .footer-list {
-                    display: none;
-                }
-
-                .background-img {
-                    width: calc(100% + 3rem);
-                    @include absolute(0, auto, auto, -1.5rem);
-
-                    img {
-                        object-position: center;
-                    }
+                    letter-spacing: 0;
+                    margin-bottom: 2.4rem;
                 }
             }
         }
@@ -611,6 +597,42 @@
                 width: 100%;
                 object-fit: cover;
                 object-position: center;
+            }
+        }
+
+        @include md {
+            .beneficios-list {
+                margin-bottom: 1.6rem;
+                padding: 24rem 0 4rem;
+                margin-bottom: 4rem;
+
+                .row {
+                    @include flex(column, flex-start, flex-end, flex-end);
+                }
+
+                li {
+                    margin-bottom: 4rem;
+                }
+            }
+        }
+
+        @include sm {
+            padding-top: 0rem;
+            margin-top: 0rem;
+
+            .beneficios-list {
+                padding: 8rem 0 4rem;
+                margin-bottom: 4rem;
+
+                li {
+                    margin-bottom: 8rem;
+                }
+            }
+
+            .background-img {
+                img {
+                    object-position: top left;
+                }
             }
         }
 

@@ -30,7 +30,8 @@ h3 {
 }
 
 p {
-  @include font(1.6rem, 400, 1.4em);
+  @include font(1.6rem, 400, 1.6em);
+  color: $black-01;
 
   b,
   strong {

@@ -1,0 +1,40 @@
+.modal {
+    background-color: rgba(0, 0, 0, .5);
+
+    .modal-dialog {
+        transform: translate(0, -50%);
+        max-width: 60rem;
+    }
+
+    &.fade.in {
+        .modal-dialog {
+            transform: translate(0, 0);
+        }
+    }
+
+    .modal-header {
+        background-color: $white-02;
+        border: none;
+    }
+
+    .modal-title {
+        width: 100%;
+        @include flex(row, center, center, center);
+        letter-spacing: 0;
+
+        font-size: 2.5rem;
+
+        span {
+            font-size: 3.2rem;
+            margin-right: 1.6rem;
+        }
+    }
+
+    .modal-body {
+        padding: 2.4rem;
+
+        p {
+            margin-bottom: 1.6rem;
+        }
+    }
+}

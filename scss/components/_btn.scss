@@ -55,9 +55,11 @@
             }
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $secondary-02;
             transition: $transition-01;
+            outline: none;
         }
     }
 
@@ -73,9 +75,11 @@
             }
         }
 
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $primary-01;
             transition: $transition-01;
+            outline: none;
         }
     }
 
@@ -116,7 +120,7 @@
         }
 
         &:focus {
-            color: $secondary-01;
+            color: $primary-01;
             text-decoration: none;
         }
     }
