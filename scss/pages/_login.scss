@@ -316,6 +316,27 @@
     }
 }
 
+.pg-final-registo {
+    padding-top: 3rem;
+
+    .section-final-registo {
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .row {
+            @include flex(row, center, center, center);
+        }
+
+        .container-btn {
+            @include flex(column, flex-start, center, center);
+            flex-wrap: wrap;
+            margin-top: 2.4rem;
+        }
+    }
+}
+
 .version-1 {
     .column-beneficios {
         .beneficios-list {

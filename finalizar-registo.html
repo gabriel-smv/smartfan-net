@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartFan.Net</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" /> -->
+</head>
+
+<body>
+    <header class="header-login version-3">
+        <div class="container-fluid">
+            <div class="row">
+                <ul class="header-list col-lg-10 col-12">
+                    <li class="logo column-1">
+                        <a href="index.html">
+                            <img src="images/svg/smartFan-logo.svg" alt="">
+                        </a>
+                    </li>
+
+                    <li class="column-2">
+                        <h2>The game changer</h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="pg-final-registo version-3">
+        <div class="section-final-registo col-lg-10 col-12">
+            <div class="container-fluid">
+                <div class="row">
+                    <h1 class="col-12">Finalize o seu registo!</h1>
+
+                    <form class="col-lg-5">
+                        <div class="row">
+                            <div class="container-input col-lg-6 col-12">
+                                <label for="sexo">Sexo</label>
+                                <select type="select" id="sexo">
+                                    <option value="masculino">Masculino</option>
+                                    <option value="feminino">Feminino</option>
+                                    <option value="-" selected>-</option>
+                                </select>
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-12">
+                                <label for="nascimento">Data de nascimento</label>
+                                <input type="date" id="nascimento">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-12">
+                                <label for="pais">País</label>
+                                <select type="select" id="pais">
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Brasil">Brasil</option>
+                                    <option value="-" selected>-</option>
+                                </select>
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-12">
+                                <label for="codigo-postal">Código postal</label>
+                                <input type="text" id="codigo-postal">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-12">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-12">
+                                <label for="select-country-phone">País Telemóvel</label>
+                                <input type="checkbox" id="select-country-phone" style="display: none;">
+                                <label for="select-country-phone" class="select-country">
+                                    <img src="images/flag/pt.svg" alt="">
+                                    <p>País</p>
+                                    <i><span class="icon-arrow-down"></span></i>
+                                </label>
+
+                                <ul class="country-list">
+                                    <li>
+                                        <img src="images/flag/pt.svg" alt="Portugal" title="Portugal">
+                                        <span>PT</span> <span>+351</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/br.svg" alt="Brasil" title="Brasil"></a>
+                                        <span>BR</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/gb-eng.svg" alt="Brasil"
+                                                title="Gra Bretanha"></a>
+                                        <span>ENG</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/us.svg" alt="Brasil"
+                                                title="United States"></a>
+                                        <span>US</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/mx.svg" alt="Brasil" title="Brasil"></a>
+                                        <span>MEX</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/es.svg" alt="Brasil" title="Brasil"></a>
+                                        <span>ES</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/fr.svg" alt="France" title="France"></a>
+                                        <span>FR</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/cr.svg" alt="Coreia Norte"
+                                                title="Coreia Norte"></a>
+                                        <span>CR</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/ru.svg" alt="Coreia Norte"
+                                                title="Coreia Norte"></a>
+                                        <span>RU</span> <span>+55</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-12">
+                                <label for="cidade">Telemóvel</label>
+                                <input type="text" id="telemovel">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-btn col-12">
+                                <a href="registo-3.html" class="btn btn-secondary btn-icon btn-full">
+                                    Finalizar <i><span class="icon-arrow-right"></span></i>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- jQuery, Bootstrap JS -->
+    <script src="includes/jquery.min.js"></script>
+    <script src="includes/bootstrap.min.js"></script>
+</body>
+
+</html>
