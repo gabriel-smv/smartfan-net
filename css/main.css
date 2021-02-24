@@ -9639,6 +9639,23 @@ footer .footer-list .item-social-medial span:hover {
   }
 }
 
+footer.footer-final-registo {
+  background-color: transparent;
+  border-top: none;
+}
+
+footer.footer-final-registo .footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+footer.footer-final-registo .footer-list .item-smartmove a img {
+  height: 4rem;
+}
+
 .nav {
   display: flex;
   flex-direction: column;

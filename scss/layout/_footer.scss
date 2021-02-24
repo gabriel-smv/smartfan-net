@@ -87,4 +87,21 @@ footer {
             }
         }
     }
+
+    &.footer-final-registo {
+        background-color: transparent;
+        border-top: none;
+
+        .footer-list {
+            @include flex(row, center, center, center);
+
+            .item-smartmove {
+                a {
+                    img {
+                        height: 4rem;
+                    }
+                }
+            }
+        }
+    }
 }
