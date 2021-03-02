@@ -1,0 +1,67 @@
+.pg-home {
+
+    .cards-menu {
+        @include flex(row, center, center, center);
+        flex-wrap: wrap;
+        padding-top: 3.2rem;
+
+        @include xxs {
+            padding-top: 2.4rem;
+        }
+
+        .cards-item {
+            min-height: 20rem;
+            // background-color: $white-02;
+            background-image: linear-gradient(to right bottom,
+                    #f5f5f5,
+                    #f7f7f7,
+                    #f8f9f8,
+                    #fafafa,
+                    #fcfcfc,
+                    #fdfdfd,
+                    #fdfdfd,
+                    #fefefe,
+                    #fefefe,
+                    #ffffff,
+                    #ffffff,
+                    #ffffff);
+            border: 2px solid $white-02;
+            border-radius: .8rem;
+            padding: 2.4rem 1.6rem;
+            margin: 0 1.2rem 2.4rem;
+            transition: $transition-01;
+            @include flex(column, center, center, center);
+
+            i {
+                display: inline-block;
+                margin-bottom: 1.6rem;
+
+                span {
+                    font-size: 8rem;
+                }
+            }
+
+            h2 {
+                @include font(2.4rem, 400, 1.2em);
+                color: $black-01;
+                letter-spacing: 0;
+                margin-bottom: .8rem;
+            }
+
+            p {
+                font-size: 1.8rem;
+                margin-bottom: 2.4rem;
+            }
+
+            &:hover {
+                background-color: $white-01;
+                transition: $transition-01;
+            }
+
+            &:focus {
+                outline: $black-01;
+                transition: $transition-01;
+            }
+        }
+    }
+}
