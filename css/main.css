@@ -9825,20 +9825,6 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   height: 4.5rem;
 }
 
-.header-login .header-list .logo::before {
-  content: '';
-  width: 1px;
-  height: 85%;
-  border-radius: 10px;
-  background-color: #212121;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  transform: translate(50%, -50%);
-}
-
 .header-login .header-list h2 {
   font-size: 3.2rem;
   font-weight: 400;
@@ -9911,10 +9897,21 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   flex-wrap: wrap;
 }
 
+@media (max-width: 992px) {
+  .pg-login .section-login .login-wrapper,
+  .pg-registo .section-login .login-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
 .pg-login .section-login .column-1 p,
 .pg-registo .section-login .column-1 p {
   font-family: "Anton";
-  font-size: 8.8rem;
+  font-size: 8rem;
   font-weight: 400;
   line-height: 1.2em;
   color: #ffffff;
@@ -9986,7 +9983,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  margin-top: .8rem;
+  margin-bottom: 2.4rem;
 }
 
 .pg-login .section-login .column-login .container-btn .btn,
@@ -10006,7 +10003,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 
 .pg-login .section-login .column-login h2,
 .pg-registo .section-login .column-login h2 {
-  margin: 2.4rem 0;
+  margin-bottom: 2.4rem;
   position: relative;
   text-align: center;
   padding-top: 2.4rem;
