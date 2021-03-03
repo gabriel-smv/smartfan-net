@@ -9908,6 +9908,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   justify-content: space-between;
   align-items: flex-end;
   align-content: flex-end;
+  flex-wrap: wrap;
 }
 
 .pg-login .section-login .column-1 p,
@@ -9988,9 +9989,19 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   margin-top: .8rem;
 }
 
+.pg-login .section-login .column-login .container-btn .btn,
+.pg-registo .section-login .column-login .container-btn .btn {
+  max-height: 4.6rem;
+}
+
 .pg-login .section-login .column-login .container-btn .btn-link,
 .pg-registo .section-login .column-login .container-btn .btn-link {
   margin-bottom: 2.4rem;
+}
+
+.pg-login .section-login .column-login .registo-btn .btn,
+.pg-registo .section-login .column-login .registo-btn .btn {
+  max-height: 4.6rem;
 }
 
 .pg-login .section-login .column-login h2,
@@ -10173,6 +10184,11 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   .pg-registo .section-beneficios .beneficios-list {
     padding: 1.6rem 0;
     margin-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
   }
   .pg-login .section-beneficios .beneficios-list li,
   .pg-registo .section-beneficios .beneficios-list li {
