@@ -8917,7 +8917,7 @@ h1 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #041229;
+  color: #03275a;
   margin-bottom: .8rem;
 }
 
@@ -8928,7 +8928,7 @@ h2 {
   line-height: 1.4em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #041229;
+  color: #03275a;
 }
 
 h3 {
@@ -9134,7 +9134,7 @@ form .container-input select {
 form .container-input input:focus,
 form .container-input select:focus {
   outline: none;
-  border-bottom: 2px solid #041229;
+  border-bottom: 2px solid #03275a;
 }
 
 form .container-input input:disabled,
@@ -9151,7 +9151,7 @@ form .container-input label {
   font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
-  color: #041229;
+  color: #03275a;
   margin-bottom: .8rem;
 }
 
@@ -9199,7 +9199,7 @@ form .container-input span.input-validate {
 
 .select-country:focus {
   outline: none;
-  border-bottom: 2px solid #041229;
+  border-bottom: 2px solid #03275a;
 }
 
 .select-country:disabled {
@@ -9545,7 +9545,7 @@ footer {
   width: 100%;
   margin-top: auto;
   padding: 2.4rem 0;
-  background-color: #041229;
+  background-color: #03275a;
   border-top: 2px solid #f34605;
 }
 
@@ -10077,7 +10077,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   text-align: center;
   padding: 1.2rem 2.4rem .8rem;
   border-radius: 2rem;
-  background-color: #041229;
+  background-color: #03275a;
 }
 
 .pg-login .section-beneficios .beneficios-list,
@@ -10106,7 +10106,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-login .section-beneficios .beneficios-list li i,
 .pg-registo .section-beneficios .beneficios-list li i {
   margin-bottom: 2.4rem;
-  background-color: #041229;
+  background-color: #03275a;
   border-radius: 50%;
   padding: 1.6rem;
   position: relative;
