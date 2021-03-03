@@ -13,19 +13,60 @@
     .header-list {
         @include flex(row, space-between, center, center);
 
+        .logo {
+            a {
+                display: inline-block;
+
+                img {
+                    height: 4.5rem;
+                }
+            }
+
+            &::before {
+                content: '';
+                width: 1px;
+                height: 85%;
+                border-radius: 10px;
+                background-color: $black-01;
+                @include absolute(50%, 0, auto, auto);
+                transform: translate(50%, -50%);
+            }
+        }
+
         h2 {
-            @include font(2.4rem, 400, 1.2em);
+            @include font(3.2rem, 400, 1.2em);
             letter-spacing: 0;
             position: relative;
             z-index: 1;
 
-            &:before {
-                content: '';
-                width: 100%;
-                height: 1.2rem;
-                background-color: $secondary-02;
-                @include absolute(auto, auto, 0, 0);
-                z-index: -1;
+            // &:before {
+            //     content: '';
+            //     width: 100%;
+            //     height: 1.2rem;
+            //     background-color: $secondary-02;
+            //     @include absolute(auto, auto, 0, 0);
+            //     z-index: -1;
+            // }
+        }
+    }
+}
+
+.footer-login {
+    background: $white-01;
+    border: none;
+    padding: 1.2rem 0;
+
+    .powered-smv {
+        text-align: center;
+        height: 3.2rem;
+
+        a {
+            display: inline-block;
+            height: 100%;
+
+            img {
+                height: 100%;
+                width: auto;
             }
         }
     }
@@ -48,13 +89,18 @@
         z-index: 1;
 
         .row {
+            @include flex(row, center, center, center);
+        }
+
+        .login-wrapper {
             @include flex(row, space-between, flex-end, flex-end);
         }
 
         .column-1 {
             p {
+                // width: 80%;
                 font-family: $font-02;
-                @include font(7rem, 400, 1.2em);
+                @include font(8.8rem, 400, 1.2em);
                 color: $white-01;
                 letter-spacing: 0;
                 text-transform: uppercase;
@@ -89,6 +135,7 @@
 
         .column-login {
             background-color: $white-01;
+            box-shadow: 0px -4px 18px 0px rgba(33, 33, 33, 0.8);
             padding: 2.4rem 4rem 5.6rem;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -150,8 +197,8 @@
     .section-beneficios {
         width: 100%;
         position: relative;
-        padding-bottom: 2rem;
-        padding-top: 4rem;
+        padding-top: 6rem;
+        padding-bottom: 2.4rem;
 
         z-index: 3;
 
@@ -163,19 +210,21 @@
         }
 
         h2 {
+            width: auto;
             margin: 0 auto;
             @include font(3.2rem, 400, 1.2em);
             color: $white-01;
             text-align: center;
             padding: 1.2rem 2.4rem .8rem;
-            border-bottom: 2px solid $secondary-01;
+            border-radius: 2rem;
+            background-color: $primary-02;
         }
 
         .beneficios-list {
             @include flex(row, space-between, flex-start, flex-start);
             flex-wrap: wrap;
-            padding: 4rem 0;
-            margin-bottom: .8rem;
+            padding: 3rem 0;
+            margin-bottom: 1.6rem;
 
             li {
                 @include flex(column, center, center, center);
@@ -190,44 +239,31 @@
                     position: relative;
 
                     .check {
-                        width: 3.2rem;
-                        height: 3.2rem;
-                        @include absolute(0, 0, auto, auto);
+                        width: 5rem;
+                        height: 5rem;
+                        @include absolute(0, -2.4rem, auto, auto);
                     }
                 }
 
                 span {
-                    font-size: 8.8rem;
+                    font-size: 8rem;
                 }
 
                 h3 {
-                    width: 70%;
+                    max-width: 37rem;
                     font-size: 2.4rem;
                     text-align: center;
                     letter-spacing: 0;
-                    margin-bottom: 2.4rem;
                 }
             }
         }
 
         .nota-rodape {
+            width: 100%;
+            text-align: center;
             @include font(1.2rem, 400, 1.4rem);
             color: $gray-01;
-        }
-
-        .powered-smv {
-            text-align: center;
-            height: 4.8rem;
-
-            a {
-                display: inline-block;
-                height: 100%;
-
-                img {
-                    height: 100%;
-                    width: auto;
-                }
-            }
+            // margin-top: .4rem;
         }
 
         @include md {
@@ -274,8 +310,8 @@
 
     .background-forma {
         width: 100%;
-        height: 100%;
-        @include absolute(0, auto, auto, 0);
+        height: 85%;
+        @include absolute(auto, auto, 0, 0);
         z-index: 0;
 
         img {

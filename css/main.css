@@ -8917,7 +8917,7 @@ h1 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #03275a;
+  color: #041229;
   margin-bottom: .8rem;
 }
 
@@ -8928,7 +8928,7 @@ h2 {
   line-height: 1.4em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #03275a;
+  color: #041229;
 }
 
 h3 {
@@ -8959,7 +8959,7 @@ p strong {
   border-radius: 3.2rem;
   border: 1px solid #000000;
   color: #000000;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 900;
   line-height: 1.3em;
   text-align: center;
@@ -9134,7 +9134,7 @@ form .container-input select {
 form .container-input input:focus,
 form .container-input select:focus {
   outline: none;
-  border-bottom: 2px solid #03275a;
+  border-bottom: 2px solid #041229;
 }
 
 form .container-input input:disabled,
@@ -9151,7 +9151,7 @@ form .container-input label {
   font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
-  color: #03275a;
+  color: #041229;
   margin-bottom: .8rem;
 }
 
@@ -9199,7 +9199,7 @@ form .container-input span.input-validate {
 
 .select-country:focus {
   outline: none;
-  border-bottom: 2px solid #03275a;
+  border-bottom: 2px solid #041229;
 }
 
 .select-country:disabled {
@@ -9545,7 +9545,7 @@ footer {
   width: 100%;
   margin-top: auto;
   padding: 2.4rem 0;
-  background-color: #03275a;
+  background-color: #041229;
   border-top: 2px solid #f34605;
 }
 
@@ -9817,8 +9817,30 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-content: center;
 }
 
+.header-login .header-list .logo a {
+  display: inline-block;
+}
+
+.header-login .header-list .logo a img {
+  height: 4.5rem;
+}
+
+.header-login .header-list .logo::before {
+  content: '';
+  width: 1px;
+  height: 85%;
+  border-radius: 10px;
+  background-color: #212121;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  transform: translate(50%, -50%);
+}
+
 .header-login .header-list h2 {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2em;
   letter-spacing: 0;
@@ -9826,17 +9848,25 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   z-index: 1;
 }
 
-.header-login .header-list h2:before {
-  content: '';
-  width: 100%;
-  height: 1.2rem;
-  background-color: #f37402;
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
+.footer-login {
+  background: #ffffff;
+  border: none;
+  padding: 1.2rem 0;
+}
+
+.footer-login .powered-smv {
+  text-align: center;
+  height: 3.2rem;
+}
+
+.footer-login .powered-smv a {
+  display: inline-block;
+  height: 100%;
+}
+
+.footer-login .powered-smv a img {
+  height: 100%;
+  width: auto;
 }
 
 .pg-login,
@@ -9866,6 +9896,15 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-registo .section-login .row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-login .section-login .login-wrapper,
+.pg-registo .section-login .login-wrapper {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   align-content: flex-end;
@@ -9874,7 +9913,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-login .section-login .column-1 p,
 .pg-registo .section-login .column-1 p {
   font-family: "Anton";
-  font-size: 7rem;
+  font-size: 8.8rem;
   font-weight: 400;
   line-height: 1.2em;
   color: #ffffff;
@@ -9920,6 +9959,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-login .section-login .column-login,
 .pg-registo .section-login .column-login {
   background-color: #ffffff;
+  box-shadow: 0px -4px 18px 0px rgba(33, 33, 33, 0.8);
   padding: 2.4rem 4rem 5.6rem;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -10001,8 +10041,8 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-registo .section-beneficios {
   width: 100%;
   position: relative;
-  padding-bottom: 2rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
+  padding-bottom: 2.4rem;
   z-index: 3;
 }
 
@@ -10020,6 +10060,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 
 .pg-login .section-beneficios h2,
 .pg-registo .section-beneficios h2 {
+  width: auto;
   margin: 0 auto;
   font-size: 3.2rem;
   font-weight: 400;
@@ -10027,7 +10068,8 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   color: #ffffff;
   text-align: center;
   padding: 1.2rem 2.4rem .8rem;
-  border-bottom: 2px solid #f34605;
+  border-radius: 2rem;
+  background-color: #041229;
 }
 
 .pg-login .section-beneficios .beneficios-list,
@@ -10038,8 +10080,8 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-items: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
-  padding: 4rem 0;
-  margin-bottom: .8rem;
+  padding: 3rem 0;
+  margin-bottom: 1.6rem;
 }
 
 .pg-login .section-beneficios .beneficios-list li,
@@ -10056,7 +10098,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-login .section-beneficios .beneficios-list li i,
 .pg-registo .section-beneficios .beneficios-list li i {
   margin-bottom: 2.4rem;
-  background-color: #03275a;
+  background-color: #041229;
   border-radius: 50%;
   padding: 1.6rem;
   position: relative;
@@ -10064,53 +10106,36 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 
 .pg-login .section-beneficios .beneficios-list li i .check,
 .pg-registo .section-beneficios .beneficios-list li i .check {
-  width: 3.2rem;
-  height: 3.2rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -2.4rem;
   bottom: auto;
   left: auto;
 }
 
 .pg-login .section-beneficios .beneficios-list li span,
 .pg-registo .section-beneficios .beneficios-list li span {
-  font-size: 8.8rem;
+  font-size: 8rem;
 }
 
 .pg-login .section-beneficios .beneficios-list li h3,
 .pg-registo .section-beneficios .beneficios-list li h3 {
-  width: 70%;
+  max-width: 37rem;
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 0;
-  margin-bottom: 2.4rem;
 }
 
 .pg-login .section-beneficios .nota-rodape,
 .pg-registo .section-beneficios .nota-rodape {
+  width: 100%;
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.4rem;
   color: #d3d3d3;
-}
-
-.pg-login .section-beneficios .powered-smv,
-.pg-registo .section-beneficios .powered-smv {
-  text-align: center;
-  height: 4.8rem;
-}
-
-.pg-login .section-beneficios .powered-smv a,
-.pg-registo .section-beneficios .powered-smv a {
-  display: inline-block;
-  height: 100%;
-}
-
-.pg-login .section-beneficios .powered-smv a img,
-.pg-registo .section-beneficios .powered-smv a img {
-  height: 100%;
-  width: auto;
 }
 
 @media (max-width: 992px) {
@@ -10162,11 +10187,11 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-login .background-forma,
 .pg-registo .background-forma {
   width: 100%;
-  height: 100%;
+  height: 85%;
   position: absolute;
-  top: 0;
+  top: auto;
   right: auto;
-  bottom: auto;
+  bottom: 0;
   left: 0;
   z-index: 0;
 }

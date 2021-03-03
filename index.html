@@ -15,7 +15,7 @@
     <header class="header-login">
         <div class="container">
             <div class="row">
-                <ul class="header-list col-12">
+                <ul class="header-list col-lg-10 col-12">
                     <li class="logo column-1">
                         <a href="index.html">
                             <img src="images/svg/smartFan-logo.svg" alt="">
@@ -31,48 +31,50 @@
     </header>
 
     <main class="pg-login">
-        <div class="section-login col-lg-8 col-sm-12">
+        <div class="section-login">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 column-1">
-                        <p>
-                            <span>Preparado para apoiar o teu clube?</span>
-                        </p>
-                    </div>
-
-                    <div class="col-lg-5 col-md-6 col-sm-12 column-login">
-                        <div class="row">
-                            <h1 class="col-12">Login</h1>
-
-                            <form class="col-12">
-                                <div class="row">
-                                    <div class="container-input col-12">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" id="email">
-                                        <span class="input-validate" style="display: none;">Obrigatório*</span>
-                                    </div>
-
-                                    <div class="container-input col-12">
-                                        <label for="password">Password</label>
-                                        <input type="password" id="password">
-                                        <span class="input-validate" style="display: none;">Obrigatório*</span>
-                                    </div>
-
-                                    <div class="container-btn col-12">
-                                        <a href="#" class="btn-link">Recuperar a password</a>
-
-                                        <a href="#" class="btn btn-primary btn-full">Entrar</a>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <h2>Ainda não tens uma conta SmartFan?</h2>
-                            <a href="registo.html" class="btn btn-secondary btn-icon btn-full">
-                                Criar conta <i><span class="icon-arrow-right"></span></i>
-                            </a>
+                    <div class="login-wrapper col-lg-10 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12 column-1">
+                            <p>
+                                <span>Preparado para apoiar o teu clube?</span>
+                            </p>
                         </div>
-                        <div class="forma-bg">
-                            <img src="images/forma-login.svg" alt="">
+
+                        <div class="col-lg-5 col-md-6 col-sm-12 column-login">
+                            <div class="row">
+                                <h1 class="col-12">Login</h1>
+
+                                <form class="col-12">
+                                    <div class="row">
+                                        <div class="container-input col-12">
+                                            <label for="email">E-mail</label>
+                                            <input type="email" id="email">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-input col-12">
+                                            <label for="password">Password</label>
+                                            <input type="password" id="password">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-btn col-12">
+                                            <a href="#" class="btn-link">Recuperar a password</a>
+
+                                            <a href="#" class="btn btn-primary btn-full">Entrar</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <h2>Ainda não tens uma conta SmartFan?</h2>
+                                <a href="registo.html" class="btn btn-secondary btn-icon btn-full">
+                                    Criar conta <i><span class="icon-arrow-right"></span></i>
+                                </a>
+                            </div>
+                            <div class="forma-bg">
+                                <img src="images/forma-login.svg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,15 +87,16 @@
                     <h2>Vantagens de uma conta smartFan</h2>
 
                     <ul class="beneficios-list col-lg-10 col-md-10">
-                        <li class="col-lg-3 col-md-6 col-12">
+                        <li class="">
                             <i>
                                 <span class="icon-quotas"></span>
                                 <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
                             </i>
                             <h3>Pagamento de quotas*</h3>
+                            <p class="nota-rodape">*Exclusivo para sócios</p>
                         </li>
 
-                        <li class="col-lg-3 col-md-6 col-12">
+                        <li class="">
                             <i>
                                 <span class="icon-membership"></span>
                                 <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
@@ -101,7 +104,7 @@
                             <h3>Inscrição de sócio e criação de grupo</h3>
                         </li>
 
-                        <li class="col-lg-3 col-md-6 col-12">
+                        <li class="">
                             <i>
                                 <span class="icon-tickets"></span>
                                 <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
@@ -109,7 +112,7 @@
                             <h3>Compra de bilhetes</h3>
                         </li>
 
-                        <li class="col-lg-3 col-md-6 col-12">
+                        <li class="">
                             <i>
                                 <span class="icon-shopping"></span>
                                 <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
@@ -117,14 +120,6 @@
                             <h3>Promoções exclusivas</h3>
                         </li>
                     </ul>
-
-                    <p class="nota-rodape">*Exclusivo para sócios</p>
-
-                    <div class="powered-smv col-lg-12">
-                        <a href="http://www.smartmove.pt/pt/" target="_blank">
-                            <img src="images/svg/smartmove-powered.svg" alt="">
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -296,6 +291,18 @@
             </div>
         </div>
     </main>
+
+    <footer class="footer-login">
+        <div class="container">
+            <div class="row">
+                <div class="powered-smv col-lg-12">
+                    <a href="http://www.smartmove.pt/pt/" target="_blank">
+                        <img src="images/svg/smartmove-powered.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
