@@ -29,9 +29,14 @@
         letter-spacing: 1px;
         padding: .8rem 2.4rem;
         min-width: 22.5rem;
+        transition: $transition-01;
 
         &:focus {
             outline: none;
+        }
+
+        &:hover {
+            border-color: $secondary-02;
         }
 
         &.active {

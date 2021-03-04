@@ -9413,10 +9413,15 @@ form .container-input span.input-validate {
   letter-spacing: 1px;
   padding: .8rem 2.4rem;
   min-width: 22.5rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .pg-registo .btn-tabs:focus {
   outline: none;
+}
+
+.pg-registo .btn-tabs:hover {
+  border-color: #f37402;
 }
 
 .pg-registo .btn-tabs.active {
