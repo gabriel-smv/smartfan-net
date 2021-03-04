@@ -38,3 +38,15 @@
         transform: translateY(0);
     }
 }
+
+@keyframes enterModal {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

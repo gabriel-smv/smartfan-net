@@ -15,7 +15,7 @@
 
 <body>
     <header class="header-login version-3">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <ul class="header-list col-12">
                     <li class="logo column-1">
@@ -32,138 +32,141 @@
         </div>
     </header>
 
-    <main class="pg-login version-3">
-        <div class="section-login col-lg-10 col-12">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6 col-sm-12 column-1">
-                        <p class="no-mobile">
-                            <span>Preparado para vestir</span>
-                            <span>a camisola do teu clube?</span>
-                        </p>
+    <main class="pg-registo">
+        <div class="container">
+            <div class="row">
 
-                        <p class="yes-mobile">
-                            <span>Preparado para vestir a camisola do teu clube?</span>
-                        </p>
-                    </div>
+                <div class="col-lg-5 col-md-6 col-sm-12 column-login">
+                    <div class="row">
+                        <h1 class="col-12">Registo</h1>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 column-login">
-                        <div class="row">
-                            <h1 class="col-12">Registo</h1>
+                        <ul class="nav-tab" id="tab-registo" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tabs active" id="socio-tab" data-toggle="tab"
+                                    data-target="#tab-socio" type="button" role="tab" aria-controls="tab-socio"
+                                    aria-selected="true">Sócio</button>
+                            </li>
 
-                            <form class="col-12">
-                                <div class="row">
-                                    <div class="container-input col-12">
-                                        <label for="nome">Nome</label>
-                                        <input type="text" id="nome">
-                                        <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            <li class="nav-item" role="presentation">
+                                <button class="btn-tabs" id="adepto-tab" data-toggle="tab" data-target="#tab-adepto"
+                                    type="button" role="tab" aria-controls="tab-adepto"
+                                    aria-selected="false">Adepto</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="tab-registoContent">
+                            <div class="tab-pane fade show active in" id="tab-socio" role="tabpanel"
+                                aria-labelledby="socio-tab">
+
+                                <form class="col-8">
+                                    <div class="row">
+                                        <div class="escolher-clube" data-toggle="modal" data-target="#modalClubes">
+                                            <!-- <i><span class="icon-add-club"></span></i> -->
+                                            <i><img src="images/svg/add-club.svg" alt=""></i>
+                                            <h3>Escolha o clube que és sócio</h3>
+                                        </div>
+
+                                        <div class="container-input col-12">
+                                            <label for="numero-socio">Número de sócio</label>
+                                            <input type="text" id="numero-socio">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-input ultimos-digitos col-12">
+                                            <label for="ultimos-digitos">últimos 5 dígitos do código de barras</label>
+                                            <input type="text" id="ultimos-digitos">
+                                            <input type="text" id="ultimos-digitos-1">
+                                            <input type="text" id="ultimos-digitos-2">
+                                            <input type="text" id="ultimos-digitos-3">
+                                            <input type="text" id="ultimos-digitos-4">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-btn col-12">
+                                            <a href="index.html" class="btn btn-primary btn-icon btn-full">
+                                                Validar <i><span class="icon-check"></span></i>
+                                            </a>
+
+                                            <a href="index.html" class="btn-link">Já tens conta Smartfan? Faça o login
+                                                aqui!</a>
+                                        </div>
                                     </div>
+                                </form>
+                            </div>
 
-                                    <div class="container-input col-12">
-                                        <label for="sobrenome">Sobrenome</label>
-                                        <input type="text" id="sobrenome">
-                                        <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            <div class="tab-pane fade" id="tab-adepto" role="tabpanel" aria-labelledby="adepto-tab">
+
+                                <form class="col-8">
+                                    <div class="row">
+                                        <div class="escolher-clube" data-toggle="modal" data-target="#modalClubes">
+                                            <!-- <i><span class="icon-add-club"></span></i> -->
+                                            <i><img src="images/svg/add-club.svg" alt=""></i>
+                                            <h3>Escolha o teu clube do coração</h3>
+                                        </div>
+
+                                        <div class="container-input col-12">
+                                            <label for="nome">Nome *</label>
+                                            <input type="text" id="nome">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-input col-12">
+                                            <label for="sobrenome">Sobrenome *</label>
+                                            <input type="text" id="sobrenome">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-input col-6">
+                                            <label for="email">E-mail *</label>
+                                            <input type="email" id="email">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-input col-6">
+                                            <label for="password">Password *</label>
+                                            <input type="password" id="password">
+                                            <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                        </div>
+
+                                        <div class="container-btn col-6">
+                                            <a href="index.html" class="btn btn-primary btn-icon btn-full">
+                                                Validar <i><span class="icon-check"></span></i>
+                                            </a>
+
+                                            <a href="index.html" class="btn-link">Já tens conta Smartfan? Faça o login
+                                                aqui!</a>
+                                        </div>
                                     </div>
-
-                                    <div class="container-input col-12">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" id="email">
-                                        <span class="input-validate" style="display: none;">Obrigatório*</span>
-                                    </div>
-
-                                    <div class="container-input col-12">
-                                        <label for="password">Password</label>
-                                        <input type="password" id="password">
-                                        <span class="input-validate" style="display: none;">Obrigatório*</span>
-                                    </div>
-
-                                    <div class="container-btn col-12">
-                                        <a href="index.html" class="btn-link">Já tens conta Smartfan? Faça o login
-                                            aqui!</a>
-
-                                        <a href="finalizar-registo.html" class="btn btn-secondary btn-icon btn-full">
-                                            Avançar <i><span class="icon-arrow-right"></span></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
-                        <div class="forma-bg">
-                            <img src="images/forma-login.svg" alt="">
-                        </div>
+
                     </div>
                 </div>
+
+                <div class="col-lg-7 col-md-6 col-sm-12 column-vantagens">
+                    <h2>Vantagens de uma conta sócio smartfan:</h2>
+                </div>
+
             </div>
         </div>
 
-        <div class="section-beneficios">
-            <div class="container-fluid">
-                <div class="row">
-                    <ul class="beneficios-list col-lg-10 col-md-10">
-                        <li class="col-lg-3 col-md-6 col-12">
-                            <i>
-                                <span class="icon-quotas"></span>
-                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
-                            </i>
-                            <h3>Pagamento de quotas</h3>
-
-                            <a href="#quotas" class="btn btn-primary" data-toggle="modal">
-                                Saiba mais
-                            </a>
-                        </li>
-
-                        <li class="col-lg-3 col-md-6 col-12">
-                            <i>
-                                <span class="icon-membership"></span>
-                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
-                            </i>
-                            <h3>Inscrição de sócio</h3>
-
-                            <a href="#socio" class="btn btn-primary" data-toggle="modal">
-                                Saiba mais
-                            </a>
-                        </li>
-
-                        <li class="col-lg-3 col-md-6 col-12">
-                            <i>
-                                <span class="icon-tickets"></span>
-                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
-                            </i>
-                            <h3>Compra de bilhetes</h3>
-
-                            <a href="#bilhetes" class="btn btn-primary" data-toggle="modal">
-                                Saiba mais
-                            </a>
-                        </li>
-
-                        <li class="col-lg-3 col-md-6 col-12">
-                            <i>
-                                <span class="icon-shopping"></span>
-                                <div class="check"><img src="images/svg/check-filled.svg" alt=""></div>
-                            </i>
-                            <h3>Promoções exclusivas</h3>
-
-                            <a href="#promocao" class="btn btn-primary" data-toggle="modal">
-                                Saiba mais
-                            </a>
-                        </li>
-                    </ul>
-
-                    <div class="powered-smv col-lg-12">
-                        <a href="http://www.smartmove.pt/pt/" target="_blank">
-                            <img src="images/svg/smartmove-powered.svg" alt="">
-                        </a>
+        <!-- Modal Clubes -->
+        <div class="modal fade collapse" id="modalClubes" tabindex="-1" role="dialog" aria-labelledby="modalClubesLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title" id="modalClubesLabel"><span class="icon-add-club"></span> Escolha o teu
+                            clube!
+                        </h2>
+                        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
                     </div>
                 </div>
             </div>
-
-            <div class="background-img">
-                <img src="images/bg-beneficios.svg" alt="">
-            </div>
-        </div>
-
-        <div class="background-img">
-            <img src="images/bg-version2.jpg" alt="">
         </div>
 
         <!-- Modal Quotas -->

@@ -6,6 +6,7 @@ form {
 
     .container-input {
         @include flex(column, flex-start, flex-start, flex-start);
+        flex-wrap: wrap;
         margin-bottom: 2.4rem;
         position: relative;
 
@@ -53,8 +54,8 @@ form {
         }
 
         .input-validate {
-            border-bottom: 2px solid $secondary-01;
-            color: $secondary-01;
+            border-bottom: 2px solid $secondary-02;
+            color: $secondary-02;
             position: relative;
         }
 
@@ -121,7 +122,7 @@ form {
     @include absolute(6rem, 50%, auto, auto);
     transform: translateX(50%);
     background-color: #FFFFFF;
-    border: 1px solid $secondary-01;
+    border: 1px solid $secondary-02;
     border-radius: .25rem;
     transition: all .3s ease-out;
     z-index: 99;
