@@ -25,9 +25,14 @@
 
         h2 {
             @include font(3.2rem, 400, 1.2em);
+            text-align: right;
             letter-spacing: 0;
             position: relative;
             z-index: 1;
+
+            @include sm {
+                font-size: 2.8rem;
+            }
         }
     }
 }
@@ -259,6 +264,7 @@
             text-align: center;
             @include font(1.2rem, 400, 1.4rem);
             color: $gray-01;
+            text-transform: uppercase;
             // margin-top: .4rem;
         }
 
@@ -273,12 +279,9 @@
                 }
 
                 li {
-                    margin-bottom: 2rem 0;
+                    margin-bottom: 2.4rem;
+                    width: 50%;
                 }
-            }
-
-            .nota-rodape {
-                margin: .8rem 0;
             }
         }
 
@@ -292,6 +295,7 @@
                 @include flex(column, flex-start, center, center);
 
                 li {
+                    width: 100%;
                     margin: 2.4rem 0;
                 }
             }

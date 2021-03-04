@@ -8917,7 +8917,7 @@ h1 {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #03275a;
+  color: #001C4D;
   margin-bottom: .8rem;
 }
 
@@ -8928,7 +8928,7 @@ h2 {
   line-height: 1.4em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #03275a;
+  color: #001C4D;
 }
 
 h3 {
@@ -9134,7 +9134,7 @@ form .container-input select {
 form .container-input input:focus,
 form .container-input select:focus {
   outline: none;
-  border-bottom: 2px solid #03275a;
+  border-bottom: 2px solid #001C4D;
 }
 
 form .container-input input:disabled,
@@ -9151,7 +9151,7 @@ form .container-input label {
   font-weight: 400;
   line-height: 1em;
   text-transform: uppercase;
-  color: #03275a;
+  color: #001C4D;
   margin-bottom: .8rem;
 }
 
@@ -9199,7 +9199,7 @@ form .container-input span.input-validate {
 
 .select-country:focus {
   outline: none;
-  border-bottom: 2px solid #03275a;
+  border-bottom: 2px solid #001C4D;
 }
 
 .select-country:disabled {
@@ -9545,7 +9545,7 @@ footer {
   width: 100%;
   margin-top: auto;
   padding: 2.4rem 0;
-  background-color: #03275a;
+  background-color: #001C4D;
   border-top: 2px solid #f34605;
 }
 
@@ -9829,9 +9829,16 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2em;
+  text-align: right;
   letter-spacing: 0;
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .header-login .header-list h2 {
+    font-size: 2.8rem;
+  }
 }
 
 .footer-login {
@@ -10077,7 +10084,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   text-align: center;
   padding: 1.2rem 2.4rem .8rem;
   border-radius: 2rem;
-  background-color: #03275a;
+  background-color: #001C4D;
 }
 
 .pg-login .section-beneficios .beneficios-list,
@@ -10106,7 +10113,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-login .section-beneficios .beneficios-list li i,
 .pg-registo .section-beneficios .beneficios-list li i {
   margin-bottom: 2.4rem;
-  background-color: #03275a;
+  background-color: #001C4D;
   border-radius: 50%;
   padding: 1.6rem;
   position: relative;
@@ -10144,6 +10151,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   font-weight: 400;
   line-height: 1.4rem;
   color: #d3d3d3;
+  text-transform: uppercase;
 }
 
 @media (max-width: 992px) {
@@ -10163,11 +10171,8 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   }
   .pg-login .section-beneficios .beneficios-list li,
   .pg-registo .section-beneficios .beneficios-list li {
-    margin-bottom: 2rem 0;
-  }
-  .pg-login .section-beneficios .nota-rodape,
-  .pg-registo .section-beneficios .nota-rodape {
-    margin: .8rem 0;
+    margin-bottom: 2.4rem;
+    width: 50%;
   }
 }
 
@@ -10189,6 +10194,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   }
   .pg-login .section-beneficios .beneficios-list li,
   .pg-registo .section-beneficios .beneficios-list li {
+    width: 100%;
     margin: 2.4rem 0;
   }
   .pg-login .section-beneficios .background-img img,
