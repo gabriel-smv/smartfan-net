@@ -58,8 +58,7 @@
     }
 }
 
-.pg-login,
-.pg-registo {
+.pg-login {
     position: relative;
     @include flex(column, center, center, center);
 
@@ -340,81 +339,6 @@
             object-fit: cover;
             object-position: center;
         }
-    }
-}
-
-.pg-registo {
-    padding-top: 1.6rem;
-
-    .row {
-        @include flex(row, flex-start, flex-start, flex-start);
-    }
-
-    .column-login {
-        h1 {
-            text-align: center;
-            color: $secondary-02;
-            margin-bottom: 1.6rem;
-        }
-
-        .tab-content {
-            padding-top: 1.6rem;
-
-            form {
-                margin: 0 auto;
-
-                label {
-                    color: $secondary-02;
-                }
-            }
-
-            .escolher-clube {
-                @include flex(row, center, center, center);
-                cursor: pointer;
-                padding: 1.6rem 0;
-
-                i {
-                    width: 3.2rem;
-                    height: 3.2rem;
-                    display: inline-block;
-                }
-
-                h3 {
-                    letter-spacing: 0;
-                    color: $gray-02;
-                    margin: 0 .8rem;
-                }
-            }
-
-            .ultimos-digitos {
-                @include flex(row, space-between, center, center);
-
-                input {
-                    width: 19%;
-                }
-            }
-
-            .container-btn {
-                @include flex(column, center, center, center);
-                margin-top: 2.4rem;
-
-                .btn {
-                    &:hover {
-                        i {
-                            animation: none;
-                        }
-                    }
-                }
-
-                .btn-link {
-                    margin-top: 2.4rem;
-                }
-            }
-        }
-    }
-
-    .column-vantagens {
-        @include flex(column, flex-start, center, center);
     }
 }
 

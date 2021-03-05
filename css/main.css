@@ -9126,6 +9126,7 @@ form .container-input select {
   background-color: #f5f5f5;
   border: none;
   border-bottom: 2px solid #1a7dd7;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1em;
@@ -9428,6 +9429,13 @@ form .container-input span.input-validate {
   background: #f37402;
   border-color: #f37402;
   color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .pg-registo .btn-tabs {
+    min-width: auto;
+    padding: .8rem 4rem;
+  }
 }
 
 .pg-registo .tab-pane {
@@ -9934,8 +9942,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   width: auto;
 }
 
-.pg-login,
-.pg-registo {
+.pg-login {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9944,21 +9951,18 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-content: center;
 }
 
-.pg-login .row,
-.pg-registo .row {
+.pg-login .row {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.pg-login .section-login,
-.pg-registo .section-login {
+.pg-login .section-login {
   padding-top: 2.4rem;
   z-index: 1;
 }
 
-.pg-login .section-login .row,
-.pg-registo .section-login .row {
+.pg-login .section-login .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -9966,8 +9970,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-content: center;
 }
 
-.pg-login .section-login .login-wrapper,
-.pg-registo .section-login .login-wrapper {
+.pg-login .section-login .login-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -9977,8 +9980,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 }
 
 @media (max-width: 992px) {
-  .pg-login .section-login .login-wrapper,
-  .pg-registo .section-login .login-wrapper {
+  .pg-login .section-login .login-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9987,8 +9989,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   }
 }
 
-.pg-login .section-login .column-1 p,
-.pg-registo .section-login .column-1 p {
+.pg-login .section-login .column-1 p {
   font-family: "Anton";
   font-size: 8rem;
   font-weight: 400;
@@ -10003,38 +10004,32 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-content: flex-start;
 }
 
-.pg-login .section-login .column-1 p span,
-.pg-registo .section-login .column-1 p span {
+.pg-login .section-login .column-1 p span {
   position: relative;
   z-index: 1;
   margin-top: .4rem;
 }
 
 @media (max-width: 992px) {
-  .pg-login .section-login .column-1 p,
-  .pg-registo .section-login .column-1 p {
+  .pg-login .section-login .column-1 p {
     font-size: 4.8rem;
   }
-  .pg-login .section-login .column-1 p span,
-  .pg-registo .section-login .column-1 p span {
+  .pg-login .section-login .column-1 p span {
     display: block;
   }
 }
 
 @media (max-width: 767px) {
-  .pg-login .section-login .column-1,
-  .pg-registo .section-login .column-1 {
+  .pg-login .section-login .column-1 {
     padding-bottom: 4rem;
   }
-  .pg-login .section-login .column-1 p,
-  .pg-registo .section-login .column-1 p {
+  .pg-login .section-login .column-1 p {
     font-size: 4rem;
     line-height: 1.4em;
   }
 }
 
-.pg-login .section-login .column-login,
-.pg-registo .section-login .column-login {
+.pg-login .section-login .column-login {
   background-color: #ffffff;
   box-shadow: 0px -4px 18px 0px rgba(33, 33, 33, 0.8);
   padding: 2.4rem 4rem 5.6rem;
@@ -10043,19 +10038,16 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   position: relative;
 }
 
-.pg-login .section-login .column-login h1,
-.pg-registo .section-login .column-login h1 {
+.pg-login .section-login .column-login h1 {
   text-align: center;
   color: #f37402;
 }
 
-.pg-login .section-login .column-login form label,
-.pg-registo .section-login .column-login form label {
+.pg-login .section-login .column-login form label {
   color: #f37402;
 }
 
-.pg-login .section-login .column-login .container-btn,
-.pg-registo .section-login .column-login .container-btn {
+.pg-login .section-login .column-login .container-btn {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10065,31 +10057,26 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   margin-bottom: 2.4rem;
 }
 
-.pg-login .section-login .column-login .container-btn .btn,
-.pg-registo .section-login .column-login .container-btn .btn {
+.pg-login .section-login .column-login .container-btn .btn {
   max-height: 4.6rem;
 }
 
-.pg-login .section-login .column-login .container-btn .btn-link,
-.pg-registo .section-login .column-login .container-btn .btn-link {
+.pg-login .section-login .column-login .container-btn .btn-link {
   margin-bottom: 2.4rem;
 }
 
-.pg-login .section-login .column-login .registo-btn .btn,
-.pg-registo .section-login .column-login .registo-btn .btn {
+.pg-login .section-login .column-login .registo-btn .btn {
   max-height: 4.6rem;
 }
 
-.pg-login .section-login .column-login h2,
-.pg-registo .section-login .column-login h2 {
+.pg-login .section-login .column-login h2 {
   margin-bottom: 2.4rem;
   position: relative;
   text-align: center;
   padding-top: 2.4rem;
 }
 
-.pg-login .section-login .column-login h2:before,
-.pg-registo .section-login .column-login h2:before {
+.pg-login .section-login .column-login h2:before {
   content: '';
   width: 50%;
   height: 1px;
@@ -10101,8 +10088,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   left: 25%;
 }
 
-.pg-login .section-login .column-login .forma-bg,
-.pg-registo .section-login .column-login .forma-bg {
+.pg-login .section-login .column-login .forma-bg {
   width: 100%;
   position: absolute;
   top: auto;
@@ -10112,20 +10098,17 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   transform: translateY(110%);
 }
 
-.pg-login .section-login .column-login .forma-bg img,
-.pg-registo .section-login .column-login .forma-bg img {
+.pg-login .section-login .column-login .forma-bg img {
   width: 100%;
 }
 
 @media (max-width: 767px) {
-  .pg-login .section-login .column-login,
-  .pg-registo .section-login .column-login {
+  .pg-login .section-login .column-login {
     padding: 2.4rem 1.6rem 8rem;
   }
 }
 
-.pg-login .section-beneficios,
-.pg-registo .section-beneficios {
+.pg-login .section-beneficios {
   width: 100%;
   position: relative;
   padding-top: 6rem;
@@ -10133,8 +10116,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   z-index: 3;
 }
 
-.pg-login .section-beneficios .row,
-.pg-registo .section-beneficios .row {
+.pg-login .section-beneficios .row {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10145,8 +10127,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   position: relative;
 }
 
-.pg-login .section-beneficios h2,
-.pg-registo .section-beneficios h2 {
+.pg-login .section-beneficios h2 {
   width: auto;
   margin: 0 auto;
   font-size: 3.2rem;
@@ -10159,8 +10140,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   background-color: #001C4D;
 }
 
-.pg-login .section-beneficios .beneficios-list,
-.pg-registo .section-beneficios .beneficios-list {
+.pg-login .section-beneficios .beneficios-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -10171,8 +10151,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   margin-bottom: 1.6rem;
 }
 
-.pg-login .section-beneficios .beneficios-list li,
-.pg-registo .section-beneficios .beneficios-list li {
+.pg-login .section-beneficios .beneficios-list li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10182,8 +10161,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   transition: all .3s ease-out;
 }
 
-.pg-login .section-beneficios .beneficios-list li i,
-.pg-registo .section-beneficios .beneficios-list li i {
+.pg-login .section-beneficios .beneficios-list li i {
   margin-bottom: 3.2rem;
   background-color: #001C4D;
   border-radius: 50%;
@@ -10191,8 +10169,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   position: relative;
 }
 
-.pg-login .section-beneficios .beneficios-list li i .check,
-.pg-registo .section-beneficios .beneficios-list li i .check {
+.pg-login .section-beneficios .beneficios-list li i .check {
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -10202,27 +10179,23 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   left: auto;
 }
 
-.pg-login .section-beneficios .beneficios-list li i .check img,
-.pg-registo .section-beneficios .beneficios-list li i .check img {
+.pg-login .section-beneficios .beneficios-list li i .check img {
   width: 100%;
   height: 100%;
 }
 
-.pg-login .section-beneficios .beneficios-list li span,
-.pg-registo .section-beneficios .beneficios-list li span {
+.pg-login .section-beneficios .beneficios-list li span {
   font-size: 9.6rem;
 }
 
-.pg-login .section-beneficios .beneficios-list li h3,
-.pg-registo .section-beneficios .beneficios-list li h3 {
+.pg-login .section-beneficios .beneficios-list li h3 {
   max-width: 37rem;
   font-size: 2.4rem;
   text-align: center;
   letter-spacing: 0;
 }
 
-.pg-login .section-beneficios .nota-rodape,
-.pg-registo .section-beneficios .nota-rodape {
+.pg-login .section-beneficios .nota-rodape {
   width: 100%;
   text-align: center;
   font-size: 1.2rem;
@@ -10233,35 +10206,30 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 }
 
 @media (max-width: 992px) {
-  .pg-login .section-beneficios .beneficios-list,
-  .pg-registo .section-beneficios .beneficios-list {
+  .pg-login .section-beneficios .beneficios-list {
     margin-bottom: 0;
     padding: 4rem 0;
     margin-bottom: 0;
   }
-  .pg-login .section-beneficios .beneficios-list .row,
-  .pg-registo .section-beneficios .beneficios-list .row {
+  .pg-login .section-beneficios .beneficios-list .row {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     align-content: flex-end;
   }
-  .pg-login .section-beneficios .beneficios-list li,
-  .pg-registo .section-beneficios .beneficios-list li {
+  .pg-login .section-beneficios .beneficios-list li {
     margin-bottom: 2.4rem;
     width: 50%;
   }
 }
 
 @media (max-width: 767px) {
-  .pg-login .section-beneficios,
-  .pg-registo .section-beneficios {
+  .pg-login .section-beneficios {
     padding-top: 0rem;
     margin-top: 0rem;
   }
-  .pg-login .section-beneficios .beneficios-list,
-  .pg-registo .section-beneficios .beneficios-list {
+  .pg-login .section-beneficios .beneficios-list {
     padding: 1.6rem 0;
     margin-bottom: 0rem;
     display: flex;
@@ -10270,19 +10238,16 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
     align-items: center;
     align-content: center;
   }
-  .pg-login .section-beneficios .beneficios-list li,
-  .pg-registo .section-beneficios .beneficios-list li {
+  .pg-login .section-beneficios .beneficios-list li {
     width: 100%;
     margin: 2.4rem 0;
   }
-  .pg-login .section-beneficios .background-img img,
-  .pg-registo .section-beneficios .background-img img {
+  .pg-login .section-beneficios .background-img img {
     object-position: top left;
   }
 }
 
-.pg-login .background-forma,
-.pg-registo .background-forma {
+.pg-login .background-forma {
   width: 100%;
   height: 85%;
   position: absolute;
@@ -10293,16 +10258,14 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   z-index: 0;
 }
 
-.pg-login .background-forma img,
-.pg-registo .background-forma img {
+.pg-login .background-forma img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
 }
 
-.pg-login .background-img,
-.pg-registo .background-img {
+.pg-login .background-img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -10313,12 +10276,91 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   z-index: -1;
 }
 
-.pg-login .background-img img,
-.pg-registo .background-img img {
+.pg-login .background-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.pg-final-registo {
+  padding-top: 3rem;
+}
+
+.pg-final-registo .section-final-registo h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.pg-final-registo .section-final-registo .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-final-registo .section-final-registo .container-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 2.4rem;
+}
+
+.footer-registo {
+  background: none;
+  border: none;
+  padding-bottom: 2rem;
+  padding-top: 45rem;
+  position: relative;
+}
+
+.footer-registo .powered-smv {
+  text-align: center;
+  height: 3.2rem;
+  z-index: 2;
+}
+
+.footer-registo .powered-smv a {
+  display: inline-block;
+  height: 100%;
+}
+
+.footer-registo .powered-smv a img {
+  height: 100%;
+  width: auto;
+}
+
+.footer-registo .background-img {
+  width: 100%;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.footer-registo .background-img img {
+  width: 100%;
+  max-height: 50rem;
+  object-position: bottom;
+  object-fit: cover;
+}
+
+@media (max-width: 992px) {
+  .footer-registo .background-img img {
+    height: 23rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-registo {
+    padding-top: 15rem;
+  }
 }
 
 .pg-registo {
@@ -10358,7 +10400,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-items: center;
   align-content: center;
   cursor: pointer;
-  padding: 1.6rem 0;
+  padding: 1.6rem 0 2.6rem;
 }
 
 .pg-registo .column-login .tab-content .escolher-clube i {
@@ -10410,31 +10452,101 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-content: center;
 }
 
-.pg-final-registo {
-  padding-top: 3rem;
-}
-
-.pg-final-registo .section-final-registo h1 {
+.pg-registo .column-vantagens h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0;
+  margin: .8rem 0;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
-.pg-final-registo .section-final-registo .row {
+.pg-registo .column-vantagens ul.vantagens-list {
+  width: 100%;
+  padding-top: 2.4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin-bottom: 1.6rem;
 }
 
-.pg-final-registo .section-final-registo .container-btn {
+.pg-registo .column-vantagens ul.vantagens-list li i span {
+  font-size: 16rem;
+  color: #001C4D;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li .vantagens-list-infos {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  flex-wrap: wrap;
-  margin-top: 2.4rem;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li .vantagens-list-infos h3 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: #f37402;
+  letter-spacing: 0;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li .vantagens-list-infos p {
+  width: 50%;
+  color: #707070;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li:nth-child(odd) {
+  margin-left: -5rem;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li:nth-child(odd) .vantagens-list-infos {
+  margin-left: 1.6rem;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li:nth-child(even) {
+  margin-right: -5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li:nth-child(even) i {
+  order: 2;
+}
+
+.pg-registo .column-vantagens ul.vantagens-list li:nth-child(even) .vantagens-list-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin-right: 1.6rem;
+  text-align: right;
+}
+
+@media (max-width: 992px) {
+  .pg-registo .column-vantagens ul.vantagens-list li {
+    margin-bottom: 3.2rem;
+  }
+  .pg-registo .column-vantagens ul.vantagens-list li .vantagens-list-infos p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .pg-registo .column-vantagens {
+    margin-top: 4rem;
+  }
 }
 
 html {

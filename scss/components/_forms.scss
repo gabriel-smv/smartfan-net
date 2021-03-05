@@ -19,6 +19,7 @@ form {
             border: none;
             border-bottom: 2px solid $primary-01;
 
+            font-family: $font-01;
             @include font(1.6rem, 400, 1em);
             color: $black-01;
 

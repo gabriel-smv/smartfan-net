@@ -44,6 +44,11 @@
             border-color: $secondary-02;
             color: $white-01;
         }
+
+        @include md {
+            min-width: auto;
+            padding: .8rem 4rem;
+        }
     }
 
     .tab-pane {
