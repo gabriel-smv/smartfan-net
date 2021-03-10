@@ -1,5 +1,5 @@
 .modal {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .7);
 
     .modal-dialog {
         transform: translate(0, -50%);
@@ -36,5 +36,70 @@
         p {
             margin-bottom: 1.6rem;
         }
+    }
+}
+
+#modalClubes {
+    .modal-content {
+        min-height: 60rem;
+        border-radius: .8rem;
+        border: none;
+    }
+
+    .modal-header {
+        background-color: $white-01;
+        // border-bottom: 1px solid $secondary-02;
+        padding: 3.2rem 1rem 1.6rem;
+
+        h2 {
+            @include flex(column, center, center, center);
+            color: $gray-02;
+            font-size: 2.4rem;
+
+            span {
+                font-size: 5.6rem;
+                color: $secondary-02;
+                margin-bottom: .8rem;
+                margin-right: 0;
+            }
+        }
+
+        .btn-close {
+            @include absolute(1.6rem, 1.6rem, 0, 0);
+        }
+    }
+
+    .modal-body {
+        @include flex(column, flex-start, center, center);
+    }
+
+    .clubs-list {
+        width: 100%;
+        position: relative;
+        @include flex(row, space-between, center, center);
+        flex-wrap: wrap;
+
+        &-item {
+            position: relative;
+            padding: 1.6rem;
+            border-radius: .4rem;
+            cursor: pointer;
+
+            img {
+                width: 100%;
+                max-height: 6rem;
+                object-fit: contain;
+                object-position: center;
+            }
+
+            &.active {
+                background: $white-02;
+                border: 2px solid $secondary-02;
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 4.8rem;
     }
 }

@@ -7,7 +7,29 @@ header {
     .top-header {
         width: 100%;
         background-color: $white-02;
-        padding: 0.8rem 0;
+        padding: 1.6rem 0;
+    }
+
+    .smv-list {
+        width: 100%;
+        @include flex(row, center, center, center);
+
+        li {
+            margin: 0 1.2rem;
+            position: relative;
+
+            a {
+                display: inline-block;
+
+                img {
+                    height: 2rem;
+                }
+            }
+
+            // &:last-child {
+            //     margin-right: 0;
+            // }
+        }
     }
 
     .language-pick {
