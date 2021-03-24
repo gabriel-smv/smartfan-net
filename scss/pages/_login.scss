@@ -23,14 +23,6 @@
             }
         }
 
-        h2 {
-            @include font(3.2rem, 400, 1.2em);
-            text-align: right;
-            letter-spacing: 0;
-            position: relative;
-            z-index: 1;
-        }
-
         @include md {
             .logo {
                 a {

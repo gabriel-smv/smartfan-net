@@ -9368,11 +9368,10 @@ form .container-input span.input-validate {
   align-items: center;
   align-content: center;
   letter-spacing: 0;
-  font-size: 2.5rem;
 }
 
 .modal .modal-title span {
-  font-size: 3.2rem;
+  font-size: 4rem;
   margin-right: 1.6rem;
 }
 
@@ -9384,18 +9383,18 @@ form .container-input span.input-validate {
   margin-bottom: 1.6rem;
 }
 
-#modalClubes .modal-content {
+.modal-clubes .modal-content {
   min-height: 60rem;
   border-radius: .8rem;
   border: none;
 }
 
-#modalClubes .modal-header {
+.modal-clubes .modal-header {
   background-color: #ffffff;
   padding: 3.2rem 1rem 1.6rem;
 }
 
-#modalClubes .modal-header h2 {
+.modal-clubes .modal-header h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9405,14 +9404,14 @@ form .container-input span.input-validate {
   font-size: 2.4rem;
 }
 
-#modalClubes .modal-header h2 span {
+.modal-clubes .modal-header h2 span {
   font-size: 5.6rem;
   color: #f37402;
   margin-bottom: .8rem;
   margin-right: 0;
 }
 
-#modalClubes .modal-header .btn-close {
+.modal-clubes .modal-header .btn-close {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
@@ -9420,7 +9419,7 @@ form .container-input span.input-validate {
   left: 0;
 }
 
-#modalClubes .modal-body {
+.modal-clubes .modal-body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -9428,7 +9427,7 @@ form .container-input span.input-validate {
   align-content: center;
 }
 
-#modalClubes .clubs-list {
+.modal-clubes .clubs-list {
   width: 100%;
   position: relative;
   display: flex;
@@ -9439,26 +9438,42 @@ form .container-input span.input-validate {
   flex-wrap: wrap;
 }
 
-#modalClubes .clubs-list-item {
+.modal-clubes .clubs-list-item {
   position: relative;
-  padding: 1.6rem;
-  border-radius: .4rem;
   cursor: pointer;
 }
 
-#modalClubes .clubs-list-item img {
+.modal-clubes .clubs-list-item a {
+  display: inline-block;
+  padding: 1.6rem;
+  border-radius: .4rem;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-clubes .clubs-list-item a:focus {
+  outline: none;
+  border-color: #d3d3d3;
+}
+
+.modal-clubes .clubs-list-item a:hover {
+  background: #f5f5f5;
+  border-color: #d3d3d3;
+}
+
+.modal-clubes .clubs-list-item img {
   width: 100%;
   max-height: 6rem;
   object-fit: contain;
   object-position: center;
 }
 
-#modalClubes .clubs-list-item.active {
+.modal-clubes .clubs-list-item.active a {
   background: #f5f5f5;
   border: 2px solid #f37402;
 }
 
-#modalClubes .btn {
+.modal-clubes .btn {
   margin-top: 4.8rem;
 }
 
@@ -9645,12 +9660,22 @@ header .language-pick .language-dropdown-list li:hover a {
   text-decoration: none;
 }
 
+header h2 {
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: right;
+  letter-spacing: 0;
+  position: relative;
+  z-index: 1;
+}
+
 header .main-header-list {
   width: 100%;
-  padding: 1.6rem 0;
+  padding: .8rem 0;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
 }
@@ -9660,56 +9685,12 @@ header .main-header-list li {
   position: relative;
 }
 
-header .main-header-list li p {
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 1.2em;
-  color: #212121;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  position: relative;
-  z-index: 1;
-}
-
-header .main-header-list li p strong {
-  font-weight: 900;
-  color: #f34605;
-}
-
-header .main-header-list li p:before {
-  content: '';
-  width: 100%;
-  height: 1.2rem;
-  background-color: #d3d3d3;
-  position: absolute;
-  top: auto;
-  right: auto;
-  bottom: 0;
-  left: 0;
-  z-index: -1;
-}
-
 header .main-header-list .logo a {
   display: inline-block;
 }
 
 header .main-header-list .logo a img {
   height: 4.5rem;
-}
-
-header .main-header-list .logo::before {
-  content: '';
-  width: 1px;
-  height: 85%;
-  border-radius: 10px;
-  background-color: #212121;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  transform: translate(50%, -50%);
 }
 
 @media (max-width: 767px) {
@@ -9913,7 +9894,6 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  padding-top: 3.2rem;
 }
 
 @media (max-width: 425px) {
@@ -9923,27 +9903,37 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 }
 
 .pg-home .cards-menu .cards-item {
-  min-height: 20rem;
-  background-image: linear-gradient(to right bottom, #f5f5f5, #f7f7f7, #f8f9f8, #fafafa, #fcfcfc, #fdfdfd, #fdfdfd, #fefefe, #fefefe, #ffffff, #ffffff, #ffffff);
-  border: 2px solid #f5f5f5;
-  border-radius: .8rem;
+  height: 25rem;
+  border: 1px solid #f37402;
+  border-radius: .4rem;
   padding: 2.4rem 1.6rem;
   margin: 0 1.2rem 2.4rem;
-  transition: all 0.3s ease-in-out;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-home .cards-menu .cards-item .mockup-app {
+  height: 150%;
+  margin-bottom: -30%;
 }
 
 .pg-home .cards-menu .cards-item i {
   display: inline-block;
-  margin-bottom: 1.6rem;
+  margin-left: -7rem;
 }
 
 .pg-home .cards-menu .cards-item i span {
-  font-size: 8rem;
+  font-size: 22rem;
+  color: #707070;
+}
+
+.pg-home .cards-menu .cards-item-infos {
+  margin-left: 3rem;
 }
 
 .pg-home .cards-menu .cards-item h2 {
@@ -9958,6 +9948,11 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-home .cards-menu .cards-item p {
   font-size: 1.8rem;
   margin-bottom: 2.4rem;
+}
+
+.pg-home .cards-menu .cards-item .btn-google-play {
+  display: inline-block;
+  height: 4rem;
 }
 
 .pg-home .cards-menu .cards-item:hover {
@@ -10003,16 +9998,6 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 
 .header-login .header-list .logo a img {
   height: 4.5rem;
-}
-
-.header-login .header-list h2 {
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.2em;
-  text-align: right;
-  letter-spacing: 0;
-  position: relative;
-  z-index: 1;
 }
 
 @media (max-width: 992px) {

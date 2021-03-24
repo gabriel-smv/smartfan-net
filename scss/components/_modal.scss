@@ -22,10 +22,8 @@
         @include flex(row, center, center, center);
         letter-spacing: 0;
 
-        font-size: 2.5rem;
-
         span {
-            font-size: 3.2rem;
+            font-size: 4rem;
             margin-right: 1.6rem;
         }
     }
@@ -39,7 +37,7 @@
     }
 }
 
-#modalClubes {
+.modal-clubes {
     .modal-content {
         min-height: 60rem;
         border-radius: .8rem;
@@ -81,9 +79,25 @@
 
         &-item {
             position: relative;
-            padding: 1.6rem;
-            border-radius: .4rem;
             cursor: pointer;
+
+            a {
+                display: inline-block;
+                padding: 1.6rem;
+                border-radius: .4rem;
+                border: 2px solid transparent;
+                transition: $transition-01;
+
+                &:focus {
+                    outline: none;
+                    border-color: $gray-01;
+                }
+
+                &:hover {
+                    background: $white-02;
+                    border-color: $gray-01;
+                }
+            }
 
             img {
                 width: 100%;
@@ -92,9 +106,12 @@
                 object-position: center;
             }
 
+
             &.active {
-                background: $white-02;
-                border: 2px solid $secondary-02;
+                a {
+                    background: $white-02;
+                    border: 2px solid $secondary-02;
+                }
             }
         }
     }
