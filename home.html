@@ -99,11 +99,25 @@
                     </a>
                 </nav>
 
-                <section class="col-lg-8">
+                <section class="col-lg-8 col-12">
+                    <div class="user-wrapper">
+                        <div class="user-picture">
+                            <a href="conta-smartfan.html">
+                                <img src="images/avatar-example.png" alt="">
+                            </a>
+
+                            <div class="user-clube">
+                                <a href="clube-coracao.html">
+                                    <img src="images/sc-braga.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <p>Bem vindo, <span>Hernán Crespo</span>!</p>
+                    </div>
 
 
                     <ul class="cards-menu col-12">
-                        <li class="cards-item col-lg-5 col-md-5 col-12">
+                        <li class="cards-item col-lg-5 col-md-6 col-12">
                             <img src="images/mockup-app.png" alt="" class="mockup-app">
                             <div class="cards-item-infos">
                                 <h2>Baixe o app smartfan</h2>
@@ -113,8 +127,44 @@
                             </div>
                         </li>
 
-                        <li class="cards-item col-lg-5 col-md-5 col-12">
+                        <li class="cards-item item-store col-lg-5 col-md-6 col-12">
+                            <div class="swiper-container swiper-store">
 
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <img src="images/item-store.png" alt="" class="item-store-img">
+                                        <div class="item-store-infos">
+                                            <h4>Equipamento principal</h4>
+                                            <h2>SC Braga</h2>
+                                            <h2 class="item-store-infos-valor">69,00€</h2>
+                                            <a href="#" target="_blank" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="images/item-store2.jpg" alt="" class="item-store-img">
+                                        <div class="item-store-infos">
+                                            <h4>Camisola principal</h4>
+                                            <h2>Vitória SC</h2>
+                                            <h2 class="item-store-infos-valor">70,00€</h2>
+                                            <a href="#" target="_blank" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <img src="images/item-store3.jpg" alt="" class="item-store-img">
+                                        <div class="item-store-infos">
+                                            <h4>Camisola oficial</h4>
+                                            <h2>Gil Vicente FC</h2>
+                                            <h2 class="item-store-infos-valor">50,00€</h2>
+                                            <a href="#" target="_blank" class="btn btn-primary">Comprar</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                            </div>
                         </li>
 
                         <li class="cards-item col-lg-5 col-md-5 col-12">
@@ -152,7 +202,7 @@
 
                     <li class="col-lg-4 col-md-4 col-12 item-smartmove">
                         <a href="http://www.smartmove.pt/pt/" target="_blank">
-                            <img src="images/svg/smartmove-powered.svg" alt="">
+                            <img src="images/svg/smartmove-powered-white.svg" alt="">
                         </a>
                     </li>
 
@@ -170,6 +220,25 @@
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
+    <script src="includes/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.cards-item .swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+        });
+    </script>
 </body>
 
 </html>
