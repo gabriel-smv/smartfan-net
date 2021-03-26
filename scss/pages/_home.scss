@@ -115,6 +115,7 @@
 
         .swiper-slide {
             @include flex(row, flex-start, center, center);
+            cursor: grab;
 
             .item-store-img {
                 height: 100%;

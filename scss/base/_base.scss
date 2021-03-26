@@ -22,6 +22,10 @@ body {
   overflow-x: hidden;
 }
 
+body.menu-opened {
+  overflow: hidden;
+}
+
 section {
   position: relative;
 }

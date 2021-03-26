@@ -123,8 +123,20 @@ header {
             @include flex(row, space-between, center, center);
 
             li {
-                padding: 0 3.2rem;
                 position: relative;
+            }
+
+            .menu-hamburguer {
+                display: none;
+
+                a {
+                    display: inline-block;
+                }
+
+                span {
+                    font-size: 4rem;
+                    color: $primary-02;
+                }
             }
 
             .logo {
@@ -139,9 +151,43 @@ header {
         }
     }
 
+    @include md {
+        .main-header {
+            &-list {
+                padding: 1.6rem 0;
+
+                .menu-hamburguer {
+                    display: block;
+                }
+
+                .logo {
+                    text-align: center;
+
+                    &:before {
+                        display: none;
+                    }
+                }
+
+                li {
+                    h2 {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+
     @include sm {
         .main-header {
             &-list {
+                position: relative;
+                padding: 1.6rem 4rem;
+
+                .menu-hamburguer {
+                    @include absolute(50%, auto, auto, 0);
+                    transform: translateY(-50%);
+                }
+
                 .logo {
                     &:before {
                         display: none;

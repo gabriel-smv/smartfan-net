@@ -58,13 +58,17 @@
             <div class="container">
                 <div class="row">
                     <ul class="main-header-list">
-                        <li class="logo column-1">
-                            <a href="index.html">
+                        <li class="menu-hamburguer col-md-4">
+                            <a href="#" class="open-menu"><span class="icon-menu"></span></a>
+                        </li>
+
+                        <li class="logo column-1 col-md-4 col-12">
+                            <a href="home.html">
                                 <img src="images/svg/smartFan-logo.svg" alt="">
                             </a>
                         </li>
 
-                        <li class="column-2">
+                        <li class="column-2 col-4">
                             <h2>The game changer</h2>
                         </li>
                     </ul>
@@ -77,6 +81,16 @@
         <div class="container">
             <div class="row">
                 <nav class="nav col-lg-2">
+                    <div class="header-menu-mobile">
+                        <i class="menu-hamburguer ">
+                            <a href="#" class="close-menu"><span class="icon-close"></span></a>
+                        </i>
+
+                        <a href="home.html" class="logo">
+                            <img src="images/svg/smartFan-logo.svg" alt="">
+                        </a>
+                    </div>
+
                     <a class="nav-link" href="home.html">
                         <i><span class="icon-home"></span></i>
                         Home
@@ -133,6 +147,7 @@
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
     <script src="includes/bootstrap.min.js"></script>
+    <script src="includes/menu.js"></script>
 </body>
 
 </html>
