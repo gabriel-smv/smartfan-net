@@ -1,0 +1,5 @@
+.pg-clube-coracao {
+    .page-content {
+        @include flex(column, flex-start, center, center);
+    }
+}

@@ -111,7 +111,7 @@
         }
 
         &.active {
-            animation: open-menu .3s ease-in-out;
+            animation: open-menu .3s ease-out;
             display: block;
         }
     }

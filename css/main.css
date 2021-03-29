@@ -10146,9 +10146,17 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
     padding: 1.6rem 1.2rem;
   }
   .nav.active {
-    animation: open-menu .3s ease-in-out;
+    animation: open-menu .3s ease-out;
     display: block;
   }
+}
+
+.pg-clube-coracao .page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
 .pg-home .user-wrapper {
@@ -10282,6 +10290,45 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 992px) {
+  .pg-home .cards-menu .cards-item {
+    margin: 0 .8rem 2.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .pg-home .cards-menu .cards-item {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3.2rem;
+  }
+  .pg-home .cards-menu .cards-item i {
+    margin-left: 0;
+    margin-bottom: 2.4rem;
+  }
+  .pg-home .cards-menu .cards-item i span {
+    font-size: 12rem;
+  }
+  .pg-home .cards-menu .cards-item .cards-item-infos {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .pg-home .cards-menu .item-app .cards-item-infos {
+    order: 1;
+    margin-bottom: 2.4rem;
+  }
+  .pg-home .cards-menu .item-app img {
+    order: 2;
+  }
+}
+
 .pg-home .swiper-store {
   height: 100%;
   padding-bottom: .4rem;
@@ -10320,6 +10367,23 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 .pg-home .swiper-store .swiper-slide .item-store-infos h2.item-store-infos-valor {
   color: #f37402;
   margin-bottom: 1.6rem;
+}
+
+@media (max-width: 767px) {
+  .pg-home .swiper-store .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-home .swiper-store .swiper-slide .item-store-img {
+    max-height: 40rem;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    margin-right: 0;
+  }
 }
 
 .pg-home .swiper-store .swiper-pagination {

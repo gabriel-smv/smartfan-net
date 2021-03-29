@@ -106,6 +106,43 @@
                 outline: $black-01;
                 transition: $transition-01;
             }
+
+            @include md {
+                margin: 0 .8rem 2.4rem;
+            }
+
+            @include sm {
+                height: auto;
+                @include flex(column, flex-start, center, center);
+                margin-bottom: 3.2rem;
+
+                i {
+                    margin-left: 0;
+                    margin-bottom: 2.4rem;
+
+                    span {
+                        font-size: 12rem;
+                    }
+                }
+
+                .cards-item-infos {
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+
+        .item-app {
+            @include sm {
+                .cards-item-infos {
+                    order: 1;
+                    margin-bottom: 2.4rem;
+                }
+
+                img {
+                    order: 2;
+                }
+            }
         }
     }
 
@@ -140,6 +177,18 @@
                 h2.item-store-infos-valor {
                     color: $secondary-02;
                     margin-bottom: 1.6rem;
+                }
+            }
+
+            @include sm {
+                @include flex(column, flex-start, center, center);
+
+                .item-store-img {
+                    max-height: 40rem;
+                    max-width: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                    margin-right: 0;
                 }
             }
         }
