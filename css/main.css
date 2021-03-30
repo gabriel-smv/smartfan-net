@@ -9082,12 +9082,11 @@ h1 {
 
 h2 {
   font-family: "Anton";
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.4em;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #001C4D;
+  color: #212121;
 }
 
 h3 {
@@ -9834,6 +9833,7 @@ header h2 {
   font-size: 3.2rem;
   font-weight: 400;
   line-height: 1.2em;
+  color: #001C4D;
   text-align: right;
   letter-spacing: 0;
   position: relative;
@@ -10151,12 +10151,135 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   }
 }
 
+.pg-conta-smartfan .row {
+  width: 100%;
+}
+
+.pg-conta-smartfan .dados-conta .avatar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  margin-bottom: 3.2rem;
+}
+
+.pg-conta-smartfan .dados-conta .avatar-wrapper-img {
+  height: 12.4rem;
+  width: 12.4rem;
+  position: relative;
+}
+
+.pg-conta-smartfan .dados-conta .avatar-wrapper-img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.pg-conta-smartfan .dados-conta .avatar-wrapper-edit {
+  background: #ffffff;
+  padding: .4rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-conta-smartfan .dados-conta .avatar-wrapper-edit span {
+  color: #707070;
+}
+
+.pg-conta-smartfan .dados-conta .avatar-wrapper-edit:hover span {
+  color: #f37402;
+}
+
+.pg-conta-smartfan .dados-conta .container-btn {
+  margin-top: 1.6rem;
+}
+
 .pg-clube-coracao .page-content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+}
+
+.pg-clube-coracao .page-content h2 {
+  text-align: center;
+}
+
+.pg-clube-coracao .page-content .clube-coracao {
+  width: 100%;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: .4rem;
+  padding: 2.4rem .8rem;
+}
+
+.pg-clube-coracao .page-content .clube-coracao img {
+  height: 7.2rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes {
+  margin-top: 2.4rem;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes p {
+  text-align: center;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list .item-clube {
+  width: 6.4rem;
+  height: 6.4rem;
+  padding: .8rem;
+  background: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #212121;
+  margin-left: -2rem;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list .item-clube img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list .item-clube:first-child {
+  margin-left: 0;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list .item-add a {
+  color: #212121;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list .item-add a span {
+  font-size: 3.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.pg-clube-coracao .page-content .acompanhar-clubes .acompanhar-clubes-list .item-add a:hover span {
+  color: #f37402;
 }
 
 .pg-home .user-wrapper {
@@ -10331,6 +10454,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 
 .pg-home .swiper-store {
   height: 100%;
+  width: 100%;
   padding-bottom: .4rem;
 }
 
@@ -10378,11 +10502,15 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
     align-content: center;
   }
   .pg-home .swiper-store .swiper-slide .item-store-img {
-    max-height: 40rem;
+    height: 24rem;
     max-width: 100%;
     object-fit: contain;
     object-position: center;
     margin-right: 0;
+    margin-bottom: 2.4rem;
+  }
+  .pg-home .swiper-store .swiper-slide .item-store-infos {
+    text-align: center;
   }
 }
 
@@ -10610,6 +10738,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
 }
 
 .pg-login .section-login .column-login h2 {
+  color: #001C4D;
   margin-bottom: 2.4rem;
   position: relative;
   text-align: center;
@@ -10996,6 +11125,7 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.4em;
+  color: #001C4D;
   letter-spacing: 0;
   margin: .8rem 0;
   text-align: center;

@@ -16,10 +16,9 @@ h1 {
 
 h2 {
   font-family: $font-02;
-  @include font(2rem, 400, 1.4em);
+  @include font(2.4rem, 400, 1.4em);
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: $primary-02;
+  color: $black-01;
 }
 
 h3 {

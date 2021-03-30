@@ -121,6 +121,7 @@
 
         h2 {
             @include font(2.4rem, 400, 1.4em);
+            color: $primary-02;
             letter-spacing: 0;
             margin: .8rem 0;
             text-align: center;

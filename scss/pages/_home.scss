@@ -148,6 +148,7 @@
 
     .swiper-store {
         height: 100%;
+        width: 100%;
         padding-bottom: .4rem;
 
         .swiper-slide {
@@ -184,11 +185,16 @@
                 @include flex(column, flex-start, center, center);
 
                 .item-store-img {
-                    max-height: 40rem;
+                    height: 24rem;
                     max-width: 100%;
                     object-fit: contain;
                     object-position: center;
                     margin-right: 0;
+                    margin-bottom: 2.4rem;
+                }
+
+                .item-store-infos {
+                    text-align: center;
                 }
             }
         }
