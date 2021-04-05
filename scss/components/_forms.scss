@@ -54,10 +54,15 @@ form {
             margin-bottom: 0;
         }
 
-        .input-validate {
-            border-bottom: 2px solid $secondary-02;
-            color: $secondary-02;
-            position: relative;
+        &.input-validate {
+            label {
+                color: $secondary-02;
+            }
+
+            input {
+                border-bottom: 2px solid $secondary-02;
+                position: relative;
+            }
         }
 
         span.input-validate {
@@ -73,12 +78,14 @@ form {
     width: 100%;
     height: 4rem;
     padding: .8rem;
+    padding-right: 2.4rem;
     background-color: $white-02;
     border: none;
     border-bottom: 2px solid $primary-01;
+    position: relative;
     cursor: pointer;
 
-    @include flex(row, space-between, center, center);
+    @include flex(row, flex-start, center, center);
 
     &:focus {
         outline: none;
@@ -96,12 +103,25 @@ form {
         height: auto;
     }
 
-    p {
+    span {
+        min-width: 4.2rem;
+        text-align: center;
         margin: 0 .4rem;
         font-family: $font-01;
-        font-weight: 400;
+        @include font(1.4rem, 400, 1.2em);
         color: $gray-02;
     }
+
+    i {
+        @include absolute(auto, 0, auto, auto);
+
+        span {
+            width: auto;
+            font-size: 2.4rem;
+            color: $secondary-02;
+        }
+    }
+
 }
 
 #select-country-movel:checked~.country-list,

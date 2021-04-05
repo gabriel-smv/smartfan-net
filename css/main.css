@@ -9323,9 +9323,12 @@ form .container-input .select-country {
   margin-bottom: 0;
 }
 
-form .container-input .input-validate {
-  border-bottom: 2px solid #f37402;
+form .container-input.input-validate label {
   color: #f37402;
+}
+
+form .container-input.input-validate input {
+  border-bottom: 2px solid #f37402;
   position: relative;
 }
 
@@ -9346,13 +9349,15 @@ form .container-input span.input-validate {
   width: 100%;
   height: 4rem;
   padding: .8rem;
+  padding-right: 2.4rem;
   background-color: #f5f5f5;
   border: none;
   border-bottom: 2px solid #1a7dd7;
+  position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
 }
@@ -9373,11 +9378,29 @@ form .container-input span.input-validate {
   height: auto;
 }
 
-.select-country p {
+.select-country span {
+  min-width: 4.2rem;
+  text-align: center;
   margin: 0 .4rem;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 1.4rem;
   font-weight: 400;
+  line-height: 1.2em;
   color: #707070;
+}
+
+.select-country i {
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+.select-country i span {
+  width: auto;
+  font-size: 2.4rem;
+  color: #f37402;
 }
 
 #select-country-movel:checked ~ .country-list,
@@ -9716,7 +9739,7 @@ form .container-input span.input-validate {
 header {
   width: 100%;
   position: relative;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3.2rem;
   border-bottom: 2px solid #f37402;
 }
 
@@ -10151,8 +10174,44 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   }
 }
 
+.pg-conta-smartfan {
+  padding-bottom: 4.8rem;
+}
+
 .pg-conta-smartfan .row {
   width: 100%;
+  margin: 0;
+}
+
+.pg-conta-smartfan .dados-conta h2,
+.pg-conta-smartfan .dados-perfil h2 {
+  margin-bottom: 1.6rem;
+}
+
+.pg-conta-smartfan .dados-conta .container-btn,
+.pg-conta-smartfan .dados-perfil .container-btn {
+  margin-top: 2.4rem;
+}
+
+.pg-conta-smartfan .dados-conta form .container-input input,
+.pg-conta-smartfan .dados-conta form .container-input select,
+.pg-conta-smartfan .dados-conta form .container-input .select-country,
+.pg-conta-smartfan .dados-perfil form .container-input input,
+.pg-conta-smartfan .dados-perfil form .container-input select,
+.pg-conta-smartfan .dados-perfil form .container-input .select-country {
+  background-color: #ffffff;
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .pg-conta-smartfan .dados-conta .container-btn,
+  .pg-conta-smartfan .dados-perfil .container-btn {
+    margin-top: 1.6rem;
+  }
+}
+
+.pg-conta-smartfan .dados-conta {
+  position: relative;
 }
 
 .pg-conta-smartfan .dados-conta .avatar-wrapper {
@@ -10198,8 +10257,29 @@ footer.footer-final-registo .footer-list .item-smartmove a img {
   color: #f37402;
 }
 
-.pg-conta-smartfan .dados-conta .container-btn {
-  margin-top: 1.6rem;
+.pg-conta-smartfan .dados-conta:before {
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: #d3d3d3;
+  position: absolute;
+  top: 0;
+  right: -6.4rem;
+  bottom: auto;
+  left: auto;
+}
+
+@media (max-width: 992px) {
+  .pg-conta-smartfan .dados-conta {
+    margin-bottom: 4.8rem;
+  }
+  .pg-conta-smartfan .dados-conta:before {
+    display: none;
+  }
+}
+
+.pg-conta-smartfan .select-country i span {
+  color: #001C4D;
 }
 
 .pg-clube-coracao .page-content {

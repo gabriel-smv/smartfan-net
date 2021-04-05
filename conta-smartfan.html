@@ -80,7 +80,7 @@
     <main class="pg-conta-smartfan">
         <div class="container">
             <div class="row">
-                <nav class="nav col-lg-2">
+                <nav class="nav col-lg-2 col-12">
                     <div class="header-menu-mobile">
                         <i class="menu-hamburguer ">
                             <a href="#" class="close-menu"><span class="icon-close"></span></a>
@@ -113,7 +113,7 @@
                     </a>
                 </nav>
 
-                <section class="dados-conta col-lg-4">
+                <section class="dados-conta col-lg-4 col-12">
                     <h2>Dados da conta</h2>
 
                     <form>
@@ -130,15 +130,15 @@
                                 </div>
                             </div>
 
-                            <div class="container-input col-lg-6">
+                            <div class="container-input col-lg-6 col-md-6 col-12">
                                 <label for="email">E-mail</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" value="gavazarin@gmail.com">
                                 <span class="input-validate" style="display: none;">Obrigatório*</span>
                             </div>
 
-                            <div class="container-input col-lg-6">
+                            <div class="container-input col-lg-6 col-md-6 col-12">
                                 <label for="password">Password</label>
-                                <input type="password" id="password">
+                                <input type="password" id="password" value="pwdpwd12345">
                                 <span class="input-validate" style="display: none;">Obrigatório*</span>
                             </div>
 
@@ -150,8 +150,137 @@
 
                 </section>
 
-                <section class="dados-perfil col-lg-6">
+                <section class="dados-perfil col-lg-5 offset-lg-1 col-12">
                     <h2>Dados do perfil</h2>
+
+
+                    <form>
+                        <div class="row">
+                            <div class="container-input col-lg-6 col-md-6 col-12">
+                                <label for="nome">Nome *</label>
+                                <input type="text" id="nome" value="Gabriel">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-md-6 col-12">
+                                <label for="sobrenome">Sobrenome *</label>
+                                <input type="text" id="sobrenome" value="Vazarin">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-md-6 col-12">
+                                <label for="sexo">Sexo</label>
+                                <select name="select-sexo" id="sexo">
+                                    <option value="none" disabled> </option>
+                                    <option value="male" selected>Masculino</option>
+                                    <option value="female">Feminino</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-6 col-md-6 col-12">
+                                <label for="birthday">Data de nascimento</label>
+                                <input type="date" id="birthday">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-12">
+                                <label for="country">País</label>
+                                <select name="select-country" id="country">
+                                    <option value="none" disabled> </option>
+                                    <option value="portugal" selected>Portugal</option>
+                                    <option value="brasil">Brasil</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input input-validate col-lg-4 col-md-6 col-12">
+                                <label for="codigo-postal">Código postal</label>
+                                <input type="text" id="codigo-postal" class="input-validate">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-8 col-md-6 col-12">
+                                <label for="cidade">Cidade</label>
+                                <input type="text" id="cidade">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-input col-lg-4 col-md-6 col-12">
+                                <label for="select-country-phone">País Telemóvel</label>
+                                <input type="checkbox" id="select-country-phone" style="display: none;">
+                                <label for="select-country-phone" class="select-country">
+                                    <img src="images/flag/pt.svg" alt="">
+                                    <span>PT</span>
+                                    <span>+351</span>
+                                    <i><span class="icon-arrow-down"></span></i>
+                                </label>
+
+                                <ul class="country-list">
+                                    <li>
+                                        <img src="images/flag/pt.svg" alt="Portugal" title="Portugal">
+                                        <span>PT</span> <span>+351</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/br.svg" alt="Brasil" title="Brasil"></a>
+                                        <span>BR</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/gb-eng.svg" alt="Brasil"
+                                                title="Gra Bretanha"></a>
+                                        <span>ENG</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/us.svg" alt="Brasil"
+                                                title="United States"></a>
+                                        <span>US</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/mx.svg" alt="Brasil" title="Brasil"></a>
+                                        <span>MEX</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/es.svg" alt="Brasil" title="Brasil"></a>
+                                        <span>ES</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/fr.svg" alt="France" title="France"></a>
+                                        <span>FR</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/cr.svg" alt="Coreia Norte"
+                                                title="Coreia Norte"></a>
+                                        <span>CR</span> <span>+55</span>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"><img src="images/flag/ru.svg" alt="Coreia Norte"
+                                                title="Coreia Norte"></a>
+                                        <span>RU</span> <span>+55</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-input col-lg-8 col-md-6 col-12">
+                                <label for="cidade">Telemóvel</label>
+                                <input type="text" id="telemovel" value="989 565 442">
+                                <span class="input-validate" style="display: none;">Obrigatório*</span>
+                            </div>
+
+                            <div class="container-btn col-12">
+                                <a href="#" class="btn btn-primary btn-full">gravar</a>
+                            </div>
+                        </div>
+                    </form>
                 </section>
             </div>
         </div>
