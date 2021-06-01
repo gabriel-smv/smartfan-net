@@ -28,7 +28,7 @@ header {
         a {
             width: auto;
             max-width: 100%;
-            height: 3.2rem;
+            height: 4rem;
             display: inline-block;
 
             padding-right: 2.4rem;
@@ -67,6 +67,15 @@ header {
     .btn-list {
         @include flex(row, flex-end, center, center);
 
+        .btn {
+            color: #FFF;
+            border-color: $white-01;
+
+            span {
+                color: $white-01;
+            }
+        }
+
         .btn-item {
             margin-left: 2.4rem;
         }
@@ -78,6 +87,11 @@ header {
 
             &::after {
                 display: none;
+            }
+
+            img {
+                width: 4rem;
+                height: 4rem;
             }
 
             i {
@@ -196,5 +210,25 @@ header {
             }
         }
 
+    }
+
+    &.socio {
+        .btn-fan {
+            img {
+                width: 4rem;
+                height: 4rem;
+            }
+
+            i {
+                @include absolute(auto, 0, 0, auto);
+                background: var(--color-clube);
+                padding: .4rem;
+                border-radius: 50%;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+        }
     }
 }

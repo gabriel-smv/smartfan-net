@@ -3,7 +3,7 @@
     position: relative;
 
     &-list {
-        @include flex(row, space-between, center, center);
+        @include flex(row, flex-start, center, center);
         overflow-x: auto;
     }
 
