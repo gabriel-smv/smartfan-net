@@ -1,5 +1,5 @@
 const $body = document.querySelector('body')
-const $menu = document.querySelector('.nav')
+const $menu = document.querySelector('.nav-mobile')
 const $btnMenuOpen = document.querySelector('.open-menu')
 const $btnMenuClose = document.querySelector('.close-menu')
 

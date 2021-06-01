@@ -1,106 +1,296 @@
 footer {
     width: 100%;
     margin-top: auto;
-    padding: 2.4rem 0;
-    background-color: $primary-02;
-    border-top: 2px solid $secondary-01;
+    background: $black-02;
+    position: relative;
 
-    .footer-list {
+    .top-footer {
         width: 100%;
-        @include flex(row, space-between, center, center);
-        flex-wrap: wrap;
+        padding: 1.6rem 0;
+        background: $primary-02;
+        position: relative;
 
-        a {
-            display: inline-block;
-        }
+        .app-info {
+            @include flex(row, flex-start, center, center);
 
-        .item-contato {
-            color: $white-02;
-
-            p {
-                font-weight: 900;
-                margin-bottom: .4rem;
-                color: $white-02;
+            h4 {
+                @include font(1.6rem, 500, 1.2em);
+                color: $white-01;
             }
 
-            a {
+            h5 {
                 @include font(1.4rem, 400, 1.2em);
-                color: $white-02;
-                transition: all .2s ease-out;
-                position: relative;
+                color: $gray-02;
+            }
 
-                &::before {
-                    content: '';
-                    width: 100%;
-                    height: 1px;
-                    background-color: $gray-01;
-                    @include absolute(auto, auto, -4px, 0);
-                    transform: scale(0, 1);
-                    transform-origin: 0 0;
-                    transition: all .2s ease-out;
+
+            .btn {
+                background-color: $white-01;
+                color: $primary-02;
+                margin-left: 3.2rem;
+                transition: $transition-01;
+
+                i {
+                    span {
+                        color: $primary-02;
+                    }
                 }
 
                 &:hover {
-                    color: $gray-01;
-                    transition: all .2s ease-in;
+                    background-color: transparent;
+                    color: $white-01;
 
-                    &:before {
-                        transform: scale(1, 1);
-                        transition: all .2s ease-in;
+                    i {
+                        span {
+                            color: $white-01;
+                        }
                     }
                 }
             }
         }
 
-        .item-smartmove {
-            text-align: center;
-        }
+        .social-media-list {
+            @include flex(row, flex-end, center, center);
 
-        .item-social-medial {
-            text-align: right;
+            li {
+                margin-left: 1.6rem;
 
-            span {
-                color: $white-02;
-                transition: all .2s ease-out;
+                a {
+                    display: inline-block;
 
-                &:hover {
-                    color: $gray-01;
-                    transition: all .2s ease-in;
+                    span {
+                        font-size: 3.2rem;
+                        color: $gray-02;
+                        transition: $transition-01;
+                    }
+
+                    &:hover {
+                        span {
+                            color: $gray-01;
+                        }
+                    }
+
+                }
+
+
+                &:first-child {
+                    margin-left: 0;
                 }
             }
         }
 
         @include sm {
-
-            .item-contato {
-                text-align: left;
-                order: 1;
-            }
-
-            .item-smartmove {
-                text-align: center;
-                margin-top: 2.4rem;
-                order: 3;
-            }
-
-            .item-social-medial {
+            .app-info {
+                justify-content: center;
+                padding: .8rem 0;
+                margin-top: .8rem;
                 order: 2;
+            }
+
+            .social-media-list {
+                justify-content: center;
+                padding: .8rem 0;
+                margin-bottom: 1.6rem;
+                order: 1;
+
+                li {
+                    margin: 0 1.6rem;
+                }
+            }
+        }
+
+    }
+
+    .logo-smv {
+        @include flex(row, center, center, center);
+        padding: 2.4rem 0;
+
+        img {
+            height: 3.2rem;
+        }
+    }
+
+    .infos-footer {
+        margin: .8rem 0 2.4rem;
+        padding: 1.6rem 0 2.4rem;
+
+        @include sm {
+            margin-bottom: 0;
+            padding-bottom: .8rem;
+        }
+
+        &-wrapper {
+            @include flex(row, flex-start, flex-start, flex-start);
+            flex-wrap: wrap;
+
+            h5 {
+                @include font(1.6rem, 400, 1.2em);
+                color: $white-01;
+                text-transform: uppercase;
+                margin-bottom: .8rem;
+            }
+
+            li {
+                &:last-child {
+                    h5 {
+                        text-align: right;
+                    }
+                }
+            }
+
+            .list-links {
+                li {
+                    padding: .4rem 0;
+                }
+
+                a {
+                    @include font(1.6rem, 400, 1.2em);
+                    color: $gray-02;
+                    transition: $transition-01;
+
+                    &:hover {
+                        color: $gray-01;
+                    }
+                }
+            }
+
+            .list-payment {
+                @include flex(row, flex-end, center, center);
+                flex-wrap: wrap;
+                padding: .8rem 0;
+
+                li {
+                    margin: .8rem 0;
+                    margin-left: 2rem;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    img {
+                        height: 2.4rem;
+                        width: auto;
+                    }
+                }
+            }
+
+            @include md {
+
+                .list-links {
+                    li {
+                        // padding: .8rem 0;
+                        margin: .4rem 0;
+                    }
+                }
+
+                .list-payment {
+                    justify-content: flex-start;
+
+                    li {
+                        margin: 0;
+                        margin-left: 2.4rem;
+                    }
+                }
+            }
+
+            @include sm {
+                @include flex(column, center, center, center);
+
+                li {
+                    text-align: center;
+                    margin-bottom: 3.2rem;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+
+                h5 {
+                    text-align: center;
+                }
+
+                .list-payment {
+                    justify-content: center;
+
+                    li {
+                        width: 50%;
+                        text-align: center;
+                        margin-bottom: 3.2rem;
+                        margin-left: 0;
+
+                        img {
+                            height: 3.2rem;
+                        }
+                    }
+                }
+
             }
         }
     }
 
-    &.footer-final-registo {
-        background-color: transparent;
-        border-top: none;
+    .rodape {
+        @include flex(row, flex-start, center, center);
 
-        .footer-list {
-            @include flex(row, center, center, center);
 
-            .item-smartmove {
+        .row {
+            border-top: 1px solid $gray-04;
+            padding: 2.4rem 0 1.6rem;
+        }
+
+        .contato-smv {
+            @include flex(row, flex-start, center, center);
+
+            p,
+            a {
+                @include font(1.4rem, 400, 1.2em);
+            }
+
+            p {
+                color: $white-01;
+                margin-bottom: 0;
+            }
+
+            a {
+                margin-left: .4rem;
+                transition: $transition-01;
+
+                &:hover {
+                    color: $gray-02;
+                }
+            }
+        }
+
+        .powered-smv {
+            @include flex(row, flex-end, center, center);
+
+            span {
+                @include font(1.4rem, 400, 1.2em);
+                color: $white-01;
+            }
+
+            a {
+                height: 2.4rem;
+                width: auto;
+                display: inline-block;
+                margin-left: .4rem;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            @include md {
                 a {
-                    img {
-                        height: 4rem;
-                    }
+                    height: 3.2rem;
+                }
+            }
+
+            @include sm {
+                justify-content: center;
+                margin-top: 3.2rem;
+
+                a {
+                    height: 4rem;
                 }
             }
         }

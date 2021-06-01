@@ -4,8 +4,11 @@
 @import "node_modules/bootstrap/scss/bootstrap-utilities.scss";
 
 @import "node_modules/bootstrap/scss/_close.scss";
+@import "node_modules/bootstrap/scss/_dropdown.scss";
 @import "node_modules/bootstrap/scss/_modal.scss";
-@import "node_modules/bootstrap/scss/_transitions";
+@import "node_modules/bootstrap/scss/_pagination.scss";
+@import "node_modules/bootstrap/scss/_transitions.scss";
+@import "node_modules/bootstrap/scss/_nav.scss";
 
 @import "node_modules/swiper/swiper.scss";
 
@@ -18,20 +21,30 @@
 @import "base/helpers";
 @import "base/typography";
 
+@import "components/breadcrumb";
 @import "components/btn";
+@import "components/checkbox";
 @import "components/forms";
 @import "components/keyframes";
-@import "components/modal";
-@import "components/tabs";
+@import "components/modal-msg";
 
-@import "layout/header";
+@import "layout/ads";
+@import "layout/banner-fan";
+@import "layout/cards-fan";
+@import "layout/events-filters";
+@import "layout/events-list";
 @import "layout/footer";
-@import "layout/nav-menu";
+@import "layout/header";
+@import "layout/modal-alerta";
+@import "layout/navbar";
 
-@import "pages/conta-smartfan";
-@import "pages/clube-coracao";
-@import "pages/home";
-@import "pages/login";
-@import "pages/registo";
+@import "pages/pg-alertas-notificacoes";
+@import "pages/pg-area-fan";
+@import "pages/pg-grupos";
+@import "pages/pg-pagar-quotas";
+@import "pages/pg-perfil-socio";
+@import "pages/pg-registo-atividades";
+// @import "pages/ticketing-adepto";
+
 
 @import "vendors/normalize";

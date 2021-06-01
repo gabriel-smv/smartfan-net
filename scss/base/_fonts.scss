@@ -1,8 +1,9 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
 
 @font-face {
     font-family: "icomoon";
@@ -17,7 +18,7 @@
 [class^="icon-"],
 [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: "icomoon" !important;
+    font-family: 'icomoon' !important;
     font-size: 2.4rem;
     font-style: normal;
     font-weight: normal;
@@ -30,78 +31,246 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-add:before {
-    content: "\e900";
+.icon-arrow-prev:before {
+    content: "\e93c";
 }
 
-.icon-add-club:before {
-    content: "\e901";
+.icon-arrow-next:before {
+    content: "\e93a";
 }
 
-.icon-arrow-down:before {
-    content: "\e902";
+.icon-cancel:before {
+    content: "\e93b";
 }
 
-.icon-arrow-right:before {
-    content: "\e903";
+.icon-pdf-file:before {
+    content: "\e939";
 }
 
-.icon-check:before {
-    content: "\e904";
+.icon-shopping-bag:before {
+    content: "\e938";
+}
+
+.icon-cartao-socio:before {
+    content: "\e937";
+}
+
+.icon-add-member:before {
+    content: "\e934";
+}
+
+.icon-trash:before {
+    content: "\e935";
+}
+
+.icon-grupo-perfil:before {
+    content: "\e936";
+}
+
+.icon-back-cards:before {
+    content: "\e933";
+}
+
+.icon-next:before {
+    content: "\e931";
+}
+
+.icon-prev:before {
+    content: "\e932";
+}
+
+.icon-registo-atividades-outline:before {
+    content: "\e92f";
+}
+
+.icon-dashboard:before {
+    content: "\e930";
 }
 
 .icon-close:before {
-    content: "\e905";
-}
-
-.icon-edit:before {
-    content: "\e906";
-}
-
-.icon-error:before {
-    content: "\e907";
-}
-
-.icon-home:before {
-    content: "\e908";
-}
-
-.icon-linkedin:before {
-    content: "\e909";
-}
-
-.icon-membership:before {
-    content: "\e90a";
+    content: "\e92e";
 }
 
 .icon-menu:before {
+    content: "\e922";
+}
+
+.icon-folder:before {
+    content: "\e91f";
+}
+
+.icon-grupo:before {
+    content: "\e920";
+}
+
+.icon-ver-mais:before {
+    content: "\e921";
+}
+
+.icon-add:before {
+    content: "\e91e";
+}
+
+.icon-add-club:before {
+    content: "\e900"
+}
+
+.icon-agenda:before {
+    content: "\e901"
+}
+
+.icon-andebol:before {
+    content: "\e902"
+}
+
+.icon-android:before {
+    content: "\e903"
+}
+
+.icon-arrow-down:before {
+    content: "\e904"
+}
+
+.icon-basquetebol:before {
+    content: "\e905"
+}
+
+.icon-calendar-fill:before {
+    content: "\e906"
+}
+
+.icon-calendar-outline:before {
+    content: "\e907";
+}
+
+.icon-config:before {
+    content: "\e908";
+}
+
+.icon-dropdown:before {
+    content: "\e909";
+}
+
+.icon-express:before {
+    content: "\e90a";
+}
+
+.icon-facebook:before {
     content: "\e90b";
 }
 
-.icon-meus-clubes:before {
+.icon-fan-fill:before {
     content: "\e90c";
 }
 
-.icon-question:before {
+.icon-fan-outline:before {
     content: "\e90d";
 }
 
-.icon-quotas:before {
+.icon-futebol:before {
     content: "\e90e";
 }
 
-.icon-remove:before {
+.icon-futsal:before {
     content: "\e90f";
 }
 
-.icon-shopping:before {
+.icon-heart:before {
     content: "\e910";
 }
 
-.icon-tickets:before {
+.icon-hoquei:before {
     content: "\e911";
 }
 
-.icon-user:before {
+.icon-information:before {
     content: "\e912";
+}
+
+.icon-instagram:before {
+    content: "\e913";
+}
+
+.icon-like:before {
+    content: "\e914";
+}
+
+.icon-linkedin:before {
+    content: "\e915";
+}
+
+.icon-locked:before {
+    content: "\e916";
+}
+
+.icon-login:before {
+    content: "\e917";
+}
+
+.icon-logout:before {
+    content: "\e918";
+}
+
+.icon-lugar-cativo:before {
+    content: "\e919";
+}
+
+.icon-mega-store:before {
+    content: "\e91a";
+}
+
+.icon-mensagem:before {
+    content: "\e91b";
+}
+
+.icon-meus-clubes:before {
+    content: "\e91c";
+}
+
+.icon-plataformas-digitais:before {
+    content: "\e923";
+}
+
+.icon-quotas:before {
+    content: "\e924";
+}
+
+.icon-registo-atividades:before {
+    content: "\e925";
+}
+
+.icon-reminder:before {
+    content: "\e926";
+}
+
+.icon-search:before {
+    content: "\e927";
+}
+
+.icon-star:before {
+    content: "\e928";
+}
+
+.icon-store:before {
+    content: "\e929";
+}
+
+.icon-ticket-fill:before {
+    content: "\e92a";
+}
+
+.icon-ticket-outline:before {
+    content: "\e92b";
+}
+
+.icon-twitter:before {
+    content: "\e92c";
+}
+
+.icon-user:before {
+    content: "\e91d";
+}
+
+.icon-voleibol:before {
+    content: "\e92d";
 }

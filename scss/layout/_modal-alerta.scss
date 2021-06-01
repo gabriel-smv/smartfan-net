@@ -1,0 +1,365 @@
+.modal-alerta {
+    .modal {
+        &-dialog {
+            max-width: 50%;
+            border: none;
+
+            @include xxl {
+                max-width: 70%;
+            }
+
+            @include md {
+                max-width: 80%;
+            }
+
+            @include sm {
+                max-width: 90%;
+            }
+
+            @include xs {
+                max-width: 100%;
+            }
+        }
+
+        &-content {
+            border-radius: 3.2rem;
+            padding: 1.6rem 2.4rem;
+            border: none;
+        }
+
+        &-header {
+            border-bottom: none;
+
+            h2 {
+                width: 100%;
+                font-size: 2.4rem;
+                text-align: center;
+            }
+
+            .btn-close {
+                width: auto;
+                height: auto;
+                @include absolute(-5px, -5px, auto, auto);
+                border-radius: 50%;
+                background: none;
+                background-color: $primary-02;
+                opacity: 1;
+                display: inline-block;
+
+                span {
+                    color: $white-01;
+                    font-size: 3.2rem;
+                }
+
+                @include xs {
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        &-body {
+            @include flex(column, flex-start, center, center);
+        }
+    }
+
+    .alerta-jogo {
+        width: 100%;
+        @include flex(column, flex-start, center, center);
+
+        &-clubes {
+            width: 100%;
+            @include flex(row, center, center, center);
+            @include font(1.6rem, 400, 1.2em);
+            text-align: center;
+            color: $black-02;
+            margin-bottom: 1.6rem;
+
+            .clube-item {
+                @include flex(column, flex-start, center, center);
+                position: relative;
+                padding: 0 2.4rem;
+
+                img {
+                    width: 8rem;
+                    height: 8rem;
+                    margin-bottom: .4rem;
+                }
+
+                .posicao-compeonato {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    @include flex(row, center, center, center);
+                    @include absolute(0, 2rem, auto, auto);
+                    background-color: $primary-02;
+                    color: $white-01;
+                    @include font(1.2rem, 400, 1.2em);
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        h4 {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+        }
+
+        &-infos {
+            @include font(1.8rem, 400, 1.2em);
+            color: $gray-04;
+            margin-top: .4rem;
+            text-align: center;
+        }
+    }
+
+    .outros-alertas {
+        width: 100%;
+        margin-top: 1.6rem;
+        @include font(1.6rem, 400, 1.2em);
+        color: $black-02;
+
+        h3 {
+            text-align: center;
+            color: $gray-04;
+            font-size: 2.2rem;
+            margin-bottom: .8rem;
+        }
+
+        form {
+            @include flex(row, flex-start, center, center);
+            flex-wrap: wrap;
+
+
+        }
+
+        .criar-alerta-clube {
+            padding-right: 2.4rem;
+
+
+            .alerta-clube {
+                &-img {
+                    width: 5.6rem;
+                    height: 5.6rem;
+                    margin-right: .8rem;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                &-infos {
+                    width: 65%;
+
+                    h4 {
+                        @include font(1.6rem, 400, 1.2em);
+                        color: $black-02;
+                    }
+
+                    h6 {
+                        @include font(1.4rem, 400, 1.2em);
+                        color: $gray-04;
+                    }
+                }
+            }
+
+            .dropdown-toggle {
+                width: 100%;
+                @include flex(row, space-between, center, center);
+
+
+                @include md {
+                    justify-content: center;
+                    margin-bottom: 2.4rem;
+                }
+
+                @include xs {
+                    margin-bottom: 1.6rem;
+                }
+            }
+
+            .dropdown-menu {
+                padding: 1.6rem 0.8rem;
+                height: auto;
+                max-height: 35rem;
+                overflow-y: auto;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+
+                &::-webkit-scrollbar {
+                    width: .8rem;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background-color: $gray-01;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $gray-04;
+                }
+
+
+                li {
+                    padding: 0;
+
+                    a {
+                        padding: 0.8rem 1.6rem;
+                        @include flex(row, flex-start, center, center);
+
+                        .alerta-clube-img {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                        }
+
+                        .alerta-clube-infos {
+                            width: auto;
+                        }
+
+                        &:hover {
+                            background-color: $gray-01;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .dropdown-toggle {
+            color: $black-02;
+            @include flex(row, flex-start, center, center);
+
+            i {
+                margin-left: .8rem;
+                transition: $transition-01;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+
+            &:after {
+                display: none;
+            }
+
+            &:hover {
+                span {
+                    color: $black-02;
+                }
+            }
+
+            &.show {
+                i {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+
+        .dropdown-menu {
+            display: none;
+            width: auto;
+            padding: 1.6rem;
+            border-radius: 2.4rem;
+            border: none;
+            box-shadow: 2px 2px 10px 0px rgba(0, 18, 43, 0.2);
+            z-index: 999;
+
+            li {
+                border: none;
+                padding: .8rem 0;
+
+                label {
+                    color: $gray-04;
+
+                    span.cbx-area-select {
+                        border-color: $gray-04;
+                    }
+                }
+            }
+
+            &.show {
+                display: block;
+            }
+
+            @include xs {
+                li {
+                    align-items: flex-start;
+                    align-content: flex-start;
+                }
+            }
+        }
+
+        .cbx-label {
+            margin-bottom: 0;
+
+            // span.cbx-area-select {
+            //     &::before {
+            //         background: var(--color-clube);
+            //     }
+            // }
+        }
+
+        .dropdown,
+        .item-futebol {
+            @include flex(row, center, center, center);
+            position: relative;
+
+            &::before {
+                content: '';
+                height: 4rem;
+                width: 1px;
+                background-color: $gray-04;
+                position: absolute;
+                left: 0;
+            }
+
+            @include md {
+                margin: 1.6rem 0;
+            }
+
+            @include xs {
+                &::before {
+                    display: none;
+                }
+            }
+
+        }
+
+        .item-futebol {
+            @include md {
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    form {
+        @include xs {
+            .apagar-input {
+                @include absolute(auto, -2.4rem, 2.2rem, auto);
+            }
+        }
+    }
+}
+
+.socio {
+    .modal-alerta {
+        .outros-alertas {
+
+            .criar-alerta-clube {
+                .dropdown-toggle {
+                    pointer-events: none;
+                    justify-content: flex-start;
+
+                    i {
+                        display: none;
+                    }
+                }
+
+                .dropdown-menu {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}

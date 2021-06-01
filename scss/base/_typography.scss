@@ -5,27 +5,34 @@ body {
 
 h1 {
   width: 100%;
-  font-family: $font-02;
-  @include font(3.2rem, 400, 1.4em);
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: $primary-02;
-  margin-bottom: .8rem;
+  font-family: $font-01;
+  @include font(3rem, 900, 1.4em);
+  color: $black-02;
 }
 
 h2 {
-  font-family: $font-02;
-  @include font(2.4rem, 400, 1.4em);
-  text-transform: uppercase;
-  color: $black-01;
+  font-family: $font-01;
+  @include font(2.4rem, 900, 1.4em);
+  color: $black-02;
 }
 
 h3 {
-  font-family: $font-02;
-  @include font(1.8rem, 400, 1.4em);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-family: $font-01;
+  @include font(1.8rem, 900, 1.4em);
+  color: $black-02;
+}
+
+h4 {
+  font-family: $font-01;
+  @include font(1.8rem, 700, 1.4em);
+  color: $black-02;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-family: $font-01;
+  @include font(1.6rem, 400, 1.4em);
+  color: $gray-04;
 }
 
 p {

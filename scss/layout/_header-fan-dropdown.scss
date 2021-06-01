@@ -1,0 +1,319 @@
+.fan-dropdown {
+    min-width: 50rem;
+    @include absolute(auto, 0, -8px, auto);
+    transform: translateY(100%);
+
+    padding: 2.4rem 3.2rem;
+    @include flex(column, flex-start, center, center);
+    text-align: center;
+    background-color: $white-01;
+    border-radius: 1.6rem;
+    box-shadow: 0px 5px 16px -3px rgba(64, 64, 64, 0.25);
+
+    z-index: 9999;
+    display: none;
+
+    @include md {
+        transform: translate(25%, 100%);
+    }
+
+    @include sm {
+        min-width: auto;
+        width: 42rem;
+        transform: translate(18%, 100%);
+        padding: 2.4rem 1.6rem;
+    }
+
+    @include xxs {
+        min-width: auto;
+        width: 32rem;
+        transform: translate(24%, 100%);
+    }
+
+    .clube-coracao-wrapper {
+        width: 100%;
+        @include flex(row, flex-start, center, center);
+        padding-bottom: 2.4rem;
+        border-bottom: 1px solid $gray-04;
+
+        .clube-coracao-img {
+            width: 10.4rem;
+            height: 10.4rem;
+            padding: 1.2rem;
+            margin-right: 1.6rem;
+
+            background: $white-01;
+            border-radius: 50%;
+            border: 3px solid $secondary-01;
+
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+
+            i {
+                @include absolute(auto, 0, 0, auto);
+                @include flex(row, center, center, center);
+                background: $secondary-01;
+                padding: .4rem;
+                border-radius: 50%;
+
+                span {
+                    font-size: 2rem;
+                    color: $white-01;
+                }
+            }
+        }
+
+        .clube-coracao-name {
+            @include flex(column, flex-start, flex-start, flex-start);
+            text-align: left;
+
+            h2 {
+                margin-bottom: .8rem;
+            }
+
+            h3 {
+                @include font(1.8rem, 400, 1.2em);
+                color: $gray-04;
+            }
+        }
+
+        @include xxs {
+            @include flex(column, center, center, center);
+
+            .clube-coracao-img {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+
+    &-nav {
+        width: 100%;
+        @include flex(column, flex-start, flex-start, flex-start);
+
+        li {
+            width: 100%;
+            // margin: .8rem 0;
+
+            a {
+                @include flex(row, flex-start, center, center);
+                padding: 1.6rem .8rem;
+                // border-radius: .8rem;
+                transition: $transition-01;
+
+                i {
+                    background: $gray-01;
+                    padding: .4rem;
+                    border-radius: 50%;
+
+                    span {
+                        color: $gray-04;
+                        font-size: 3.2rem;
+                        transition: $transition-01;
+                    }
+                }
+
+                p {
+                    @include font(1.6rem, 400, 1.2em);
+                    color: $black-02;
+                    margin-bottom: 0;
+                    margin-left: 1.6rem;
+                }
+
+                &:hover {
+                    background: $gray-01;
+
+                    i {
+                        span {
+                            color: $black-02;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include xs {
+            li {
+                a {
+                    i {
+                        span {
+                            font-size: 4rem;
+                        }
+                    }
+
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .user-clubs {
+        width: 100%;
+
+        input {
+            display: none;
+        }
+
+        .btn-collapse-clubs {
+            display: inline-block;
+            cursor: pointer;
+            transition: $transition-01;
+
+            span {
+                color: $gray-04;
+                transition: $transition-01;
+            }
+
+            &:hover {
+                span {
+                    color: $black-02;
+                }
+            }
+
+            &[aria-expanded="true"] {
+                transform: rotate(180deg);
+
+                span {
+                    color: $black-02;
+                }
+            }
+        }
+
+        #collapse-clubs:checked~.user-clubs-content {
+            display: flex;
+            animation: entrar-tab-content .3s ease-in;
+        }
+
+        #collapse-clubs:checked~.btn-collapse-clubs {
+            transform: rotate(180deg);
+        }
+
+        &-content {
+            @include flex(column, flex-start, center, center);
+            padding: .8rem 0;
+            display: none;
+
+            h4 {
+                margin-bottom: .8rem;
+            }
+
+            .list-outros-clubes {
+                width: 85%;
+                @include flex(row, space-between, center, center);
+                flex-wrap: wrap;
+                margin-bottom: 1.6rem;
+
+                li {
+                    width: 20%;
+                    padding: .4rem;
+                    margin-bottom: .8rem;
+
+                    a {
+                        width: 6.2rem;
+                        height: 6.2rem;
+                        @include flex(row, center, center, center);
+                        padding: .8rem;
+                        margin: 0 auto;
+                        border: 1px solid $black-02;
+                        border-radius: 50%;
+                        position: relative;
+                        transition: $transition-01;
+
+                        span {
+                            color: $gray-04;
+                        }
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-position: center;
+                            object-fit: contain;
+                        }
+
+                        i {
+                            @include absolute(auto, 0, 0, auto);
+                            background-color: $gray-04;
+                            border-radius: 50%;
+                            @include flex(row, center, center, center);
+                            padding: .4rem;
+
+                            span {
+                                font-size: 1.2rem;
+                                color: $white-02;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: $gray-02;
+
+                            span {
+                                color: $white-01;
+                            }
+                        }
+                    }
+
+                    &.club-select {
+                        a {
+                            border: 2px solid $secondary-01;
+
+                            i {
+                                background-color: $secondary-01;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include sm {
+                .list-outros-clubes {
+                    width: 100%;
+                    @include flex(row, flex-start, center, center);
+                }
+            }
+
+            @include xxs {
+                .list-outros-clubes {
+                    li {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.no-clube {
+        .clube-coracao-img {
+            padding: 0;
+            border: none;
+
+            img {
+                object-fit: cover;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+
+.dropdown {
+    &.open {
+        .btn-perfil {
+            background-color: rgba(255, 255, 255, .3);
+
+            i {
+                transform: rotate(180deg);
+            }
+        }
+
+        .fan-dropdown {
+            display: flex;
+        }
+    }
+}

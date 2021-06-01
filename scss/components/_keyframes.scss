@@ -1,48 +1,7 @@
-@keyframes rotateImg {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes iconHover {
-    0% {
-        transform: translateX(0);
-    }
-
-    50% {
-        transform: translateX(5px);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes enterText {
-    0% {
-
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes enterModal {
+@keyframes entrar-tab-content {
     0% {
         opacity: 0;
-        transform: translateY(-15px);
+        transform: translateY(-20px);
     }
 
     100% {
@@ -54,7 +13,31 @@
 @keyframes open-menu {
     0% {
         opacity: 0;
-        transform: translateY(-60%);
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes open-filter-dropdown {
+    0% {
+        opacity: 0;
+        transform: translateY(95%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(105%);
+    }
+}
+
+@keyframes open-navbar-mobile {
+    0% {
+        opacity: 0;
+        transform: translateX(-15px);
     }
 
     100% {

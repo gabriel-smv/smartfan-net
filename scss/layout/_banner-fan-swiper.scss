@@ -1,0 +1,54 @@
+.swiper-fan {
+
+    .swiper-slide {
+        @include flex(column, center, flex-start, flex-start);
+
+        cursor: grab;
+
+        h3 {
+            @include font(3.2rem, 400, 1.2em);
+            color: $white-01;
+            margin-bottom: 1.6rem;
+        }
+
+        .btn {
+            --color-clube: #FFFFFF;
+            --color-hover: #737A83;
+        }
+
+        @include xs {
+            align-items: flex-end;
+
+            h3 {
+                text-align: right;
+            }
+        }
+
+        @include xxs {
+            align-items: center;
+
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+    .swiper-pagination {
+        @include flex(row, center, center, center);
+        margin-top: 2.4rem;
+
+        .swiper-pagination-bullet {
+            width: 1.2rem;
+            height: 1.2rem;
+            display: inline-block;
+            border: 1px solid $white-01;
+            border-radius: 50%;
+            margin: 0 4px;
+            transition: $transition-01;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $white-01;
+        }
+    }
+}

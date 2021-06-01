@@ -1,0 +1,103 @@
+.pg-grupos {
+    .nav-tabs {
+        width: auto;
+        @include flex(row, space-between, center, center);
+        padding: 0 1.6rem;
+
+        .nav-item {
+            padding: 0 2.4rem;
+        }
+
+        .nav-link {
+            @include flex(row, center, center, center);
+            @include font(1.4rem, 400, 1.2em);
+            color: $gray-04;
+            padding: 1.6rem .8rem .2rem;
+            border: none;
+            background: none;
+            cursor: pointer;
+
+            i {
+                display: inline-block;
+                margin-right: .8rem;
+            }
+
+            &.active {
+                color: var(--color-clube);
+                border-bottom: 3px solid var(--color-clube);
+            }
+        }
+    }
+
+    .tab-content {
+
+        .socios-grupo {
+            padding: .8rem 1.6rem;
+
+            li {
+                @include flex(row, flex-start, center, center);
+                @include font(1.4rem, 400, 1.2em);
+                border-bottom: 1px solid rgba(115, 122, 131, .3);
+
+                span {
+                    display: inline-block;
+                    margin: 0 .4rem;
+                }
+            }
+        }
+
+        .perfil-grupo {
+            @include flex(row, space-around, center, center);
+            flex-wrap: wrap;
+            padding: 1.6rem 0;
+
+            li {
+                width: 50%;
+                color: $black-02;
+                @include font(1.2rem, 400, 1.2em);
+                text-align: center;
+                padding: .8rem;
+
+                i {
+                    display: inline-block;
+
+                    span {
+                        font-size: 4.8rem;
+                    }
+                }
+            }
+        }
+
+        .container-btn {
+            @include flex(row, flex-end, center, center);
+            margin: 1.6rem;
+            padding: 0 1.6rem;
+
+            a {
+                color: var(--color-clube);
+                @include flex(row, flex-end, center, center);
+
+                i {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    margin-right: .4rem;
+                    @include flex(row, center, center, center);
+                    border: 1px solid var(--color-clube);
+                    padding: .4rem;
+                    border-radius: 50%;
+
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        color: var(--color-clube);
+                    }
+                }
+            }
+        }
+    }
+
+}

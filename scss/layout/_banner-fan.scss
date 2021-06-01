@@ -1,0 +1,381 @@
+@import 'layout/banner-fan-swiper';
+
+.banner-fan {
+    --bg-color: #263F62;
+
+    width: 100%;
+    padding: calc(9.6rem + 3.2rem) 0 12rem;
+
+
+    background: var(--bg-color);
+
+    position: relative;
+
+    .column-01 {
+        @include flex(row, flex-start, center, center);
+        flex-wrap: wrap;
+
+        .img-profile-wrapper {
+
+            margin-bottom: -5.6rem;
+
+            z-index: 111;
+
+            a {
+                width: 18rem;
+                height: 18rem;
+                background-color: $white-01;
+                border-radius: 50%;
+                padding: .8rem;
+                display: inline-block;
+                position: relative;
+
+                i {
+                    width: 100%;
+                    height: 100%;
+                    @include flex(row, center, center, center);
+                    border: 2px solid $primary-02;
+                    border-style: dashed;
+                    border-radius: 50%;
+
+                    span {
+                        font-size: 6.4rem;
+                        color: $gray-03;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: contain;
+                    border-radius: 50%;
+                }
+
+                .icone-clube-adepto {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    @include absolute(auto, 0, 2rem, auto);
+                    border: none;
+                    padding: .4rem;
+
+                    background-color: #F78946;
+
+                    span {
+                        font-size: 3.2rem;
+                        color: $white-01;
+                    }
+                }
+            }
+        }
+
+        h1 {
+            width: auto;
+            margin-left: 3.2rem;
+            margin-bottom: 0;
+            font-weight: 400;
+            color: $white-01;
+        }
+    }
+
+    .column-02 {
+        @include flex(row, flex-end, center, center);
+
+        .infos-club {
+            @include flex(column, center, flex-end, flex-end);
+            margin-right: 2.4rem;
+
+            h2 {
+                color: $white-01;
+                margin-bottom: 1.6rem;
+            }
+
+            .btn-secondary {
+                --color-clube: #FFFFFF;
+                --color-hover: #737A83;
+            }
+        }
+
+
+        .img-club {
+            width: 11.2rem;
+            height: 11.2rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+
+    @include mlg {
+        .column-01 {
+            .img-profile-wrapper {
+                a {
+                    width: 15rem;
+                    height: 15rem;
+                }
+            }
+        }
+    }
+
+    @include md {
+        .column-01 {
+            order: 2;
+
+            .img-profile-wrapper {
+                a {
+                    width: 16rem;
+                    height: 16rem;
+                }
+            }
+        }
+
+        .column-02 {
+            order: 1;
+            margin-bottom: 3.2rem;
+        }
+    }
+
+    @include sm {
+        .column-01 {
+            .img-profile-wrapper {
+                a {
+                    width: 12rem;
+                    height: 12rem;
+                }
+            }
+        }
+    }
+
+    @include xs {
+        .column-01 {
+            .img-profile-wrapper {
+                margin-bottom: 0;
+            }
+        }
+
+        .column-02 {
+            .infos-club {
+                align-items: flex-start;
+            }
+        }
+    }
+
+    @include xxs {
+        .column-01 {
+            margin-top: 2.4rem;
+            @include flex(column, flex-start, center, center);
+
+            .img-profile-wrapper {
+                text-align: center;
+            }
+        }
+    }
+
+    &.logged-no-club {
+        background-image: url("../images/banner-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .banner-content {
+            @include flex(column, center, flex-start, flex-start);
+
+            h3 {
+                @include font(3.2rem, 400, 1.2em);
+                color: $white-01;
+                margin-bottom: 1.6rem;
+            }
+
+            .btn {
+                --color-btn: #FFFFFF;
+                --color-hover: #737A83;
+            }
+        }
+
+        @include xs {
+            .content-wrapper {
+                justify-content: flex-start;
+                align-items: flex-end;
+                // padding-left: 8rem;
+
+                h3 {
+                    text-align: right;
+                }
+            }
+        }
+
+        @include xxs {
+            .content-wrapper {
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 2.4rem;
+
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &.banner-socio {
+        background-image: url("../images/banner-sporting.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .column-01 {
+            align-items: flex-end;
+            align-content: flex-end;
+
+            .img-profile-wrapper {
+                a {
+                    .icone-clube-adepto {
+                        background-color: var(--color-clube);
+                    }
+                }
+            }
+        }
+
+        .infos-profile {
+            &-wrapper {
+                @include flex(row, flex-start, flex-start, flex-start);
+                flex-wrap: wrap;
+            }
+
+            &-dados {
+                padding-right: 1.6rem;
+
+                h3,
+                p {
+                    color: $white-01;
+                }
+
+                h3 {
+                    @include font(2rem, 900, 1.2em);
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-notification {
+                padding-left: 1.6rem;
+                border-left: 1px solid $white-01;
+
+                .notification-icon {
+                    position: relative;
+                    display: inline-block;
+
+                    i {
+                        display: inline-block;
+
+                        span {
+                            font-size: 3.2rem;
+                            color: $white-01;
+                        }
+                    }
+
+                    .notification-warning {
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        display: inline-block;
+                        @include absolute(0, 0, auto, auto);
+                    }
+                }
+
+                .notification-list {
+                    li {
+                        @include flex(row, flex-start, center, center);
+                        margin-top: .8rem;
+
+                        p {
+                            color: $white-01;
+                            margin-bottom: 0;
+                        }
+
+                        .btn-link {
+                            font-size: 1.2rem;
+                            color: $white-01;
+                            margin-left: 1.6rem;
+
+                            &:before {
+                                background: $white-01;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include xs {
+                &-dados {
+                    margin-top: 1.6rem;
+                    padding-right: 0;
+                }
+
+                &-notification {
+                    margin-top: 2.4rem;
+                    padding-left: 0;
+                    border: none;
+                }
+            }
+
+            @include xxs {
+                &-notification {
+                    .notification-list {
+                        li {
+                            @include flex(column, flex-start, flex-start, flex-start);
+                            margin-bottom: 2.4rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            .btn-link {
+                                margin-top: .8rem;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.banner-adesao {
+        background-image: url("../images/banner-img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &.other-club {
+        .column-01 {
+            flex-wrap: wrap;
+
+
+            p {
+                width: 100%;
+                @include font(2.4rem, 300, 1em);
+                color: $white-01;
+            }
+        }
+    }
+}
+
+.fc-famalicao {
+    .banner-fan {
+        &.banner-socio {
+            background-image: url("../images/banner-fcfamalicao.png");
+        }
+    }
+}
+
+.rioave-fc {
+    .banner-fan {
+        &.banner-adesao {
+            background-image: url("../images/banner-rioavefc.jpg");
+        }
+    }
+}

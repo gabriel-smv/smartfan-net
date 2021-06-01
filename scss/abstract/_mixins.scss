@@ -43,3 +43,15 @@
     @content;
   }
 }
+
+@mixin mlg {
+  @media (max-width: 1150px) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
