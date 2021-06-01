@@ -10759,74 +10759,12 @@ form .container-btn {
   object-position: center;
 }
 
-.swiper-fan .swiper-slide {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
-  cursor: grab;
-}
-
-.swiper-fan .swiper-slide h3 {
-  font-size: 3.2rem;
-  font-weight: 400;
-  line-height: 1.2em;
-  color: #ffffff;
-  margin-bottom: 1.6rem;
-}
-
-.swiper-fan .swiper-slide .btn {
-  --color-clube: #FFFFFF;
-  --color-hover: #737A83;
-}
-
-@media (max-width: 575px) {
-  .swiper-fan .swiper-slide {
-    align-items: flex-end;
-  }
-  .swiper-fan .swiper-slide h3 {
-    text-align: right;
-  }
-}
-
-@media (max-width: 425px) {
-  .swiper-fan .swiper-slide {
-    align-items: center;
-  }
-  .swiper-fan .swiper-slide h3 {
-    text-align: center;
-  }
-}
-
-.swiper-fan .swiper-pagination {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 2.4rem;
-}
-
-.swiper-fan .swiper-pagination .swiper-pagination-bullet {
-  width: 1.2rem;
-  height: 1.2rem;
-  display: inline-block;
-  border: 1px solid #ffffff;
-  border-radius: 50%;
-  margin: 0 4px;
-  transition: all 0.3s ease-in-out;
-}
-
-.swiper-fan .swiper-pagination .swiper-pagination-bullet-active {
-  background: #ffffff;
-}
-
 .banner-fan {
-  --bg-color: #263F62;
   width: 100%;
   padding: calc(9.6rem + 3.2rem) 0 12rem;
-  background: var(--bg-color);
+  background-image: url("../images/banner-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 
@@ -10840,6 +10778,7 @@ form .container-btn {
 }
 
 .banner-fan .column-01 .img-profile-wrapper {
+  margin-right: 1.6rem;
   margin-bottom: -5.6rem;
   z-index: 111;
 }
@@ -10898,93 +10837,76 @@ form .container-btn {
   color: #ffffff;
 }
 
-.banner-fan .column-01 h1 {
-  width: auto;
-  margin-left: 3.2rem;
-  margin-bottom: 0;
-  font-weight: 400;
-  color: #ffffff;
-}
-
-.banner-fan .column-02 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-}
-
-.banner-fan .column-02 .infos-club {
+.banner-fan .column-01 .banner-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  align-content: flex-end;
-  margin-right: 2.4rem;
+  align-items: flex-start;
+  align-content: flex-start;
 }
 
-.banner-fan .column-02 .infos-club h2 {
+.banner-fan .column-01 .banner-content h3 {
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
   color: #ffffff;
   margin-bottom: 1.6rem;
 }
 
-.banner-fan .column-02 .infos-club .btn-secondary {
-  --color-clube: #FFFFFF;
-  --color-hover: #737A83;
+.banner-fan .column-01 .banner-content h3 .fan-categoria {
+  font-weight: 300;
 }
 
-.banner-fan .column-02 .img-club {
-  width: 11.2rem;
-  height: 11.2rem;
+.banner-fan .column-01 .banner-content .btn {
+  --color-clube: #FFF;
 }
 
-.banner-fan .column-02 .img-club img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+.banner-fan .column-01 .banner-content .clubes-fan {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
-@media (max-width: 1150px) {
-  .banner-fan .column-01 .img-profile-wrapper a {
-    width: 15rem;
-    height: 15rem;
-  }
+.banner-fan .column-01 .banner-content .clubes-fan li {
+  position: relative;
+  margin-right: .8rem;
 }
 
-@media (max-width: 992px) {
-  .banner-fan .column-01 {
-    order: 2;
-  }
-  .banner-fan .column-01 .img-profile-wrapper a {
-    width: 16rem;
-    height: 16rem;
-  }
-  .banner-fan .column-02 {
-    order: 1;
-    margin-bottom: 3.2rem;
-  }
+.banner-fan .column-01 .banner-content .clubes-fan li a {
+  display: inline-block;
 }
 
-@media (max-width: 767px) {
-  .banner-fan .column-01 .img-profile-wrapper a {
-    width: 12rem;
-    height: 12rem;
-  }
+.banner-fan .column-01 .banner-content .clubes-fan li img {
+  height: 5.6rem;
+  width: 5.6rem;
+}
+
+.banner-fan .column-01 .banner-content .clubes-fan li i {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: #F78946;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+}
+
+.banner-fan .column-01 .banner-content .clubes-fan li i span {
+  color: #ffffff;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 575px) {
-  .banner-fan .column-01 .img-profile-wrapper {
-    margin-bottom: 0;
-  }
-  .banner-fan .column-02 .infos-club {
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 425px) {
   .banner-fan .column-01 {
-    margin-top: 2.4rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -10992,209 +10914,77 @@ form .container-btn {
     align-content: center;
   }
   .banner-fan .column-01 .img-profile-wrapper {
+    margin-bottom: 0.8rem;
+  }
+  .banner-fan .column-01 .banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .banner-fan .column-01 .banner-content h3 {
     text-align: center;
   }
 }
 
-.banner-fan.logged-no-club {
-  background-image: url("../images/banner-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner-fan.logged-no-club .banner-content {
+.banner-fan.registo .column-01 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
 }
 
-.banner-fan.logged-no-club .banner-content h3 {
-  font-size: 3.2rem;
+.banner-fan.registo .column-01 h1,
+.banner-fan.registo .column-01 h3 {
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner-fan.registo .column-01 h1 {
+  font-size: 4;
   font-weight: 400;
   line-height: 1.2em;
-  color: #ffffff;
-  margin-bottom: 1.6rem;
+  margin-bottom: .8rem;
 }
 
-.banner-fan.logged-no-club .banner-content .btn {
-  --color-btn: #FFFFFF;
-  --color-hover: #737A83;
+.banner-fan.registo .column-01 h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.2em;
 }
 
-@media (max-width: 575px) {
-  .banner-fan.logged-no-club .content-wrapper {
-    justify-content: flex-start;
-    align-items: flex-end;
-  }
-  .banner-fan.logged-no-club .content-wrapper h3 {
-    text-align: right;
-  }
-}
-
-@media (max-width: 425px) {
-  .banner-fan.logged-no-club .content-wrapper {
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 2.4rem;
-  }
-  .banner-fan.logged-no-club .content-wrapper h3 {
-    text-align: center;
-  }
-}
-
-.banner-fan.banner-socio {
-  background-image: url("../images/banner-sporting.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner-fan.banner-socio .column-01 {
-  align-items: flex-end;
-  align-content: flex-end;
-}
-
-.banner-fan.banner-socio .column-01 .img-profile-wrapper a .icone-clube-adepto {
+.banner-fan.socio .img-profile-wrapper a .icone-clube-adepto {
   background-color: var(--color-clube);
 }
 
-.banner-fan.banner-socio .infos-profile-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  flex-wrap: wrap;
-}
-
-.banner-fan.banner-socio .infos-profile-dados {
-  padding-right: 1.6rem;
-}
-
-.banner-fan.banner-socio .infos-profile-dados h3,
-.banner-fan.banner-socio .infos-profile-dados p {
-  color: #ffffff;
-}
-
-.banner-fan.banner-socio .infos-profile-dados h3 {
-  font-size: 2rem;
-  font-weight: 900;
-  line-height: 1.2em;
-}
-
-.banner-fan.banner-socio .infos-profile-dados p {
-  margin-bottom: 0;
-}
-
-.banner-fan.banner-socio .infos-profile-notification {
-  padding-left: 1.6rem;
-  border-left: 1px solid #ffffff;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-icon {
-  position: relative;
-  display: inline-block;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-icon i {
-  display: inline-block;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-icon i span {
-  font-size: 3.2rem;
-  color: #ffffff;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-icon .notification-warning {
-  width: 1.6rem;
-  height: 1.6rem;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  left: auto;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-list li {
+.banner-fan.socio .detalhes-socio {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin-top: .8rem;
 }
 
-.banner-fan.banner-socio .infos-profile-notification .notification-list li p {
+.banner-fan.socio .detalhes-socio a {
+  display: inline-block;
+}
+
+.banner-fan.socio .detalhes-socio img {
+  height: 6.4rem;
+  width: 6.4rem;
+}
+
+.banner-fan.socio .detalhes-socio-info {
+  margin-left: .4rem;
+}
+
+.banner-fan.socio .detalhes-socio-info h5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
   color: #ffffff;
-  margin-bottom: 0;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link {
-  font-size: 1.2rem;
-  color: #ffffff;
-  margin-left: 1.6rem;
-}
-
-.banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link:before {
-  background: #ffffff;
-}
-
-@media (max-width: 575px) {
-  .banner-fan.banner-socio .infos-profile-dados {
-    margin-top: 1.6rem;
-    padding-right: 0;
-  }
-  .banner-fan.banner-socio .infos-profile-notification {
-    margin-top: 2.4rem;
-    padding-left: 0;
-    border: none;
-  }
-}
-
-@media (max-width: 425px) {
-  .banner-fan.banner-socio .infos-profile-notification .notification-list li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-    margin-bottom: 2.4rem;
-  }
-  .banner-fan.banner-socio .infos-profile-notification .notification-list li:last-child {
-    margin-bottom: 0;
-  }
-  .banner-fan.banner-socio .infos-profile-notification .notification-list li .btn-link {
-    margin-top: .8rem;
-    margin-left: 0;
-  }
-}
-
-.banner-fan.banner-adesao {
-  background-image: url("../images/banner-img.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.banner-fan.other-club .column-01 {
-  flex-wrap: wrap;
-}
-
-.banner-fan.other-club .column-01 p {
-  width: 100%;
-  font-size: 2.4rem;
-  font-weight: 300;
-  line-height: 1em;
-  color: #ffffff;
-}
-
-.fc-famalicao .banner-fan.banner-socio {
-  background-image: url("../images/banner-fcfamalicao.png");
-}
-
-.rioave-fc .banner-fan.banner-adesao {
-  background-image: url("../images/banner-rioavefc.jpg");
 }
 
 .cards-fan {
@@ -13568,7 +13358,7 @@ header .nav-mobile {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 3.2rem 0 0;
+  padding: 3.2rem 0;
   z-index: 9999;
   background: #263F62;
   box-shadow: 0px 15px 23px -10px rgba(33, 33, 33, 0.7);
@@ -13589,58 +13379,12 @@ header .nav-mobile .close-menu span {
   color: #ACC2D3;
 }
 
-header .nav-mobile .nav {
-  padding: .8rem 0;
-  justify-content: center;
-}
-
-header .nav-mobile .nav .nav-link {
-  font-size: 1.6rem;
-  font-weight: 500;
-  line-height: 1.2em;
-}
-
-header .nav-mobile .nav .nav-link:hover {
-  background: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-}
-
-header .nav-mobile .nav .nav-dropdown {
-  top: calc(var(--header-md-height) - .8rem);
-}
-
 @media (max-width: 767px) {
-  header .nav-mobile .nav {
-    height: auto;
-    padding: 1.6rem 0;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-  }
-  header .nav-mobile .nav .nav-link {
-    padding: 2.4rem 3.2rem;
+  header .nav-mobile .row {
+    justify-content: flex-start;
   }
   header .nav-mobile .logo {
     justify-content: center;
-  }
-  header .nav-mobile .tabs-nav {
-    overflow-x: scroll;
-  }
-  header .nav-mobile .tabs-nav .tab-item {
-    width: 35%;
-  }
-  header .nav-mobile .tabs-content {
-    height: 32rem;
-    overflow-y: scroll;
-  }
-  header .nav-mobile .tabs-content .clubes-item a {
-    justify-content: center;
-  }
-  header .nav-mobile .tabs-content .clubes-item a img {
-    height: 5.6rem;
-    width: 5.6rem;
-  }
-  header .nav-mobile .tabs-content .clubes-item span {
-    display: none;
   }
   header .nav-mobile .btn-list {
     justify-content: center;
@@ -13651,9 +13395,13 @@ header .nav-mobile .nav .nav-dropdown {
   }
 }
 
-@media (max-width: 575px) {
-  header .nav-mobile .nav {
-    justify-content: flex-start;
+@media (max-width: 425px) {
+  header .nav-mobile .logo a {
+    padding-right: 2.4rem;
+    border-right: 2px solid #ffffff;
+  }
+  header .nav-mobile .logo h3 {
+    display: block;
   }
 }
 
@@ -13661,7 +13409,7 @@ header {
   --header-height: 9.6rem;
   width: 100%;
   height: var(--header-height);
-  background: #021D43;
+  background: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -13697,6 +13445,8 @@ header .logo a {
   max-width: 100%;
   height: 3.2rem;
   display: inline-block;
+  padding-right: 2.4rem;
+  border-right: 2px solid #ffffff;
 }
 
 header .logo a img {
@@ -13704,69 +13454,34 @@ header .logo a img {
   height: 100%;
 }
 
-header .nav {
-  height: var(--header-height);
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-}
-
-header .nav .nav-item {
-  height: 100%;
-}
-
-header .nav .nav-link {
-  height: 100%;
-  color: #ACC2D3;
-  font-size: 1.6rem;
-  font-weight: 500;
+header .logo h3 {
+  font-size: 2.2rem;
+  font-weight: 900;
   line-height: 1.2em;
-  background: rgba(255, 255, 255, 0);
-  padding: 0 3.2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 2.4rem;
+}
+
+header .game-changer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   align-content: center;
-  transition: all 0.3s ease-in-out;
 }
 
-header .nav .nav-link:hover {
-  background: rgba(255, 255, 255, 0.25);
+header .game-changer h3 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
-header .nav .nav-link[aria-expanded="true"] {
-  background: rgba(255, 255, 255, 0.25);
-  color: #ffffff;
-}
-
-header .nav .nav-link:after {
-  display: none;
-}
-
-header .nav .dropdown-menu {
-  width: 100vw;
-  position: absolute;
-  top: var(--header-height);
-  right: auto;
-  bottom: auto;
-  left: 0;
-  z-index: 9999;
-  background-color: #263F62;
-  padding-bottom: 3.2rem;
-  box-shadow: 0px 15px 23px -10px rgba(33, 33, 33, 0.7);
-  display: none;
-}
-
-header .nav .dropdown-menu.show {
-  display: block;
-}
-
-header .nav .dropdown {
-  position: inherit;
+header .game-changer h3 span {
+  padding: 0 .4rem;
+  background-color: #F78946;
 }
 
 header .btn-list {
@@ -13865,12 +13580,39 @@ header .btn-list .btn-perfil:hover {
   }
 }
 
-.socio header {
-  background: transparent;
+@media (max-width: 425px) {
+  header .logo a {
+    padding-right: 0;
+    border-right: none;
+  }
+  header .logo h3 {
+    display: none;
+  }
 }
 
-.socio header .nav {
-  display: none;
+@media (max-width: 767px) {
+  header.registo .logo {
+    justify-content: center;
+    order: 2;
+  }
+  header.registo .game-changer {
+    justify-content: center;
+  }
+  header.registo .game-changer h3 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+}
+
+@media (max-width: 425px) {
+  header.registo .logo a {
+    padding-right: 2.4rem;
+    border-right: 2px solid #ffffff;
+  }
+  header.registo .logo h3 {
+    display: block;
+  }
 }
 
 .modal-alerta .modal-dialog {

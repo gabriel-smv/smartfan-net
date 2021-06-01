@@ -23,7 +23,7 @@ header {
         position: fixed;
         top: 0;
         left: 0;
-        padding: 3.2rem 0 0;
+        padding: 3.2rem 0;
         z-index: 9999;
         background: $primary-02;
         box-shadow: 0px 15px 23px -10px rgba(33, 33, 33, 0.7);
@@ -42,66 +42,13 @@ header {
             }
         }
 
-        .nav {
-            padding: .8rem 0;
-            justify-content: center;
-
-            .nav-link {
-                @include font(1.6rem, 500, 1.2em);
-
-                &:hover {
-                    background: rgba(255, 255, 255, .25);
-                    color: $white-01;
-                }
-            }
-
-            .nav-dropdown {
-                top: calc(var(--header-md-height) - .8rem);
-            }
-        }
-
         @include sm {
-            .nav {
-                height: auto;
-                padding: 1.6rem 0;
-                flex-wrap: nowrap;
-                overflow-x: scroll;
-
-                .nav-link {
-                    padding: 2.4rem 3.2rem;
-                }
+            .row {
+                justify-content: flex-start;
             }
 
             .logo {
                 justify-content: center;
-            }
-
-            .tabs-nav {
-                overflow-x: scroll;
-
-                .tab-item {
-                    width: 35%;
-                }
-            }
-
-            .tabs-content {
-                height: 32rem;
-                overflow-y: scroll;
-
-                .clubes-item {
-                    a {
-                        justify-content: center;
-
-                        img {
-                            height: 5.6rem;
-                            width: 5.6rem;
-                        }
-                    }
-
-                    span {
-                        display: none;
-                    }
-                }
             }
 
             .btn-list {
@@ -114,9 +61,16 @@ header {
             }
         }
 
-        @include xs {
-            .nav {
-                justify-content: flex-start;
+        @include xxs {
+            .logo {
+                a {
+                    padding-right: 2.4rem;
+                    border-right: 2px solid $white-01;
+                }
+
+                h3 {
+                    display: block;
+                }
             }
         }
 

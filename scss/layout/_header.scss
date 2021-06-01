@@ -8,7 +8,7 @@ header {
 
     width: 100%;
     height: var(--header-height);
-    background: $primary-01;
+    background: transparent;
     @include flex(row, space-between, center, center);
     @include absolute(0, auto, auto, auto);
     z-index: 9999;
@@ -31,63 +31,36 @@ header {
             height: 3.2rem;
             display: inline-block;
 
+            padding-right: 2.4rem;
+            border-right: 2px solid $white-01;
+
             img {
                 width: auto;
                 height: 100%;
             }
         }
+
+        h3 {
+            @include font(2.2rem, 900, 1.2em);
+            text-transform: uppercase;
+            color: $white-01;
+
+            padding-left: 2.4rem;
+        }
     }
 
-    .nav {
-        height: var(--header-height);
-        @include flex(row, flex-start, center, center);
+    .game-changer {
+        @include flex(row, flex-end, center, center);
 
-        .nav-item {
-            height: 100%;
-        }
+        h3 {
+            @include font(3rem, 300, 1.2em);
+            text-transform: uppercase;
+            color: $white-01;
 
-        .nav-link {
-            height: 100%;
-            color: $gray-02;
-            @include font(1.6rem, 500, 1.2em);
-            background: rgba(255, 255, 255, 0);
-            padding: 0 3.2rem;
-            @include flex(row, center, center, center);
-            transition: $transition-01;
-
-            &:hover {
-                background: rgba(255, 255, 255, .25);
-                color: $white-01;
+            span {
+                padding: 0 .4rem;
+                background-color: $secondary-01;
             }
-
-            &[aria-expanded="true"] {
-                background: rgba(255, 255, 255, .25);
-                color: $white-01;
-            }
-
-            &:after {
-                display: none;
-            }
-        }
-
-        .dropdown-menu {
-            width: 100vw;
-            @include absolute(var(--header-height), auto, auto, 0);
-            z-index: 9999;
-            background-color: $primary-02;
-            padding-bottom: 3.2rem;
-            box-shadow: 0px 15px 23px -10px rgba(33, 33, 33, 0.7);
-            display: none;
-
-            &.show {
-                display: block;
-            }
-        }
-
-        .dropdown {
-            position: inherit;
-
-
         }
     }
 
@@ -180,14 +153,48 @@ header {
             }
         }
     }
-}
 
-.socio {
-    header {
-        background: transparent;
+    @include xxs {
+        .logo {
+            a {
+                padding-right: 0;
+                border-right: none;
+            }
 
-        .nav {
-            display: none;
+            h3 {
+                display: none;
+            }
         }
+    }
+
+    &.registo {
+        @include sm {
+            .logo {
+                justify-content: center;
+                order: 2;
+            }
+
+            .game-changer {
+                justify-content: center;
+
+                h3 {
+                    @include font(2.4rem, 300, 1.2em);
+                }
+            }
+        }
+
+        @include xxs {
+            .logo {
+                a {
+                    padding-right: 2.4rem;
+                    border-right: 2px solid $white-01;
+                }
+
+                h3 {
+                    display: block;
+                }
+            }
+        }
+
     }
 }
