@@ -360,7 +360,7 @@
                 <div class="row">
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
-                            <li class="navbar-item active">
+                            <li class="navbar-item">
                                 <a href="ateu-dados.html">
                                     <i><span class="icon-user"></span></i>
                                     Os teus dados
@@ -395,7 +395,7 @@
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item active">
                                 <a href="fan-config.html">
                                     <i><span class="icon-config"></span></i>
                                     Configurações
@@ -413,7 +413,7 @@
                             </h2>
 
                             <ul class="navbar-mobile-dropdown dropdown-menu">
-                                <li class="navbar-item active">
+                                <li class="navbar-item">
                                     <a href="ateu-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         Os teus dados
@@ -448,7 +448,7 @@
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
+                                <li class="navbar-item active">
                                     <a href="fan-config.html">
                                         <i><span class="icon-config"></span></i>
                                         Configurações
@@ -458,154 +458,69 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-perfil-socio">
+                    <section class="pg-padrao pg-config">
                         <div class="content-wrapper">
                             <a href="smartfan-area-fan.html" class="btn-voltar-cards">
                                 <i><span class="icon-back-cards"></span></i> Área de Fan
                             </a>
 
 
-                            <h2>Os teus dados</h2>
+                            <h2>Configurações</h2>
 
-                            <section class="infos-socio col-lg-8 col-12">
-                                <div class="infos-socio-wrapper">
-                                    <div class="infos-socio-img">
-                                        <img src="images/user-placeholder.png" alt="">
-                                        <i><span class="icon-fan-fill"></span></i>
-                                        <!-- <i><img src="images/sporting-cp.png" alt=""></i> -->
-                                    </div>
+                            <section class="config-wrapper col-lg-5 col-12">
+                                <h4>Competições que pretendes seguir</h4>
 
-                                    <div class="infos-socio-details">
-                                        <h3>Neymar Ninja Jr</h3>
-                                        <ul>
-                                            <li>
-                                                <h5>ID</h5>
-                                                <span>1234875</span>
-                                            </li>
+                                <ul class="config-list">
+                                    <li>
+                                        <input type="checkbox" name="seguir-competicao" id="futebol">
+                                        <label for="futebol">
+                                            <span>Futebol</span>
+                                            <div class="btn-switch"></div>
+                                        </label>
+                                    </li>
 
-                                            <li>
-                                                <h5>Conta</h5>
-                                                <span>ADEPTO</span>
-                                            </li>
+                                    <li>
+                                        <input type="checkbox" name="seguir-competicao" id="futsal">
+                                        <label for="futsal">
+                                            <span>Futsal</span>
+                                            <div class="btn-switch"></div>
+                                        </label>
+                                    </li>
 
-                                            <li>
-                                                <h5>Antiguidade</h5>
-                                                <span>Janeiro 2021</span>
-                                            </li>
+                                    <li>
+                                        <input type="checkbox" name="seguir-competicao" id="andebol">
+                                        <label for="andebol">
+                                            <span>Andebol</span>
+                                            <div class="btn-switch"></div>
+                                        </label>
+                                    </li>
 
-                                            <li>
-                                                <h5>Clube do coração</h5>
-                                                <span>Sporting CP</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                    <li>
+                                        <input type="checkbox" name="seguir-competicao" id="basquetebol">
+                                        <label for="basquetebol">
+                                            <span>Basquetebol</span>
+                                            <div class="btn-switch"></div>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" name="seguir-competicao" id="hoquei">
+                                        <label for="hoquei">
+                                            <span>Hoquei em Patins</span>
+                                            <div class="btn-switch"></div>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <input type="checkbox" name="seguir-competicao" id="voleibol">
+                                        <label for="voleibol">
+                                            <span>Voleibol</span>
+                                            <div class="btn-switch"></div>
+                                        </label>
+                                    </li>
+                                </ul>
                             </section>
 
-                            <form class="col-lg-8  col-12">
-
-                                <div class="dados-conta">
-                                    <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" name="email" id="email" placeholder="Default input"
-                                            disabled>
-                                        <a href="#" class="btn-link">Alterar e-mail</a>
-                                    </div>
-
-                                    <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label for="password">Password</label>
-                                        <input type="password" name="password" id="password" placeholder="Default input"
-                                            disabled>
-                                        <a href="#" class="btn-link">Alterar password</a>
-                                    </div>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="name">Nome</label>
-                                    <input type="text" name="name" id="name" placeholder="Default input">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="lastname">Sobrenome</label>
-                                    <input type="text" name="lastname" id="lastname" placeholder="Default input">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="birthday">Data de nascimento</label>
-                                    <input type="date" name="birthday" id="birthday" placeholder="Default input">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="sexo">Sexo</label>
-                                    <select name="sexo" id="sexo">
-                                        <option value="">Selecione</option>
-                                        <option value="male">Masculino</option>
-                                        <option value="female">Feminino</option>
-                                        <option value="outro">Outro</option>
-                                    </select>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="nif">NIF</label>
-                                    <input type="text" name="nif" id="nif">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="pais">País</label>
-                                    <select name="pais" id="pais">
-                                        <option value="">Selecione</option>
-                                        <option value="br">Brasil</option>
-                                        <option value="pt">Portugal</option>
-                                        <option value="outro">Outro</option>
-                                    </select>
-                                </div>
-
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="endereco">Endereço</label>
-                                    <input type="text" name="endereco" id="endereco">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="cp">Código Postal</label>
-                                    <input type="text" name="cp" id="cp">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <!-- <label for="name"></label> -->
-                                    <input type="text" value="Localidade">
-                                </div>
-
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="localidade">Localidade</label>
-                                    <input type="text" name="localidade" id="localidade">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telemovel-pais">País telemóvel</label>
-                                    <input type="text" name="telemovel-pais" id="telemovel-pais">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telemovel">Telemóvel</label>
-                                    <input type="text" name="telemovel" id="telemovel">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telefone-pais">País telefone</label>
-                                    <input type="text" name="telefone-pais" id="telefone-pais">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telefone">Telefone</label>
-                                    <input type="text" name="telefone" id="telefone">
-                                </div>
-
-                                <p class="last-change">Ultima actualização: 12 de março 2021, 12:00</p>
-
-                                <div class="container-btn">
-                                    <a href="#" class="btn btn-secondary no-round">Gravar dados pessoais</a>
-                                </div>
-                            </form>
                         </div>
                     </section>
                 </div>
