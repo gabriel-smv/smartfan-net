@@ -64,6 +64,12 @@
                 }
             }
 
+            @include xs {
+                .nav-item {
+                    width: 100%;
+                }
+            }
+
         }
 
 
@@ -78,6 +84,7 @@
                         span {
                             font-size: 3.2rem;
                             color: $black-02;
+                            padding: 0;
                         }
                     }
 
@@ -93,6 +100,7 @@
 
                             span {
                                 position: relative;
+                                padding: 0;
 
                                 &::after {
                                     content: '';
@@ -380,20 +388,19 @@
             }
 
             &:hover {
-                span {
-                    color: $black-02;
-                }
+
+                isolation: auto;
             }
 
             &.active {
-                color: var(--color-clube);
+                color: $secondary-01;
 
                 .area-select {
                     &:before {
                         content: '';
                         width: 80%;
                         height: 80%;
-                        background-color: var(--color-clube);
+                        background-color: $secondary-01;
                         @include absolute (50%, auto, auto, 50%);
                         transform: translate(-50%, -50%);
                         border-radius: 50%;
@@ -401,11 +408,7 @@
                     }
                 }
 
-                &:hover {
-                    span {
-                        color: var(--color-clube);
-                    }
-                }
+
             }
 
             @include xs {
@@ -430,6 +433,10 @@
                 padding: 1.6rem 0;
                 border-bottom: 1px solid $gray-04;
 
+                span {
+                    padding: 0 .4rem;
+                }
+
                 a {
                     @include flex(row, flex-start, center, center);
                     @include font(1.6rem, 400, 1.2em);
@@ -442,6 +449,7 @@
                         span {
                             font-size: 3.2rem;
                             color: $black-02;
+                            padding: 0;
                         }
                     }
                 }
