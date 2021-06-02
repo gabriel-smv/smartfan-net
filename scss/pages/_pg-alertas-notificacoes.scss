@@ -10,6 +10,12 @@
             .nav-item {
                 padding: .8rem;
             }
+
+            .item-config {
+                .btn.active {
+                    border-color: $secondary-01;
+                }
+            }
         }
     }
 
@@ -83,7 +89,7 @@
                     @include font(1.4rem, 400, 1.2em);
 
                     span.active {
-                        color: var(--color-clube);
+                        color: $secondary-01;
                     }
 
                     a {
@@ -388,28 +394,71 @@
         }
 
         .criar-alerta-clube {
+            padding: 0 1.6rem;
             @include flex(row, flex-start, center, center);
 
-            .alerta-clube {
-                &-img {
-                    width: 5.6rem;
-                    height: 5.6rem;
-                    margin-right: .8rem;
 
-                    img {
-                        height: 100%;
-                    }
+            .dropdown-toggle {
+                width: 100%;
+                padding: .8rem 1.6rem;
+                border: 1px solid rgba(115, 122, 131, .5);
+                border-radius: .8rem;
+
+                @include flex(row, space-between, center, center);
+            }
+
+            .alerta-clube-infos {
+                h4 {
+                    @include font(1.6rem, 400, 1.2em);
+                    color: $black-02;
+                }
+            }
+
+            .dropdown-menu {
+                padding: 1.6rem 0.8rem;
+                height: auto;
+                max-height: 35rem;
+                overflow-y: auto;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+
+                &::-webkit-scrollbar {
+                    width: .8rem;
                 }
 
-                &-infos {
-                    h4 {
-                        @include font(1.6rem, 400, 1.2em);
-                        color: $black-02;
-                    }
+                &::-webkit-scrollbar-track {
+                    background-color: $gray-01;
+                }
 
-                    h6 {
-                        @include font(1.4rem, 400, 1.2em);
-                        color: $gray-04;
+                &::-webkit-scrollbar-thumb {
+                    background-color: $gray-04;
+                }
+
+
+                li {
+                    padding: 0;
+
+                    a {
+                        padding: 0.8rem 1.6rem;
+                        @include flex(row, flex-start, center, center);
+
+                        .alerta-clube-img {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                            margin-right: .8rem;
+
+                            img {
+                                height: 100%;
+                            }
+                        }
+
+                        .alerta-clube-infos {
+                            width: auto;
+                        }
+
+                        &:hover {
+                            background-color: $gray-01;
+                        }
                     }
                 }
             }
@@ -421,6 +470,7 @@
 
             @include xs {
                 margin-bottom: 1.6rem;
+                padding: 0;
             }
 
         }

@@ -1,122 +1,65 @@
 .modal {
-    background-color: rgba(0, 0, 0, .7);
+    z-index: 9999;
 
-    .modal-dialog {
-        transform: translate(0, -50%);
-        max-width: 60rem;
-    }
+    &-dialog {
+        max-width: 50%;
+        border: none;
 
-    &.fade.in {
-        .modal-dialog {
-            transform: translate(0, 0);
+        @include xxl {
+            max-width: 70%;
+        }
+
+        @include md {
+            max-width: 80%;
+        }
+
+        @include sm {
+            max-width: 90%;
+        }
+
+        @include xs {
+            max-width: 100%;
         }
     }
 
-    .modal-header {
-        background-color: $white-02;
+    &-content {
+        border-radius: 3.2rem;
+        padding: 1.6rem 2.4rem;
         border: none;
     }
 
-    .modal-title {
-        width: 100%;
-        @include flex(row, center, center, center);
-        letter-spacing: 0;
-
-        span {
-            font-size: 4rem;
-            margin-right: 1.6rem;
-        }
-    }
-
-    .modal-body {
-        padding: 2.4rem;
-
-        p {
-            margin-bottom: 1.6rem;
-        }
-    }
-}
-
-.modal-clubes {
-    .modal-content {
-        min-height: 60rem;
-        border-radius: .8rem;
-        border: none;
-    }
-
-    .modal-header {
-        background-color: $white-01;
-        // border-bottom: 1px solid $secondary-02;
-        padding: 3.2rem 1rem 1.6rem;
+    &-header {
+        border-bottom: none;
 
         h2 {
-            @include flex(column, center, center, center);
-            color: $gray-02;
+            width: 100%;
             font-size: 2.4rem;
-
-            span {
-                font-size: 5.6rem;
-                color: $secondary-02;
-                margin-bottom: .8rem;
-                margin-right: 0;
-            }
+            text-align: center;
         }
 
         .btn-close {
-            @include absolute(1.6rem, 1.6rem, 0, 0);
+            width: auto;
+            height: auto;
+            @include absolute(-5px, -5px, auto, auto);
+            border-radius: 50%;
+            background: none;
+            background-color: $primary-02;
+            opacity: 1;
+            display: inline-block;
+
+            span {
+                color: $white-01;
+                font-size: 3.2rem;
+            }
+
+            @include xs {
+                top: 0;
+                right: 0;
+            }
         }
     }
 
-    .modal-body {
+    &-body {
         @include flex(column, flex-start, center, center);
-    }
-
-    .clubs-list {
-        width: 100%;
-        position: relative;
-        @include flex(row, space-between, center, center);
-        flex-wrap: wrap;
-
-        &-item {
-            position: relative;
-            cursor: pointer;
-
-            a {
-                display: inline-block;
-                padding: 1.6rem;
-                border-radius: .4rem;
-                border: 2px solid transparent;
-                transition: $transition-01;
-
-                &:focus {
-                    outline: none;
-                    border-color: $gray-01;
-                }
-
-                &:hover {
-                    background: $white-02;
-                    border-color: $gray-01;
-                }
-            }
-
-            img {
-                width: 100%;
-                max-height: 6rem;
-                object-fit: contain;
-                object-position: center;
-            }
-
-
-            &.active {
-                a {
-                    background: $white-02;
-                    border: 2px solid $secondary-02;
-                }
-            }
-        }
-    }
-
-    .btn {
-        margin-top: 4.8rem;
     }
 }

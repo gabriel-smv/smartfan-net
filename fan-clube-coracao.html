@@ -326,9 +326,28 @@
                         <div class="banner-content">
                             <h3>Olá, <span>Neymar Jr.</span> <span class="fan-categoria">(ADEPTO)</span></h3>
 
-                            <a href="#" class="btn btn-secondary" style="--color-hover: rgba(0,0,0,.3);">
-                                <i><span class="icon-heart"></span></i> Clube do coração
-                            </a>
+                            <ul class="clubes-fan">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/sporting-cp.png" alt="">
+                                    </a>
+                                    <i><span class="icon-heart"></span></i>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="images/rioave-fc.png" alt="">
+                                    </a>
+                                    <i><span class="icon-like"></span></i>
+                                </li>
+
+                                <li>
+                                    <a href="#">
+                                        <img src="images/boavista-fc.png" alt="">
+                                    </a>
+                                    <i><span class="icon-like"></span></i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -342,43 +361,42 @@
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
                             <li class="navbar-item">
-                                <a href="smartfan-area-fan.html">
-                                    <i><span class="icon-fan-outline"></span></i>
-                                    Área de Fan
-                                </a>
-                            </li>
-
-                            <li class="navbar-item">
-                                <a href="ateu-dados.html">
+                                <a href="fan-dados.html">
                                     <i><span class="icon-user"></span></i>
                                     Os teus dados
                                 </a>
                             </li>
 
                             <li class="navbar-item active">
-                                <a href="ateu-clube-coracao.html">
+                                <a href="fan-clube-coracao.html">
                                     <i><span class="icon-heart"></span></i>
                                     Clube do coração
                                 </a>
                             </li>
 
-
                             <li class="navbar-item">
-                                <a href="#">
+                                <a href="pg-registo-atividades">
                                     <i><span class="icon-registo-atividades"></span></i>
                                     Registo de actividade
                                 </a>
                             </li>
 
                             <li class="navbar-item">
-                                <a href="#">
+                                <a href="pg-grupo-fan.html">
+                                    <i><span class="icon-grupo"></span></i>
+                                    Grupo de amigos
+                                </a>
+                            </li>
+
+                            <li class="navbar-item">
+                                <a href="pg-alertas-notificacoes-fan.html">
                                     <i><span class="icon-mensagem"></span></i>
                                     Alertas / Notificações
                                 </a>
                             </li>
 
                             <li class="navbar-item">
-                                <a href="#">
+                                <a href="fan-config.html">
                                     <i><span class="icon-config"></span></i>
                                     Configurações
                                 </a>
@@ -396,43 +414,42 @@
 
                             <ul class="navbar-mobile-dropdown dropdown-menu">
                                 <li class="navbar-item">
-                                    <a href="smartfan-area-fan.html">
-                                        <i><span class="icon-fan-outline"></span></i>
-                                        Área de Fan
-                                    </a>
-                                </li>
-
-                                <li class="navbar-item">
-                                    <a href="ateu-dados.html">
+                                    <a href="fan-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         Os teus dados
                                     </a>
                                 </li>
 
                                 <li class="navbar-item active">
-                                    <a href="#">
+                                    <a href="fan-clube-coracao.html">
                                         <i><span class="icon-heart"></span></i>
                                         Clube do coração
                                     </a>
                                 </li>
 
-
                                 <li class="navbar-item">
-                                    <a href="#">
+                                    <a href="pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         Registo de actividade
                                     </a>
                                 </li>
 
                                 <li class="navbar-item">
-                                    <a href="#">
+                                    <a href="pg-grupo-fan.html">
+                                        <i><span class="icon-grupo"></span></i>
+                                        Grupo de amigos
+                                    </a>
+                                </li>
+
+                                <li class="navbar-item">
+                                    <a href="pg-alertas-notificacoes-fan.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         Alertas / Notificações
                                     </a>
                                 </li>
 
                                 <li class="navbar-item">
-                                    <a href="#">
+                                    <a href="fan-config.html">
                                         <i><span class="icon-config"></span></i>
                                         Configurações
                                     </a>
@@ -441,24 +458,27 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-clube-coracao">
+                    <section class="pg-padrao pg-clube-coracao fan">
                         <div class="content-wrapper">
-                            <h2>Melhora a tua experiência</h2>
+                            <a href="smartfan-area-fan.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Área de Fan
+                            </a>
+
+                            <h2>Clube do coração</h2>
 
                             <div class="clube-coracao">
                                 <div class="clube-coracao-img">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#clube-coracao">
-                                        <span class="icon-add"></span>
-                                        <!-- <img src="images/svg/add.svg" alt=""> -->
+                                        <!-- <span class="icon-add"></span> -->
+                                        <img src="images/sporting-cp.png" alt="">
                                     </a>
 
                                     <i><span class="icon-heart"></span></i>
                                 </div>
 
-                                <a href="#" class="btn btn-secondary" data-bs-toggle="modal"
-                                    data-bs-target="#clube-coracao">
-                                    <i><span class="icon-heart"></span></i>
-                                    Clube do coração
+                                <a href="#" class="btn btn-secondary">
+                                    <i><span class="icon-meus-clubes"></span></i>
+                                    Faz-te sócio
                                 </a>
                             </div>
 
@@ -473,11 +493,19 @@
                                 <h3>Seguir outros clubes</h3>
 
                                 <ul class="seguir-clubes-list">
-                                    <li>
+                                    <li class="active">
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
+                                            <!-- <span class="icon-add"></span> -->
+                                            <img src="images/boavista-fc.png" alt="">
 
+                                            <i><span class="icon-like"></span></i>
+                                        </a>
+                                    </li>
+
+                                    <li class="active">
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
+                                            <!-- <span class="icon-add"></span> -->
+                                            <img src="images/rioave-fc.png" alt="">
 
                                             <i><span class="icon-like"></span></i>
                                         </a>
@@ -488,7 +516,6 @@
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
 
-
                                             <i><span class="icon-like"></span></i>
                                         </a>
                                     </li>
@@ -498,7 +525,6 @@
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
 
-
                                             <i><span class="icon-like"></span></i>
                                         </a>
                                     </li>
@@ -507,17 +533,6 @@
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
-
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
 
                                             <i><span class="icon-like"></span></i>
                                         </a>
@@ -529,6 +544,14 @@
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
 
+                                            <i><span class="icon-like"></span></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
+                                            <span class="icon-add"></span>
+                                            <!-- <img src="images/svg/add.svg" alt=""> -->
 
                                             <i><span class="icon-like"></span></i>
                                         </a>
@@ -539,6 +562,14 @@
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
 
+                                            <i><span class="icon-like"></span></i>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
+                                            <span class="icon-add"></span>
+                                            <!-- <img src="images/svg/add.svg" alt=""> -->
 
                                             <i><span class="icon-like"></span></i>
                                         </a>
@@ -549,7 +580,6 @@
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
 
-
                                             <i><span class="icon-like"></span></i>
                                         </a>
                                     </li>
@@ -558,27 +588,6 @@
                                         <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
                                             <span class="icon-add"></span>
                                             <!-- <img src="images/svg/add.svg" alt=""> -->
-
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
 
                                             <i><span class="icon-like"></span></i>
                                         </a>
@@ -807,7 +816,7 @@
                             </label>
                         </li>
 
-                        <li>
+                        <li class="clube-coracao-active">
                             <input type="radio" name="clube-coracao" id="sporting-cp">
                             <label for="sporting-cp">
                                 <img src="images/sporting-cp.png" alt="">
@@ -894,12 +903,13 @@
 
                 <div class="modal-body">
                     <ul class="modal-clubes-list">
-                        <li>
+                        <li class="active">
                             <input type="radio" name="clube-coracao" id="seguir-boavista-fc">
                             <label for="seguir-boavista-fc">
                                 <img src="images/boavista-fc.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -909,6 +919,7 @@
                                 <img src="images/cd-nacional.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -918,6 +929,7 @@
                                 <img src="images/fc-porto.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -927,6 +939,7 @@
                                 <img src="images/gilvicente-fc.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -936,15 +949,17 @@
                                 <img src="images/belenenses-sad.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
-                        <li>
+                        <li class="active">
                             <input type="radio" name="clube-coracao" id="seguir-rioave-fc">
                             <label for="seguir-rioave-fc">
                                 <img src="images/rioave-fc.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -954,15 +969,16 @@
                                 <img src="images/sc-braga.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
-                        <li>
+                        <li class="clube-coracao-active">
                             <input type="radio" name="clube-coracao" id="seguir-sporting-cp">
                             <label for="seguir-sporting-cp">
                                 <img src="images/sporting-cp.png" alt="">
 
-                                <i><span class="icon-like"></span></i>
+                                <i><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -972,6 +988,7 @@
                                 <img src="images/vitoria-sc.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -981,6 +998,7 @@
                                 <img src="images/estoril-praia.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -990,6 +1008,7 @@
                                 <img src="images/gd-chaves.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -999,6 +1018,7 @@
                                 <img src="images/sc-covilha.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -1008,6 +1028,7 @@
                                 <img src="images/varzim-sc.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
 
@@ -1017,6 +1038,7 @@
                                 <img src="images/vitoria-fc.png" alt="">
 
                                 <i><span class="icon-like"></span></i>
+                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
                             </label>
                         </li>
                     </ul>

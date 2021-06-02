@@ -1,5 +1,6 @@
 .pg-clube-coracao {
     .clube-coracao {
+        padding-top: 1.6rem;
         @include flex(column, flex-start, center, center);
 
         &-img {
@@ -10,11 +11,312 @@
             border: 2px solid $gray-04;
             border-radius: 50%;
 
-            margin-bottom: 1.6rem;
+            margin-bottom: 2.4rem;
+
+            position: relative;
+
+            a {
+                width: 100%;
+                height: 100%;
+                @include flex(row, center, center, center);
+            }
+
+            i {
+                width: 2.8rem;
+                height: 2.8rem;
+                border-radius: 50%;
+                @include absolute(auto, 0, 0, auto);
+                background-color: $gray-04;
+                @include flex(row, center, center, center);
+
+                span {
+                    color: $white-01;
+                    font-size: 2rem;
+                }
+            }
+
+            span {
+                font-size: 4rem;
+                color: $gray-04;
+            }
 
             img {
                 height: 100%;
                 width: 100%;
+            }
+        }
+    }
+
+    .socio-wrapper {
+        @include flex(column, flex-start, center, center);
+        margin: 4rem 0;
+
+        h3 {
+            @include font(2.6rem, 400, 1.2em);
+            margin-bottom: 1.2rem;
+        }
+
+        span {
+            color: $gray-04;
+        }
+
+        span,
+        a {
+            @include font(1.6rem, 700, 1.2em);
+            margin-bottom: .4rem;
+        }
+
+    }
+
+    .seguir-clubes {
+        @include flex(column, flex-start, center, center);
+
+        &-list {
+            width: 100%;
+            @include flex(row, flex-start, center, center);
+            flex-wrap: wrap;
+
+            margin: 1.6rem 0;
+
+            li {
+                width: 20%;
+                padding: .8rem .4rem;
+
+                a {
+                    width: 7.2rem;
+                    height: 7.2rem;
+                    padding: 1.6rem;
+                    margin: 0 auto;
+
+                    border: 1px solid $gray-04;
+                    border-radius: 50%;
+
+                    position: relative;
+                    @include flex(row, center, center, center);
+                }
+
+                i {
+                    width: 2.4rem;
+                    height: 2.4rem;
+                    border-radius: 50%;
+                    @include absolute(auto, 0, 0, auto);
+                    background-color: $gray-04;
+                    @include flex(row, center, center, center);
+
+                    span {
+                        color: $white-01;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                span {
+                    font-size: 3.2rem;
+                    color: $gray-04;
+                }
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+
+                &.active {
+                    a {
+                        padding: .8rem;
+                        border: 2px solid $secondary-01;
+
+                        i {
+                            background-color: $secondary-01;
+                        }
+                    }
+                }
+            }
+        }
+
+        @include xs {
+            &-list {
+
+                li {
+                    width: 33.33%;
+                }
+            }
+        }
+
+        @include xxs {
+            &-list {
+
+                li {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    &.fan {
+        .clube-coracao-img {
+            border-color: $secondary-01;
+
+            i {
+                background-color: $secondary-01;
+            }
+        }
+    }
+}
+
+.modal-clubes {
+    .modal-dialog {
+        max-width: 40%;
+
+        @include xxl {
+            max-width: 60%;
+        }
+
+        @include md {
+            max-width: 70%;
+        }
+
+        @include sm {
+            max-width: 90%;
+        }
+
+        @include xs {
+            max-width: 100%;
+        }
+    }
+
+    .modal-body {
+        padding-top: 0;
+    }
+
+    &-list {
+        width: 100%;
+        position: relative;
+        @include flex(row, flex-start, center, center);
+        flex-wrap: wrap;
+        padding: .8rem;
+        margin-bottom: 1.6rem;
+
+        @include xxs {
+            padding: 0;
+        }
+
+        li {
+            width: 20%;
+            padding: 1.6rem;
+
+            input[type="radio"] {
+                display: none;
+            }
+
+            label {
+                width: 100%;
+                padding: 1.6rem;
+                border: 2px solid rgba(247, 137, 70, 0);
+                border-radius: 50%;
+
+                cursor: pointer;
+                transition: $transition-01;
+
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+
+                i {
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    border-radius: 50%;
+                    @include absolute(auto, 0, 0, auto);
+                    @include flex(row, center, center, center);
+                    background-color: $secondary-01;
+                    transition: $transition-01;
+
+                    opacity: 0;
+                    visibility: hidden;
+
+                    span {
+                        color: $white-01;
+                    }
+                }
+            }
+
+            input[type="radio"]:checked+label {
+                border: 2px solid rgba(247, 137, 70, 1);
+
+                i {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            .clube-coracao-icon {
+                display: none;
+            }
+
+            &.clube-coracao-active {
+                border: 1px solid $gray-04;
+
+                label {
+                    opacity: .3;
+                    border: 2px solid rgba(247, 137, 70, 1);
+                    pointer-events: none;
+
+                    i {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            &.active {
+                label {
+                    border: 2px solid rgba(247, 137, 70, 1);
+                    pointer-events: none;
+
+                    i {
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            @include xxl {
+                padding: .4rem;
+
+                label {
+                    padding: .8rem;
+                }
+            }
+
+            @include md {
+                margin: .4rem 0;
+            }
+
+            @include xs {
+                width: 25%;
+            }
+
+            @include xxs {
+                width: 33.33%;
+            }
+        }
+    }
+
+    .container-btn {
+        width: 100%;
+        @include flex(row, center, center, center);
+
+        .btn {
+            margin: 0 1.6rem;
+        }
+
+        @include xs {
+            flex-direction: column;
+
+            .btn {
+                width: 100%;
+                margin: 1.6rem;
             }
         }
     }
