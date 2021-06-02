@@ -198,7 +198,7 @@
                     }
 
                     &.active {
-                        border-color: var(--color-clube);
+                        border-color: $secondary-01;
                     }
                 }
             }
@@ -270,7 +270,7 @@
 
                 span.cbx-area-select {
                     &::before {
-                        background: var(--color-clube);
+                        background: $secondary-01;
                     }
                 }
             }

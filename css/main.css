@@ -14491,7 +14491,7 @@ header.socio .btn-fan i span {
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .nav-tabs li .nav-link.active {
-  border-color: var(--color-clube);
+  border-color: #F78946;
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .tab-content {
@@ -14553,7 +14553,7 @@ header.socio .btn-fan i span {
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .cbx-label span.cbx-area-select::before {
-  background: var(--color-clube);
+  background: #F78946;
 }
 
 .pg-alertas-notificacoes .tabs-configuracoes .criar-alerta-wrapper .dropdown,
@@ -14731,6 +14731,28 @@ header.socio .btn-fan i span {
   .pg-area-fan {
     padding: 1.6rem .4rem;
   }
+}
+
+.pg-clube-coracao .clube-coracao {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-clube-coracao .clube-coracao-img {
+  width: 10.6rem;
+  height: 10.6rem;
+  padding: 1.6rem;
+  border: 2px solid #737A83;
+  border-radius: 50%;
+  margin-bottom: 1.6rem;
+}
+
+.pg-clube-coracao .clube-coracao-img img {
+  height: 100%;
+  width: 100%;
 }
 
 .config-wrapper {
@@ -16505,6 +16527,10 @@ header.socio .btn-fan i span {
   isolation: auto;
 }
 
+.tabs .nav-tabs .nav-link:hover span {
+  color: #737A83;
+}
+
 .tabs .nav-tabs .nav-link.active {
   color: #F78946;
 }
@@ -16522,6 +16548,10 @@ header.socio .btn-fan i span {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+}
+
+.tabs .nav-tabs .nav-link.active:hover span {
+  color: #F78946;
 }
 
 @media (max-width: 575px) {

@@ -1,0 +1,21 @@
+.pg-clube-coracao {
+    .clube-coracao {
+        @include flex(column, flex-start, center, center);
+
+        &-img {
+            width: 10.6rem;
+            height: 10.6rem;
+            padding: 1.6rem;
+
+            border: 2px solid $gray-04;
+            border-radius: 50%;
+
+            margin-bottom: 1.6rem;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}

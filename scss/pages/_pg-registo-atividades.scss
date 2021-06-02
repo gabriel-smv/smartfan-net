@@ -388,6 +388,9 @@
             }
 
             &:hover {
+                span {
+                    color: $gray-04;
+                }
 
                 isolation: auto;
             }
@@ -405,6 +408,12 @@
                         transform: translate(-50%, -50%);
                         border-radius: 50%;
                         transition: $transition-01;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        color: $secondary-01;
                     }
                 }
 
