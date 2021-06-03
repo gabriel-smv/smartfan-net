@@ -10465,10 +10465,11 @@ form {
 form .container-input {
   padding: 1.6rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
   position: relative;
 }
 
@@ -10479,6 +10480,8 @@ form .container-input {
 }
 
 form label {
+  width: 100%;
+  text-align: left;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.2em;
@@ -10512,6 +10515,12 @@ form select:disabled {
   background-color: #F0F4F6;
   border-color: #F0F4F6;
   pointer-events: none;
+}
+
+form .input-single {
+  width: 19%;
+  padding: .5rem;
+  text-align: center;
 }
 
 form .input-select {
@@ -14878,7 +14887,7 @@ header.socio .btn-fan i span {
   }
 }
 
-.pg-clube-coracao .clube-coracao {
+.clube-coracao {
   padding-top: 1.6rem;
   display: flex;
   flex-direction: column;
@@ -14887,7 +14896,7 @@ header.socio .btn-fan i span {
   align-content: center;
 }
 
-.pg-clube-coracao .clube-coracao-img {
+.clube-coracao-img {
   width: 10.6rem;
   height: 10.6rem;
   padding: 1.6rem;
@@ -14897,7 +14906,7 @@ header.socio .btn-fan i span {
   position: relative;
 }
 
-.pg-clube-coracao .clube-coracao-img a {
+.clube-coracao-img a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -14907,7 +14916,7 @@ header.socio .btn-fan i span {
   align-content: center;
 }
 
-.pg-clube-coracao .clube-coracao-img i {
+.clube-coracao-img i {
   width: 2.8rem;
   height: 2.8rem;
   border-radius: 50%;
@@ -14924,22 +14933,22 @@ header.socio .btn-fan i span {
   align-content: center;
 }
 
-.pg-clube-coracao .clube-coracao-img i span {
+.clube-coracao-img i span {
   color: #ffffff;
   font-size: 2rem;
 }
 
-.pg-clube-coracao .clube-coracao-img span {
+.clube-coracao-img span {
   font-size: 4rem;
   color: #737A83;
 }
 
-.pg-clube-coracao .clube-coracao-img img {
+.clube-coracao-img img {
   height: 100%;
   width: 100%;
 }
 
-.pg-clube-coracao .socio-wrapper {
+.socio-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14948,26 +14957,26 @@ header.socio .btn-fan i span {
   margin: 4rem 0;
 }
 
-.pg-clube-coracao .socio-wrapper h3 {
+.socio-wrapper h3 {
   font-size: 2.6rem;
   font-weight: 400;
   line-height: 1.2em;
   margin-bottom: 1.2rem;
 }
 
-.pg-clube-coracao .socio-wrapper span {
+.socio-wrapper span {
   color: #737A83;
 }
 
-.pg-clube-coracao .socio-wrapper span,
-.pg-clube-coracao .socio-wrapper a {
+.socio-wrapper span,
+.socio-wrapper a {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: .4rem;
 }
 
-.pg-clube-coracao .seguir-clubes {
+.seguir-clubes {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -14975,7 +14984,7 @@ header.socio .btn-fan i span {
   align-content: center;
 }
 
-.pg-clube-coracao .seguir-clubes-list {
+.seguir-clubes-list {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -14986,12 +14995,12 @@ header.socio .btn-fan i span {
   margin: 1.6rem 0;
 }
 
-.pg-clube-coracao .seguir-clubes-list li {
+.seguir-clubes-list li {
   width: 20%;
   padding: .8rem .4rem;
 }
 
-.pg-clube-coracao .seguir-clubes-list li a {
+.seguir-clubes-list li a {
   width: 7.2rem;
   height: 7.2rem;
   padding: 1.6rem;
@@ -15006,7 +15015,7 @@ header.socio .btn-fan i span {
   align-content: center;
 }
 
-.pg-clube-coracao .seguir-clubes-list li i {
+.seguir-clubes-list li i {
   width: 2.4rem;
   height: 2.4rem;
   border-radius: 50%;
@@ -15023,38 +15032,38 @@ header.socio .btn-fan i span {
   align-content: center;
 }
 
-.pg-clube-coracao .seguir-clubes-list li i span {
+.seguir-clubes-list li i span {
   color: #ffffff;
   font-size: 1.6rem;
 }
 
-.pg-clube-coracao .seguir-clubes-list li span {
+.seguir-clubes-list li span {
   font-size: 3.2rem;
   color: #737A83;
 }
 
-.pg-clube-coracao .seguir-clubes-list li img {
+.seguir-clubes-list li img {
   height: 100%;
   width: 100%;
 }
 
-.pg-clube-coracao .seguir-clubes-list li.active a {
+.seguir-clubes-list li.active a {
   padding: .8rem;
   border: 2px solid #F78946;
 }
 
-.pg-clube-coracao .seguir-clubes-list li.active a i {
+.seguir-clubes-list li.active a i {
   background-color: #F78946;
 }
 
 @media (max-width: 575px) {
-  .pg-clube-coracao .seguir-clubes-list li {
+  .seguir-clubes-list li {
     width: 33.33%;
   }
 }
 
 @media (max-width: 425px) {
-  .pg-clube-coracao .seguir-clubes-list li {
+  .seguir-clubes-list li {
     width: 50%;
   }
 }
@@ -15204,15 +15213,6 @@ header.socio .btn-fan i span {
   visibility: visible;
 }
 
-@media (max-width: 1400px) {
-  .modal-clubes-list li {
-    padding: .4rem;
-  }
-  .modal-clubes-list li label {
-    padding: .8rem;
-  }
-}
-
 @media (max-width: 992px) {
   .modal-clubes-list li {
     margin: .4rem 0;
@@ -15330,6 +15330,57 @@ header.socio .btn-fan i span {
   background-color: #F78946;
   right: 2px;
   left: auto;
+}
+
+.pg-criar-conta {
+  text-align: center;
+}
+
+.pg-criar-conta .clube-coracao {
+  width: 100%;
+  margin-bottom: 1.6rem;
+}
+
+.pg-criar-conta .clube-coracao a:hover span {
+  color: #737A83;
+}
+
+.pg-criar-conta .clube-coracao-img {
+  margin-bottom: 1.6rem;
+}
+
+.pg-criar-conta .clube-coracao h4 {
+  color: #737A83;
+}
+
+.pg-criar-conta .seguir-clubes {
+  margin: 1.6rem 0;
+}
+
+.pg-criar-conta form .container-input {
+  justify-content: space-between;
+}
+
+.pg-criar-conta .form-aviso {
+  width: 100%;
+  padding: 0.8rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  text-align: right;
+}
+
+.pg-criar-conta .captcha {
+  width: 100%;
+  text-align: center;
+}
+
+.pg-criar-conta .captcha img {
+  width: auto;
+  height: auto;
+  max-height: 8rem;
+  max-width: 100%;
 }
 
 .pg-grupos .modal {

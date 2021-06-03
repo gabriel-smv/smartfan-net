@@ -1,0 +1,59 @@
+.pg-criar-conta {
+    text-align: center;
+
+    .clube-coracao {
+        width: 100%;
+        margin-bottom: 1.6rem;
+
+        a {
+            &:hover {
+                span {
+                    color: $gray-04;
+                }
+            }
+        }
+
+        &-img {
+            margin-bottom: 1.6rem;
+        }
+
+        // p {
+        //     text-align: center;
+        // }
+
+        h4 {
+            color: $gray-04;
+            // text-align: center;
+        }
+    }
+
+    .seguir-clubes {
+        margin: 1.6rem 0;
+    }
+
+    form {
+        .container-input {
+            justify-content: space-between;
+        }
+    }
+
+    .form-aviso {
+        width: 100%;
+        padding: 0.8rem 1.6rem;
+        @include font(1.6rem, 400, 1.2em);
+        color: $gray-04;
+        text-align: right;
+    }
+
+    .captcha {
+        width: 100%;
+        text-align: center;
+
+        img {
+            width: auto;
+            height: auto;
+            max-height: 8rem;
+            max-width: 100%;
+        }
+    }
+}

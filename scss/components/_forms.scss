@@ -5,8 +5,10 @@ form {
     position: relative;
 
     .container-input {
+
         padding: 1.6rem;
-        @include flex(column, flex-start, flex-start, flex-start);
+        @include flex(row, flex-start, center, center);
+        flex-wrap: wrap;
         position: relative;
 
         @include xs {
@@ -15,6 +17,8 @@ form {
     }
 
     label {
+        width: 100%;
+        text-align: left;
         @include font(1.6rem, 400, 1.2em);
         color: $black-02;
         margin-bottom: .8rem;
@@ -42,6 +46,12 @@ form {
             border-color: $gray-01;
             pointer-events: none;
         }
+    }
+
+    .input-single {
+        width: 19%;
+        padding: .5rem;
+        text-align: center;
     }
 
     .input-select {

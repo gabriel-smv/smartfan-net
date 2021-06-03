@@ -1,29 +1,102 @@
-.pg-clube-coracao {
-    .clube-coracao {
-        padding-top: 1.6rem;
-        @include flex(column, flex-start, center, center);
+.clube-coracao {
+    padding-top: 1.6rem;
+    @include flex(column, flex-start, center, center);
 
-        &-img {
-            width: 10.6rem;
-            height: 10.6rem;
-            padding: 1.6rem;
+    &-img {
+        width: 10.6rem;
+        height: 10.6rem;
+        padding: 1.6rem;
 
-            border: 2px solid $gray-04;
+        border: 2px solid $gray-04;
+        border-radius: 50%;
+
+        margin-bottom: 2.4rem;
+
+        position: relative;
+
+        a {
+            width: 100%;
+            height: 100%;
+            @include flex(row, center, center, center);
+        }
+
+        i {
+            width: 2.8rem;
+            height: 2.8rem;
             border-radius: 50%;
+            @include absolute(auto, 0, 0, auto);
+            background-color: $gray-04;
+            @include flex(row, center, center, center);
 
-            margin-bottom: 2.4rem;
+            span {
+                color: $white-01;
+                font-size: 2rem;
+            }
+        }
 
-            position: relative;
+        span {
+            font-size: 4rem;
+            color: $gray-04;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.socio-wrapper {
+    @include flex(column, flex-start, center, center);
+    margin: 4rem 0;
+
+    h3 {
+        @include font(2.6rem, 400, 1.2em);
+        margin-bottom: 1.2rem;
+    }
+
+    span {
+        color: $gray-04;
+    }
+
+    span,
+    a {
+        @include font(1.6rem, 700, 1.2em);
+        margin-bottom: .4rem;
+    }
+
+}
+
+.seguir-clubes {
+    @include flex(column, flex-start, center, center);
+
+    &-list {
+        width: 100%;
+        @include flex(row, flex-start, center, center);
+        flex-wrap: wrap;
+
+        margin: 1.6rem 0;
+
+        li {
+            width: 20%;
+            padding: .8rem .4rem;
 
             a {
-                width: 100%;
-                height: 100%;
+                width: 7.2rem;
+                height: 7.2rem;
+                padding: 1.6rem;
+                margin: 0 auto;
+
+                border: 1px solid $gray-04;
+                border-radius: 50%;
+
+                position: relative;
                 @include flex(row, center, center, center);
             }
 
             i {
-                width: 2.8rem;
-                height: 2.8rem;
+                width: 2.4rem;
+                height: 2.4rem;
                 border-radius: 50%;
                 @include absolute(auto, 0, 0, auto);
                 background-color: $gray-04;
@@ -31,12 +104,12 @@
 
                 span {
                     color: $white-01;
-                    font-size: 2rem;
+                    font-size: 1.6rem;
                 }
             }
 
             span {
-                font-size: 4rem;
+                font-size: 3.2rem;
                 color: $gray-04;
             }
 
@@ -44,123 +117,49 @@
                 height: 100%;
                 width: 100%;
             }
+
+            &.active {
+                a {
+                    padding: .8rem;
+                    border: 2px solid $secondary-01;
+
+                    i {
+                        background-color: $secondary-01;
+                    }
+                }
+            }
         }
     }
 
-    .socio-wrapper {
-        @include flex(column, flex-start, center, center);
-        margin: 4rem 0;
-
-        h3 {
-            @include font(2.6rem, 400, 1.2em);
-            margin-bottom: 1.2rem;
-        }
-
-        span {
-            color: $gray-04;
-        }
-
-        span,
-        a {
-            @include font(1.6rem, 700, 1.2em);
-            margin-bottom: .4rem;
-        }
-
-    }
-
-    .seguir-clubes {
-        @include flex(column, flex-start, center, center);
-
+    @include xs {
         &-list {
-            width: 100%;
-            @include flex(row, flex-start, center, center);
-            flex-wrap: wrap;
-
-            margin: 1.6rem 0;
 
             li {
-                width: 20%;
-                padding: .8rem .4rem;
-
-                a {
-                    width: 7.2rem;
-                    height: 7.2rem;
-                    padding: 1.6rem;
-                    margin: 0 auto;
-
-                    border: 1px solid $gray-04;
-                    border-radius: 50%;
-
-                    position: relative;
-                    @include flex(row, center, center, center);
-                }
-
-                i {
-                    width: 2.4rem;
-                    height: 2.4rem;
-                    border-radius: 50%;
-                    @include absolute(auto, 0, 0, auto);
-                    background-color: $gray-04;
-                    @include flex(row, center, center, center);
-
-                    span {
-                        color: $white-01;
-                        font-size: 1.6rem;
-                    }
-                }
-
-                span {
-                    font-size: 3.2rem;
-                    color: $gray-04;
-                }
-
-                img {
-                    height: 100%;
-                    width: 100%;
-                }
-
-                &.active {
-                    a {
-                        padding: .8rem;
-                        border: 2px solid $secondary-01;
-
-                        i {
-                            background-color: $secondary-01;
-                        }
-                    }
-                }
-            }
-        }
-
-        @include xs {
-            &-list {
-
-                li {
-                    width: 33.33%;
-                }
-            }
-        }
-
-        @include xxs {
-            &-list {
-
-                li {
-                    width: 50%;
-                }
+                width: 33.33%;
             }
         }
     }
 
-    &.fan {
-        .clube-coracao-img {
-            border-color: $secondary-01;
+    @include xxs {
+        &-list {
 
-            i {
-                background-color: $secondary-01;
+            li {
+                width: 50%;
             }
         }
     }
 }
+
+.pg-clube-coracao.fan {
+    .clube-coracao-img {
+        border-color: $secondary-01;
+
+        i {
+            background-color: $secondary-01;
+        }
+    }
+}
+
 
 .modal-clubes {
     .modal-dialog {
@@ -281,13 +280,6 @@
                 }
             }
 
-            @include xxl {
-                padding: .4rem;
-
-                label {
-                    padding: .8rem;
-                }
-            }
 
             @include md {
                 margin: .4rem 0;
