@@ -1,6 +1,19 @@
 .pg-criar-conta {
     text-align: center;
 
+    .navbar {
+        &-item {
+            a {
+                font-weight: 400;
+
+                strong {
+                    font-weight: 900;
+                    margin-left: .4rem;
+                }
+            }
+        }
+    }
+
     .clube-coracao {
         width: 100%;
         margin-bottom: 1.6rem;
@@ -15,15 +28,21 @@
 
         &-img {
             margin-bottom: 1.6rem;
+
+            border-color: var(--color-clube);
+
+            i {
+                background-color: var(--color-clube);
+            }
         }
 
-        // p {
-        //     text-align: center;
-        // }
+        p {
+            text-align: center;
+        }
 
         h4 {
             color: $gray-04;
-            // text-align: center;
+            text-align: center;
         }
     }
 
@@ -54,6 +73,15 @@
             height: auto;
             max-height: 8rem;
             max-width: 100%;
+        }
+    }
+
+    &.socio {
+        .clube-coracao {
+
+            h4 {
+                color: var(--color-clube);
+            }
         }
     }
 }

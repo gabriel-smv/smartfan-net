@@ -15336,6 +15336,15 @@ header.socio .btn-fan i span {
   text-align: center;
 }
 
+.pg-criar-conta .navbar-item a {
+  font-weight: 400;
+}
+
+.pg-criar-conta .navbar-item a strong {
+  font-weight: 900;
+  margin-left: .4rem;
+}
+
 .pg-criar-conta .clube-coracao {
   width: 100%;
   margin-bottom: 1.6rem;
@@ -15347,10 +15356,20 @@ header.socio .btn-fan i span {
 
 .pg-criar-conta .clube-coracao-img {
   margin-bottom: 1.6rem;
+  border-color: var(--color-clube);
+}
+
+.pg-criar-conta .clube-coracao-img i {
+  background-color: var(--color-clube);
+}
+
+.pg-criar-conta .clube-coracao p {
+  text-align: center;
 }
 
 .pg-criar-conta .clube-coracao h4 {
   color: #737A83;
+  text-align: center;
 }
 
 .pg-criar-conta .seguir-clubes {
@@ -15381,6 +15400,10 @@ header.socio .btn-fan i span {
   height: auto;
   max-height: 8rem;
   max-width: 100%;
+}
+
+.pg-criar-conta.socio .clube-coracao h4 {
+  color: var(--color-clube);
 }
 
 .pg-grupos .modal {

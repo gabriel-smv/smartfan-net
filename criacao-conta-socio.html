@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <main>
+    <main style="--color-clube:#04b46b;">
         <section class="banner-fan registo">
             <div class="container">
                 <div class="row">
@@ -49,7 +49,7 @@
 
             <div class="container">
                 <div class="row">
-                    <nav class="navbar col-12">
+                    <nav class="navbar pg-criar-conta col-12">
                         <ul class="navbar-list">
                             <li class="navbar-item">
                                 <a href="criacao-conta-fan.html">
@@ -67,13 +67,14 @@
                         </ul>
                     </nav>
 
-                    <section class="pg-padrao pg-criar-conta">
+                    <section class="pg-padrao pg-criar-conta socio">
                         <div class="content-wrapper">
                             <h2>Registo como sócio</h2>
 
                             <div class="clube-coracao">
-                                <h3>Qual o teu clube do coração?</h3>
-                                <p>Se preferires, podes escolher mais tarde</p>
+                                <h3>És sócio de que clube?</h3>
+                                <p>Dado obrigatório para conta como sócio</p>
+
                                 <div class="clube-coracao-img">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#clube-coracao">
                                         <!-- <span class="icon-add"></span> -->
@@ -260,6 +261,156 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-clubes modal fade" id="clube-coracao" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Clube que és sócio</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <span class="icon-close"></span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <ul class="modal-clubes-list">
+                        <li>
+                            <input type="radio" name="clube-coracao" id="boavista-fc">
+                            <label for="boavista-fc">
+                                <img src="images/boavista-fc.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="cd-nacional">
+                            <label for="cd-nacional">
+                                <img src="images/cd-nacional.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="fc-porto">
+                            <label for="fc-porto">
+                                <img src="images/fc-porto.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="gilvicente-fc">
+                            <label for="gilvicente-fc">
+                                <img src="images/gilvicente-fc.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="belenenses-sad">
+                            <label for="belenenses-sad">
+                                <img src="images/belenenses-sad.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="rioave-fc">
+                            <label for="rioave-fc">
+                                <img src="images/rioave-fc.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="sc-braga">
+                            <label for="sc-braga">
+                                <img src="images/sc-braga.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="sporting-cp">
+                            <label for="sporting-cp">
+                                <img src="images/sporting-cp.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="vitoria-sc">
+                            <label for="vitoria-sc">
+                                <img src="images/vitoria-sc.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="estoril-praia">
+                            <label for="estoril-praia">
+                                <img src="images/estoril-praia.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="gd-chaves">
+                            <label for="gd-chaves">
+                                <img src="images/gd-chaves.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="sc-covilha">
+                            <label for="sc-covilha">
+                                <img src="images/sc-covilha.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="varzim-sc">
+                            <label for="varzim-sc">
+                                <img src="images/varzim-sc.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+
+                        <li>
+                            <input type="radio" name="clube-coracao" id="vitoria-fc">
+                            <label for="vitoria-fc">
+                                <img src="images/vitoria-fc.png" alt="">
+
+                                <i><span class="icon-heart"></span></i>
+                            </label>
+                        </li>
+                    </ul>
+
+                    <div class="container-btn">
+                        <a href="#" class="btn btn-secondary">
+                            <i><span class="icon-heart"></span></i>
+                            Escolher Clube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery, Bootstrap JS -->
     <script src="includes/jquery.min.js"></script>
