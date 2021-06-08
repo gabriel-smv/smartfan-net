@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .container,
 .container-fluid,
 .container-sm,
@@ -15902,6 +15903,207 @@ header.socio .btn-fan i span {
     min-width: auto;
     width: 32rem;
   }
+}
+
+.pg-login {
+  height: auto;
+  min-height: 100vh;
+  padding-top: 12rem;
+  padding-bottom: 24rem;
+  background-image: url("../images/login-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.pg-login .form-bg {
+  width: 100%;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0, 28, 77, 0.5);
+  pointer-events: none;
+}
+
+.pg-login .form-bg img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1150px) {
+  .pg-login .form-bg {
+    height: 54rem;
+  }
+  .pg-login .form-bg img {
+    height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-login .form-bg {
+    height: 72rem;
+  }
+}
+
+.pg-login .row {
+  justify-content: center;
+}
+
+.pg-login .column-01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-content: flex-end;
+  z-index: 1;
+  padding: 0 8rem;
+}
+
+.pg-login .column-01 h1 {
+  width: 75%;
+  font-family: "Anton", sans-serif;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1400px) {
+  .pg-login .column-01 h1 {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .pg-login .column-01 {
+    padding: 0;
+    margin-bottom: 3.2rem;
+  }
+  .pg-login .column-01 h1 {
+    width: 100%;
+    font-size: 4.8rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: center;
+  }
+}
+
+.pg-login .column-02 {
+  background-color: #ffffff;
+  padding: 3.2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.pg-login .column-02 h2 {
+  font-size: 3rem;
+  color: #021D43;
+  text-align: center;
+}
+
+.pg-login .column-02 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-login .column-02 form .container-input {
+  padding: .8rem 0 1.6rem;
+}
+
+.pg-login .column-02 form .btn-link {
+  margin: 1.6rem 0;
+}
+
+.pg-login .column-02 form .btn {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+
+.pg-login .column-02 .registo-wrapper {
+  width: 100%;
+  margin-top: 3.2rem;
+  padding-top: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+.pg-login .column-02 .registo-wrapper h3 {
+  color: #263F62;
+  text-align: center;
+}
+
+.pg-login .column-02 .registo-wrapper .btn {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+
+.pg-login .column-02 .registo-wrapper::before {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  right: 25%;
+  bottom: auto;
+  left: auto;
+}
+
+.pg-login .column-02 .forma-login {
+  width: 100%;
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  transform: translateY(calc(100% + .8rem));
+}
+
+.pg-login .column-02 .forma-login img {
+  width: 100%;
+}
+
+.pg-login .footer-login {
+  width: 100%;
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: auto;
+  z-index: 8;
+}
+
+.pg-login .footer-login a {
+  height: 3.2rem;
+}
+
+.pg-login .footer-login a img {
+  height: 100%;
 }
 
 .pg-pagar-quotas .cbx-label span.cbx-area-select::before {

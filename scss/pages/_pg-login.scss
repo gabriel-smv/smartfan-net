@@ -1,0 +1,165 @@
+.pg-login {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 12rem;
+    padding-bottom: 24rem;
+
+    background-image: url('../images/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    position: relative;
+
+    .form-bg {
+        width: 100%;
+        @include absolute(auto, auto, 0, 0);
+        z-index: 0;
+        background-color: rgba(0, 28, 77, .5);
+
+        pointer-events: none;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        @include mlg {
+            height: 54rem;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        @include md {
+            height: 72rem;
+        }
+    }
+
+    .row {
+        justify-content: center;
+    }
+
+    .column-01 {
+        @include flex(row, flex-start, flex-end, flex-end);
+        z-index: 1;
+        padding: 0 8rem;
+
+        h1 {
+            width: 75%;
+            font-family: $font-02;
+            @include font(8rem, 400, 1.2em);
+            color: $white-01;
+            text-transform: uppercase;
+        }
+
+        @include xxl {
+            h1 {
+                width: 90%;
+            }
+        }
+
+        @include md {
+            padding: 0;
+            margin-bottom: 3.2rem;
+
+            h1 {
+                width: 100%;
+                @include font(4.8rem, 400, 1.2em);
+                text-align: center;
+            }
+        }
+    }
+
+    .column-02 {
+        background-color: $white-01;
+        padding: 3.2rem 4rem;
+        @include flex(column, flex-start, center, center);
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+
+
+        position: relative;
+
+        z-index: 1;
+
+        h2 {
+            font-size: 3rem;
+            color: $primary-01;
+            text-align: center
+        }
+
+        form {
+            @include flex(column, flex-start, center, center);
+
+            .container-input {
+                padding: .8rem 0 1.6rem;
+
+            }
+
+            .btn-link {
+                margin: 1.6rem 0;
+
+            }
+
+            .btn {
+                width: 100%;
+                margin-top: 1.6rem;
+            }
+        }
+
+        .registo-wrapper {
+            width: 100%;
+            margin-top: 3.2rem;
+            padding-top: 2.4rem;
+            @include flex(column, flex-start, center, center);
+
+            position: relative;
+
+            h3 {
+                color: $primary-02;
+                text-align: center
+            }
+
+            .btn {
+                width: 100%;
+                margin-top: 1.6rem;
+            }
+
+            &::before {
+                content: '';
+                width: 50%;
+                height: 1px;
+                background-color: rgba(0, 0, 0, .2);
+                @include absolute(0, 25%, auto, auto);
+            }
+        }
+
+        .forma-login {
+            width: 100%;
+            @include absolute(auto, auto, 0, 0);
+            transform: translateY(calc(100% + .8rem));
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-login {
+        width: 100%;
+        padding: 3.2rem;
+        @include flex(row, center, center, center);
+        @include absolute(auto, 0, 0, auto);
+        z-index: 8;
+
+        a {
+            height: 3.2rem;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+}
