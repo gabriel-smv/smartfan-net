@@ -18,6 +18,10 @@
         width: 100%;
         margin-bottom: 1.6rem;
 
+        h3 {
+            font-size: 2rem;
+        }
+
         a {
             &:hover {
                 span {
@@ -29,10 +33,12 @@
         &-img {
             margin-bottom: 1.6rem;
 
-            border-color: var(--color-clube);
+            // border-color: var(--color-clube);
+            border-color: $secondary-02;
 
             i {
-                background-color: var(--color-clube);
+                // background-color: var(--color-clube);
+                background-color: $secondary-02;
             }
         }
 
@@ -53,6 +59,42 @@
     form {
         .container-input {
             justify-content: space-between;
+
+            .info-cartao {
+                @include absolute(1.6rem, 1.6rem, auto, auto);
+                display: inline-block;
+                cursor: pointer;
+
+                span {
+                    font-size: 2rem;
+                    color: $gray-04;
+                }
+
+                .member-card {
+                    width: 35rem;
+                    height: auto;
+                    z-index: 22;
+                    @include absolute(0, auto, auto, 0);
+                    transform: translate(-100%, 0);
+                    display: none;
+                    transition: all .3s ease-in-out;
+                    animation-name: animation-card;
+                    animation-duration: .4s;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 1rem;
+                    }
+                }
+
+                &:hover {
+                    .member-card {
+                        display: inline-block;
+                        transition: all .3s ease-in-out;
+                    }
+                }
+            }
         }
     }
 

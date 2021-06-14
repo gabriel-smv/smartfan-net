@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <main>
+    <main style="--color-clube:#04b46b;">
         <section class="banner-fan registo">
             <div class="container">
                 <div class="row">
@@ -51,15 +51,15 @@
                 <div class="row">
                     <nav class="navbar pg-criar-conta col-12">
                         <ul class="navbar-list">
-                            <li class="navbar-item active">
+                            <li class="navbar-item">
                                 <a href="criacao-conta-fan.html">
                                     <i><span class="icon-fan-outline"></span></i>
                                     Conta <strong>Adepto</strong>
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
-                                <a href="criacao-conta-socio.html">
+                            <li class="navbar-item active">
+                                <a href="criacao-conta-socio-validar.html">
                                     <i><span class="icon-meus-clubes"></span></i>
                                     Conta <strong>Sócio</strong>
                                 </a>
@@ -67,13 +67,14 @@
                         </ul>
                     </nav>
 
-                    <section class="pg-padrao pg-criar-conta">
+                    <section class="pg-padrao pg-criar-conta socio">
                         <div class="content-wrapper">
-                            <h2>Registo como adepto</h2>
+                            <h2>Registo como sócio</h2>
 
                             <div class="clube-coracao">
-                                <h3>Qual o teu clube do coração?</h3>
-                                <p>Se preferires, podes escolher mais tarde</p>
+                                <h3>És sócio de que clube?</h3>
+                                <p>Dado obrigatório para conta como sócio</p>
+
                                 <div class="clube-coracao-img">
                                     <a href="#" data-bs-toggle="modal" data-bs-target="#clube-coracao">
                                         <!-- <span class="icon-add"></span> -->
@@ -83,137 +84,33 @@
                                     <i><span class="icon-heart"></span></i>
                                 </div>
 
-                                <h4>POR DEFINIR</h4>
+                                <h4>SPORTING CLUBE DE PORTUGAL</h4>
                             </div>
 
-                            <div class="seguir-clubes col-lg-5 col-12">
-                                <h3>Que clubes pretendes seguir?</h3>
-
-                                <ul class="seguir-clubes-list">
-                                    <li class="active">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <!-- <span class="icon-add"></span> -->
-                                            <img src="images/boavista-fc.png" alt="">
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/rioave-fc.png" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#seguir-clubes">
-                                            <span class="icon-add"></span>
-                                            <!-- <img src="images/svg/add.svg" alt=""> -->
-
-                                            <i><span class="icon-like"></span></i>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <h3>Preenche os teus dados</h3>
+                            <h3>Dados de sócio</h3>
                             <form class="col-lg-8 col-12">
-                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label for="email">E-mail*</label>
-                                    <input type="email" name="email" id="email">
+                                <div class="container-input col-lg-6 col-md-6 col-12">
+                                    <label for="socio-number">Nº de sócio*</label>
+                                    <input type="text" name="socio-number" id="socio-number">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
                                 </div>
 
-                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                    <label for="password">Password*</label>
-                                    <input type="password" name="password" id="password">
-                                </div>
+                                <div class="container-input col-lg-6 col-md-6 col-12">
+                                    <label for="last-digit">Últimos 5 dígitos do código de barras*</label>
+                                    <input type="text" class="input-single">
+                                    <input type="text" class="input-single">
+                                    <input type="text" class="input-single">
+                                    <input type="text" class="input-single">
+                                    <input type="text" class="input-single">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
 
-                                <div class="container-input col-lg-4 col-md-4 col-12">
-                                    <label for="name">Nome*</label>
-                                    <input type="text" name="name" id="name">
-                                </div>
+                                    <i class="info-cartao ">
+                                        <span class="icon-information"></span>
 
-                                <div class="container-input col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label for="sexo">Sexo</label>
-                                    <select name="sexo" id="sexo">
-                                        <option value="">Selecione</option>
-                                        <option value="male">Masculino</option>
-                                        <option value="female">Feminino</option>
-                                        <option value="outro">Outro</option>
-                                    </select>
-                                </div>
-
-                                <div class="container-input col-lg-4 col-md-4 col-sm-6 col-12">
-                                    <label for="birthday">Data de nascimento</label>
-                                    <input type="date" name="birthday" id="birthday" placeholder="Default input">
+                                        <div class="member-card">
+                                            <img src="images/memberCard.png" alt="">
+                                        </div>
+                                    </i>
                                 </div>
 
                                 <p class="form-aviso">*Dados de preenchimento obrigatório</p>
@@ -223,10 +120,10 @@
                                 </div>
 
                                 <div class="container-btn">
-                                    <div class="btn btn-primary">
-                                        <i><span class="icon-fan-fill"></span></i>
-                                        Criar conta
-                                    </div>
+                                    <a href="criacao-conta-socio.html" class="btn btn-primary">
+                                        <i><span class="icon-meus-clubes"></span></i>
+                                        Validar
+                                    </a>
                                 </div>
                             </form>
                         </div>
@@ -379,7 +276,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2>Clube do coração</h2>
+                    <h2>Clube que és sócio</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <span class="icon-close"></span>
                     </button>
@@ -518,174 +415,6 @@
                         <a href="#" class="btn btn-secondary">
                             <i><span class="icon-heart"></span></i>
                             Escolher Clube
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal-clubes modal fade" id="seguir-clubes" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h2>Seguir outros clubes</h2>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <span class="icon-close"></span>
-                    </button>
-                </div>
-
-                <div class="modal-body">
-                    <ul class="modal-clubes-list">
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-boavista-fc">
-                            <label for="seguir-boavista-fc">
-                                <img src="images/boavista-fc.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-cd-nacional">
-                            <label for="seguir-cd-nacional">
-                                <img src="images/cd-nacional.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-fc-porto">
-                            <label for="seguir-fc-porto">
-                                <img src="images/fc-porto.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-gilvicente-fc">
-                            <label for="seguir-gilvicente-fc">
-                                <img src="images/gilvicente-fc.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-belenenses-sad">
-                            <label for="seguir-belenenses-sad">
-                                <img src="images/belenenses-sad.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-rioave-fc">
-                            <label for="seguir-rioave-fc">
-                                <img src="images/rioave-fc.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-sc-braga">
-                            <label for="seguir-sc-braga">
-                                <img src="images/sc-braga.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-sporting-cp">
-                            <label for="seguir-sporting-cp">
-                                <img src="images/sporting-cp.png" alt="">
-
-                                <i><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-vitoria-sc">
-                            <label for="seguir-vitoria-sc">
-                                <img src="images/vitoria-sc.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-estoril-praia">
-                            <label for="seguir-estoril-praia">
-                                <img src="images/estoril-praia.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-gd-chaves">
-                            <label for="seguir-gd-chaves">
-                                <img src="images/gd-chaves.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-sc-covilha">
-                            <label for="seguir-sc-covilha">
-                                <img src="images/sc-covilha.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-varzim-sc">
-                            <label for="seguir-varzim-sc">
-                                <img src="images/varzim-sc.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="clube-coracao" id="seguir-vitoria-fc">
-                            <label for="seguir-vitoria-fc">
-                                <img src="images/vitoria-fc.png" alt="">
-
-                                <i><span class="icon-like"></span></i>
-                                <i class="clube-coracao-icon"><span class="icon-heart"></span></i>
-                            </label>
-                        </li>
-                    </ul>
-
-                    <div class="container-btn">
-                        <a href="#" class="btn btn-secondary">
-                            <i><span class="icon-like"></span></i>
-                            Seguir Clube
-                        </a>
-
-                        <a href="#" class="btn btn-secondary">
-                            <i><span class="icon-dislike"></span></i>
-                            Não seguir Clube
                         </a>
                     </div>
                 </div>

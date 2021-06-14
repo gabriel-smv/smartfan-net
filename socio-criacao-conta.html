@@ -59,7 +59,7 @@
                             </li>
 
                             <li class="navbar-item active">
-                                <a href="criacao-conta-socio.html">
+                                <a href="criacao-conta-socio-validar.html">
                                     <i><span class="icon-meus-clubes"></span></i>
                                     Conta <strong>Sócio</strong>
                                 </a>
@@ -72,35 +72,48 @@
                             <h2>Registo como sócio</h2>
 
                             <div class="clube-coracao">
-                                <h3>És sócio de que clube?</h3>
-                                <p>Dado obrigatório para conta como sócio</p>
-
                                 <div class="clube-coracao-img">
-                                    <a href="#" data-bs-toggle="modal" data-bs-target="#clube-coracao">
-                                        <!-- <span class="icon-add"></span> -->
+                                    <div>
                                         <img src="images/sporting-cp.png" alt="">
-                                    </a>
+                                    </div>
 
                                     <i><span class="icon-heart"></span></i>
                                 </div>
 
                                 <h4>SPORTING CLUBE DE PORTUGAL</h4>
+                                <p>Sócio nº: <span>2837</span></p>
                             </div>
 
-                            <h3>Dados de sócio</h3>
-                            <form class="col-lg-8 col-12">
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="socio-number">Nº de sócio*</label>
-                                    <input type="text" name="socio-number" id="socio-number">
+                            <h3>Insere o teu e-mail e password</h3>
+                            <form class="col-lg-6 col-12">
+                                <div class="container-input col-lg-4 col-md-6 col-12">
+                                    <label for="socio-name">Nome*</label>
+                                    <input type="text" name="socio-name" id="socio-name">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                </div>
+
+                                <div class="container-input col-lg-8 col-md-6 col-12">
+                                    <label for="socio-lastname">Sobrenome*</label>
+                                    <input type="text" name="socio-lastname" id="socio-lastname">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                </div>
+
+                                <div class="container-input col-lg-12 col-12">
+                                    <label for="socio-email">E-mail*</label>
+                                    <input type="email" name="socio-email" id="socio-email">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
                                 </div>
 
                                 <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="last-digit">Últimos 5 dígitos do código de barras*</label>
-                                    <input type="text" class="input-single">
-                                    <input type="text" class="input-single">
-                                    <input type="text" class="input-single">
-                                    <input type="text" class="input-single">
-                                    <input type="text" class="input-single">
+                                    <label for="socio-password">Password*</label>
+                                    <input type="password" name="socio-password" id="socio-password">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
+                                </div>
+
+                                <div class="container-input col-lg-6 col-md-6 col-12">
+                                    <label for="socio-confirm-password">Confirma a password*</label>
+                                    <input type="password" name="socio-confirm-password" id="socio-confirm-password">
+                                    <span class="input-validate" style="display: none;">Obrigatório*</span>
                                 </div>
 
                                 <p class="form-aviso">*Dados de preenchimento obrigatório</p>
@@ -110,10 +123,10 @@
                                 </div>
 
                                 <div class="container-btn">
-                                    <div class="btn btn-primary">
+                                    <a href="socio-dados.html" class="btn btn-primary">
                                         <i><span class="icon-meus-clubes"></span></i>
                                         Criar conta
-                                    </div>
+                                    </a>
                                 </div>
                             </form>
                         </div>

@@ -361,35 +361,35 @@
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
                             <li class="navbar-item">
-                                <a href="ateu-dados.html">
+                                <a href="fan-dados.html">
                                     <i><span class="icon-user"></span></i>
                                     Os teus dados
                                 </a>
                             </li>
 
                             <li class="navbar-item">
-                                <a href="#">
+                                <a href="fan-clube-coracao.html">
                                     <i><span class="icon-heart"></span></i>
                                     Clube do coração
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
-                                <a href="pg-registo-atividades.html">
+                            <li class="navbar-item active">
+                                <a href="fan-pg-registo-atividades">
                                     <i><span class="icon-registo-atividades"></span></i>
                                     Registo de actividade
                                 </a>
                             </li>
 
-                            <li class="navbar-item active">
-                                <a href="pg-grupo-fan.html">
+                            <li class="navbar-item">
+                                <a href="fan-pg-grupo-fan.html">
                                     <i><span class="icon-grupo"></span></i>
                                     Grupo de amigos
                                 </a>
                             </li>
 
                             <li class="navbar-item">
-                                <a href="pg-alertas-notificacoes-fan.html">
+                                <a href="fan-pg-alertas-notificacoes-fan.html">
                                     <i><span class="icon-mensagem"></span></i>
                                     Alertas / Notificações
                                 </a>
@@ -408,41 +408,41 @@
                                 aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
-                                <i><span class="icon-grupo"></span></i>
-                                Grupo de amigos
+                                <i><span class="icon-registo-atividades"></span></i>
+                                Registo de actividade
                             </h2>
 
                             <ul class="navbar-mobile-dropdown dropdown-menu">
                                 <li class="navbar-item">
-                                    <a href="ateu-dados.html">
+                                    <a href="fan-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         Os teus dados
                                     </a>
                                 </li>
 
                                 <li class="navbar-item">
-                                    <a href="#">
+                                    <a href="fan-clube-coracao.html">
                                         <i><span class="icon-heart"></span></i>
                                         Clube do coração
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
-                                    <a href="pg-registo-atividades.html">
+                                <li class="navbar-item active">
+                                    <a href="fan-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         Registo de actividade
                                     </a>
                                 </li>
 
-                                <li class="navbar-item active">
-                                    <a href="pg-grupo-fan.html">
+                                <li class="navbar-item">
+                                    <a href="fan-pg-grupo.html">
                                         <i><span class="icon-grupo"></span></i>
                                         Grupo de amigos
                                     </a>
                                 </li>
 
                                 <li class="navbar-item">
-                                    <a href="pg-alertas-notificacoes-fan.html">
+                                    <a href="fan-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         Alertas / Notificações
                                     </a>
@@ -458,182 +458,327 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-grupos">
+                    <section class="pg-padrao pg-registo-atividades">
                         <div class="content-wrapper">
-                            <a href="pg-area-fan.html" class="btn-voltar-cards">
-                                <i><span class="icon-back-cards"></span></i> Área de Fan
+                            <a href="pg-area-socio.html" class="btn-voltar-cards">
+                                <i><span class="icon-back-cards"></span></i> Voltar
                             </a>
 
-                            <h2>Grupo de amigos</h2>
-                            <h5>
-                                Nesta área podes adicionar amigos, dado a possibilidade de gerires a compra de bilhetes
-                                dos teus amigos e familiares.
-                            </h5>
+                            <h2>Registo de actividade</h2>
 
-                            <div class="grupo-list-empty" style="display: none;">
-                                <img src="images/svg/folder.svg" alt="">
-                                <p>Não tens grupo criado</p>
-                            </div>
+                            <section class="tabs tabs-atividades col-lg-8 col-12">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab"
+                                            data-bs-target="#pagamentos" type="button" role="tab" aria-selected="true">
+                                            <div class="area-select"></div>
+                                            <span>Os meus pagamentos</span>
+                                            <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false"><span class="icon-arrow-down"></span></a>
 
-                            <ul class="grupo-list">
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                                <li><a class="dropdown-item" href="#">Loja</a></li>
+                                                <li><a class="dropdown-item" href="#">Bilhetes</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Grupo</a></li>
+                                            </ul>
+                                        </button>
+                                    </li>
 
-                                <li class="dropdown">
-                                    <div class="grupo-img">
-                                        <img src="images/svg/grupo-item.svg" alt="">
-                                        <a href="#" class="delete-grupo"><i><span class="icon-trash"></span></i></a>
-                                    </div>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#actividade"
+                                            type="button" role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>A minha actividade</span>
+                                        </button>
+                                    </li>
 
-                                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" aria-expanded="false">
-                                        <span>Amigos</span> <i><span class="icon-arrow-down"></span></i>
-                                    </a>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bilhetes"
+                                            type="button" role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>Os meus bilhetes</span>
+                                        </button>
+                                    </li>
+                                </ul>
 
-                                    <div class="grupo-dropdown dropdown-menu">
-                                        <!-- Nav tabs -->
-                                        <ul class="nav nav-tabs" id="myTab">
-                                            <li class="nav-item">
-                                                <button class="nav-link active" data-bs-toggle="tab"
-                                                    data-bs-target="#grupo1-socio" type="button" role="tab"
-                                                    aria-controls="grupo1-socio" aria-selected="true">
-                                                    <i><span class="icon-grupo"></span></i> Amigos
-                                                </button>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="pagamentos" role="tabpanel">
+                                        <ul class="pagamentos-list">
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-ticket-outline"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra de bilhete futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Sporting CP</span> x <span>Rio Ave FC</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>6 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>20,00</span>€
+                                                </div>
                                             </li>
 
-                                            <li class="nav-item">
-                                                <button class="nav-link" data-bs-toggle="tab"
-                                                    data-bs-target="#grupo1-perfil" type="button" role="tab"
-                                                    aria-controls="grupo1-perfil" aria-selected="false">
-                                                    <i><span class="icon-config"></span></i> Perfil
-                                                </button>
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-ticket-outline"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra de bilhete futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>29 mar 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>20,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-store"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra na loja</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Camisola Sporting época 2020/2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>23 fev 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>30,00</span>€
+                                                </div>
                                             </li>
                                         </ul>
-
-                                        <!-- Tab panes -->
-                                        <div class="tab-content">
-                                            <div class="tab-pane fade show active" id="grupo1-socio" role="tabpanel">
-                                                <ul class="socios-grupo">
-                                                    <li>
-                                                        ID nº <span>2345434.8</span>,
-                                                        <span>antonio.precatado@smartmove.pt</span>
-                                                    </li>
-                                                    <li>
-                                                        ID nº <span> 2743234.2</span>,
-                                                        <span>rui.precatado@smartmove.pt</span>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="container-btn">
-                                                    <a href="#" class="btn-edit">
-                                                        <i><span class="icon-add"></span></i> Editar grupo
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                            <div class="tab-pane fade" id="grupo1-perfil" role="tabpanel">
-                                                <ul class="perfil-grupo">
-                                                    <li>
-                                                        <i><span class="icon-ticket-outline"></span></i>
-                                                        <span>Compra de bilhetes</span>
-                                                    </li>
-                                                </ul>
-
-                                                <div class="container-btn">
-                                                    <a href="#" class="btn-edit">
-                                                        <i><span class="icon-add"></span></i> Editar grupo
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                </li>
 
-                            </ul>
-
-                            <div class="container-btn">
-                                <a class="btn btn-secondary no-round" data-bs-toggle="modal" href="#modal-grupo">
-                                    Criar grupo
-                                </a>
-                            </div>
-
-                            <div class="modal fade" id="modal-grupo" tabindex="-1" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h2>Criação de grupo</h2>
-                                            <button type="button" class="btn-close" data-dismiss="modal"
-                                                aria-label="Close"><span class="icon-close"></span></button>
-                                        </div>
-
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <label for="nome-grupo">Qual é o nome do grupo?</label>
-                                                    <input type="text" name="nome-grupo" id="nome-grupo">
+                                    <div class="tab-pane" id="actividade" role="tabpanel">
+                                        <ul class="atividades-list">
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-fan-fill"></span></i>
+                                                    Criação de conta <span>Adepto</span>
                                                 </div>
 
-                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <label for="atividade-grupo">Para que serve o grupo?</label>
-                                                    <a href="#" class="input-select dropdown-toggle"
-                                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                                        <span>Insere a(s) actividade(s)</span>
-                                                        <i><span class="icon-arrow-down"></span></i>
+                                                <div class="atividades-date">
+                                                    4 dez 2020
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-grupo"></span></i>
+                                                    Criação de grupo <span>Família</span>
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    8 dez 2020
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-fan-fill"></span></i>
+                                                    Alteração de perfil
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    12 jan 2021
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-heart"></span></i>
+                                                    Clube do coração <span>Sporting CP</span>
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    23 mar 2021
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-like"></span></i>
+                                                    Seguir <span>Rio-Ave FC</span>
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    23 mar 2021
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-like"></span></i>
+                                                    Seguir <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    23 mar 2021
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-pane" id="bilhetes" role="tabpanel">
+                                        <ul class="bilhetes-list">
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
                                                     </a>
-
-                                                    <ul class="dropdown-menu dropdown-menu-end">
-
-                                                        <li>
-                                                            <input type="checkbox" class="cbx" name="comprar-bilhetes"
-                                                                id="comprar-bilhetes">
-                                                            <label for="comprar-bilhetes" class="cbx-label">
-                                                                <span class="cbx-area-select"></span>
-                                                                <span>Compra de bilhetes</span>
-                                                            </label>
-                                                        </li>
-
-                                                    </ul>
-                                                </div>
-                                            </form>
-
-                                            <ul class="grupo-membros">
-                                                <li>
-                                                    <p>
-                                                        <span>antonio.precatado@smartmove.pt</span>, Sócio nº
-                                                        <span>1234567.9</span>
-                                                    </p>
-
-                                                    <a href="#"><i><span class="icon-trash"></span></i></a>
-                                                </li>
-                                            </ul>
-
-                                            <h3>Inserir sócios</h3>
-
-                                            <form class="form-inserir-membro">
-                                                <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                                    <label for="email-socio">E-mail do amigos</label>
-                                                    <input type="email" name="email-socio" id="email-socio">
                                                 </div>
 
-                                                <div class="container-input col-lg-5 col-md-5 col-sm-5 col-9">
-                                                    <label for="number-socio">Nome do amigo</label>
-                                                    <input type="text" name="number-socio" id="number-socio">
+                                                <div class="bilhetes-event">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
                                                 </div>
 
-                                                <div class="btn-add-member col-lg-1 col-md-1 col-sm-1 col-3">
-                                                    <a href="#"><i><span class="icon-add-member"></span></i></a>
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Futebol</span>
                                                 </div>
-                                            </form>
 
-                                            <p class="grupo-aviso">
-                                                Será enviado a todos os sócio um e-mail. O grupo só será activado assim
-                                                que todos os sócios do grupo aceitem via e-mail todas as condições
-                                                inerentes ao grupo criado.
-                                            </p>
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
 
-                                            <a href="#" class="btn btn-secondary no-round">Criar grupo</a>
-                                        </div>
+                                                <div class="bilhetes-date">
+                                                    4 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>30,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Andebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    8 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>30,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>SC Braga</span> x <span>Sporting CP</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Futebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    11 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>25,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>Sporting CP</span> x <span>Vitória FC</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Basquetebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    24 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>10,00</span>€
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </section>
+
                         </div>
                     </section>
                 </div>

@@ -206,5 +206,14 @@
 
             }
         }
+
+        form {
+            .container-input {
+                .btn-link {
+                    margin-bottom: 0;
+                    @include absolute(auto, 0, 0, auto);
+                }
+            }
+        }
     }
 }

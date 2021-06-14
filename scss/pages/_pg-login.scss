@@ -98,6 +98,10 @@
 
             }
 
+            span.input-validate {
+                @include absolute(auto, 0, 0, auto);
+            }
+
             .btn-link {
                 margin: 1.6rem 0;
 

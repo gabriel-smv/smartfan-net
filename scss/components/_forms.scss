@@ -48,6 +48,17 @@ form {
         }
     }
 
+    .input-validate {
+        border: 2px solid $secondary-02;
+        color: $secondary-02;
+    }
+
+    span.input-validate {
+        @include font(1.2rem, 400, 1em);
+        @include absolute(auto, auto, 0, 1.6rem);
+        border: none;
+    }
+
     .input-single {
         width: 19%;
         padding: .5rem;
