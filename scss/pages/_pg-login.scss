@@ -113,9 +113,48 @@
             }
         }
 
+        .login-rapido {
+            width: 100%;
+            @include flex(column, flex-start, center, center);
+            padding: 2.4rem 0;
+
+            .container-btn {
+                margin-top: .8rem;
+            }
+
+            .btn {
+                width: auto;
+                padding: 1.2rem;
+                margin: 0 1.6rem;
+
+                i {
+                    margin: 0;
+
+                    img {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+
+            @include xs {
+                .container-btn {
+                    @include flex(row, center, center, center);
+                }
+            }
+
+            @include xxs {
+                .btn {
+                    margin: 0 .8rem;
+                }
+            }
+        }
+
         .registo-wrapper {
             width: 100%;
-            margin-top: 3.2rem;
+            margin-top: .8rem;
             padding-top: 2.4rem;
             @include flex(column, flex-start, center, center);
 

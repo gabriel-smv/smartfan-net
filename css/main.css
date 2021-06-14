@@ -15481,6 +15481,104 @@ header.socio .btn-fan i span {
   max-width: 100%;
 }
 
+.pg-criar-conta .registo-rapido {
+  padding: 2.4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-criar-conta .registo-rapido .divider {
+  width: 100%;
+  padding: 0 40%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #737A83;
+  display: block;
+  position: relative;
+}
+
+.pg-criar-conta .registo-rapido .divider::before {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: #737A83;
+  position: absolute;
+  top: calc(50% + 1px);
+  right: auto;
+  bottom: auto;
+  left: 0;
+}
+
+.pg-criar-conta .registo-rapido .divider::after {
+  content: '';
+  width: 40%;
+  height: 1px;
+  background-color: #737A83;
+  position: absolute;
+  top: calc(50% + 1px);
+  right: 0;
+  bottom: auto;
+  left: auto;
+}
+
+.pg-criar-conta .registo-rapido .container-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 2.4rem 0;
+}
+
+.pg-criar-conta .registo-rapido .container-btn .btn {
+  margin: .8rem;
+}
+
+.pg-criar-conta .registo-rapido .container-btn .btn i img {
+  height: 3.2rem;
+  width: 3.2rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+.pg-criar-conta .registo-rapido .container-btn .btn:first-child {
+  margin-left: 0;
+}
+
+.pg-criar-conta .registo-rapido .container-btn .btn:last-child {
+  margin-right: 0;
+}
+
+.pg-criar-conta .registo-rapido .container-btn .btn:hover {
+  color: #00122B;
+}
+
+@media (max-width: 992px) {
+  .pg-criar-conta .registo-rapido .container-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+  }
+  .pg-criar-conta .registo-rapido .container-btn .btn {
+    width: 80%;
+    margin: .8rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .pg-criar-conta .registo-rapido .container-btn .btn {
+    width: 100%;
+  }
+}
+
 .pg-criar-conta.socio .clube-coracao h4 {
   color: var(--color-clube);
 }
@@ -16120,9 +16218,56 @@ header.socio .btn-fan i span {
   margin-top: 1.6rem;
 }
 
+.pg-login .column-02 .login-rapido {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  padding: 2.4rem 0;
+}
+
+.pg-login .column-02 .login-rapido .container-btn {
+  margin-top: .8rem;
+}
+
+.pg-login .column-02 .login-rapido .btn {
+  width: auto;
+  padding: 1.2rem;
+  margin: 0 1.6rem;
+}
+
+.pg-login .column-02 .login-rapido .btn i {
+  margin: 0;
+}
+
+.pg-login .column-02 .login-rapido .btn i img {
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  object-position: center;
+}
+
+@media (max-width: 575px) {
+  .pg-login .column-02 .login-rapido .container-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .pg-login .column-02 .login-rapido .btn {
+    margin: 0 .8rem;
+  }
+}
+
 .pg-login .column-02 .registo-wrapper {
   width: 100%;
-  margin-top: 3.2rem;
+  margin-top: .8rem;
   padding-top: 2.4rem;
   display: flex;
   flex-direction: column;

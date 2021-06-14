@@ -118,6 +118,85 @@
         }
     }
 
+    .registo-rapido {
+        padding: 2.4rem 0;
+        @include flex(column, flex-start, center, center);
+
+
+        .divider {
+            width: 100%;
+            padding: 0 40%;
+            @include font(1.6rem, 400, 1.2em);
+            color: $gray-04;
+            display: block;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 40%;
+                height: 1px;
+                background-color: $gray-04;
+                @include absolute(calc(50% + 1px), auto, auto, 0);
+            }
+
+            &::after {
+                content: '';
+                width: 40%;
+                height: 1px;
+                background-color: $gray-04;
+                @include absolute(calc(50% + 1px), 0, auto, auto);
+            }
+        }
+
+        .container-btn {
+            width: 100%;
+            @include flex(row, center, center, center);
+            flex-wrap: wrap;
+            padding: 2.4rem 0;
+
+            .btn {
+                margin: .8rem;
+
+                i {
+                    img {
+                        height: 3.2rem;
+                        width: 3.2rem;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    color: $black-02;
+                }
+            }
+
+            @include md {
+                @include flex(column, flex-start, center, center);
+
+                .btn {
+                    width: 80%;
+                    margin: .8rem 0;
+                }
+            }
+
+            @include xs {
+
+                .btn {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     &.socio {
         .clube-coracao {
 
