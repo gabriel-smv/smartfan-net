@@ -1,0 +1,26 @@
+.pg-feedback {
+    i {
+        width: 7.2rem;
+        height: 7.2rem;
+        margin-bottom: 2.4rem;
+        display: inline-block;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    h2 {
+        line-height: 1.1em;
+        margin-bottom: 1.6rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .btn {
+        margin-top: 1.6rem;
+    }
+}

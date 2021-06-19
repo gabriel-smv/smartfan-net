@@ -15583,6 +15583,31 @@ header.socio .btn-fan i span {
   color: var(--color-clube);
 }
 
+.pg-feedback i {
+  width: 7.2rem;
+  height: 7.2rem;
+  margin-bottom: 2.4rem;
+  display: inline-block;
+}
+
+.pg-feedback i img {
+  height: 100%;
+  width: 100%;
+}
+
+.pg-feedback h2 {
+  line-height: 1.1em;
+  margin-bottom: 1.6rem;
+}
+
+.pg-feedback p {
+  text-align: center;
+}
+
+.pg-feedback .btn {
+  margin-top: 1.6rem;
+}
+
 .pg-grupos .modal {
   z-index: 9999;
   background: rgba(0, 0, 0, 0.6);
