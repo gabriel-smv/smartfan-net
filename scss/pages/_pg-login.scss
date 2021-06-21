@@ -2,7 +2,7 @@
     height: auto;
     min-height: 100vh;
     padding-top: 12rem;
-    padding-bottom: 24rem;
+    padding-bottom: 8rem;
 
     background-image: url('../images/login-bg.jpg');
     background-repeat: no-repeat;
@@ -190,6 +190,73 @@
         }
     }
 
+    .vantagens {
+        z-index: 99;
+        position: relative;
+        padding: 12rem 0 .8rem;
+
+        .row {
+            @include flex(column, flex-start, center, center);
+        }
+
+        h1 {
+            width: auto;
+
+            font-family: $font-02;
+            @include font(3.2rem, 400, 1.2em);
+            text-align: center;
+            text-transform: uppercase;
+            color: $white-01;
+
+            background-color: $primary-01;
+            padding: .8rem;
+            border-radius: .8rem;
+        }
+
+        &-list {
+            @include flex(row, center, center, center);
+            flex-wrap: wrap;
+            padding: 1.6rem 0;
+
+            li {
+                @include flex(column, flex-start, center, center);
+                margin: .8rem 2.4rem;
+
+                i {
+                    width: 10.4rem;
+                    height: 10.4rem;
+                    background-color: $primary-01;
+                    @include flex(row, center, center, center);
+                    position: relative;
+                    border-radius: 50%;
+
+                    span {
+                        color: $white-01;
+                        font-size: 7.2rem;
+                    }
+
+                    .check {
+                        width: 3.2rem;
+                        height: 3.2rem;
+                        padding: .4rem;
+                        @include absolute(0, 0, auto, auto);
+                        @include flex(row, center, center, center);
+                        background-color: $secondary-02;
+                        border-radius: 50%;
+                    }
+                }
+
+                h2 {
+                    font-family: $font-02;
+                    @include font(2.2rem, 400, 1.2em);
+                    color: $white-01;
+                    text-transform: uppercase;
+                    margin-top: .8rem;
+                }
+            }
+        }
+    }
+
     .footer-login {
         width: 100%;
         padding: 3.2rem;
@@ -198,7 +265,7 @@
         z-index: 8;
 
         a {
-            height: 3.2rem;
+            height: 2.4rem;
 
             img {
                 height: 100%;

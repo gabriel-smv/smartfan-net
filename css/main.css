@@ -9752,6 +9752,38 @@ div[smv-type="widgetcontainer"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-aviso-notificacao:before {
+  content: "\e946";
+}
+
+.icon-check:before {
+  content: "\e945";
+}
+
+.icon-view:before {
+  content: "\e943";
+}
+
+.icon-shopping-cart:before {
+  content: "\e944";
+}
+
+.icon-loading:before {
+  content: "\e942";
+}
+
+.icon-euro:before {
+  content: "\e941";
+}
+
+.icon-photo:before {
+  content: "\e93f";
+}
+
+.icon-user-fill:before {
+  content: "\e940";
+}
+
 .icon-dislike:before {
   content: "\e93d";
 }
@@ -13632,7 +13664,6 @@ header .logo a {
   height: 4rem;
   display: inline-block;
   padding-right: 2.4rem;
-  border-right: 2px solid #ffffff;
 }
 
 header .logo a img {
@@ -13647,6 +13678,7 @@ header .logo h3 {
   text-transform: uppercase;
   color: #ffffff;
   padding-left: 2.4rem;
+  border-left: 2px solid #ffffff;
 }
 
 header .game-changer {
@@ -13659,7 +13691,7 @@ header .game-changer {
 
 header .game-changer h3 {
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
   text-transform: uppercase;
   color: #ffffff;
@@ -15365,6 +15397,102 @@ header.socio .btn-fan i span {
   left: auto;
 }
 
+.table-vantagens {
+  width: 80%;
+  padding: 1.6rem 4rem;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+.table-vantagens thead th {
+  font-size: 1.6rem;
+}
+
+.table-vantagens tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  border-bottom: 1px solid #737A83;
+}
+
+.table-vantagens th,
+.table-vantagens td {
+  min-height: 5.6rem;
+  width: 15%;
+  padding: 1.2rem;
+  background-color: #ffffff;
+}
+
+.table-vantagens th:first-child,
+.table-vantagens td:first-child {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+}
+
+.table-vantagens th:first-child i,
+.table-vantagens td:first-child i {
+  margin-right: .8rem;
+}
+
+.table-vantagens th:first-child i span,
+.table-vantagens td:first-child i span {
+  font-size: 2.8rem;
+  color: #737A83;
+}
+
+.table-vantagens th .icon-check,
+.table-vantagens td .icon-check {
+  color: #f37402;
+  font-size: 2.8rem;
+}
+
+.table-vantagens td:nth-child(3) {
+  background-color: #F0F4F6;
+}
+
+@media (max-width: 992px) {
+  .table-vantagens {
+    width: 100%;
+  }
+  .table-vantagens th,
+  .table-vantagens td {
+    width: 20%;
+  }
+}
+
+@media (max-width: 575px) {
+  .table-vantagens th,
+  .table-vantagens td {
+    width: 25%;
+  }
+  .table-vantagens th:first-child,
+  .table-vantagens td:first-child {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+}
+
+.table-vantagens .socio .table-vantagens td:nth-child(3) {
+  background-color: #ffffff;
+}
+
+.table-vantagens .socio .table-vantagens td:nth-child(4) {
+  background-color: #F0F4F6;
+}
+
 .pg-criar-conta {
   text-align: center;
 }
@@ -15457,6 +15585,17 @@ header.socio .btn-fan i span {
 .pg-criar-conta form .container-input .info-cartao:hover .member-card {
   display: inline-block;
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 425px) {
+  .pg-criar-conta form .container-input .info-cartao {
+    right: 0;
+  }
+  .pg-criar-conta form .container-input .info-cartao .member-card {
+    width: 32rem;
+    transform: translate(-80%, 30px);
+    animation-name: none;
+  }
 }
 
 .pg-criar-conta .form-aviso {
@@ -16110,7 +16249,7 @@ header.socio .btn-fan i span {
   height: auto;
   min-height: 100vh;
   padding-top: 12rem;
-  padding-bottom: 24rem;
+  padding-bottom: 8rem;
   background-image: url("../images/login-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -16338,6 +16477,99 @@ header.socio .btn-fan i span {
   width: 100%;
 }
 
+.pg-login .vantagens {
+  z-index: 99;
+  position: relative;
+  padding: 12rem 0 .8rem;
+}
+
+.pg-login .vantagens .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.pg-login .vantagens h1 {
+  width: auto;
+  font-family: "Anton", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #021D43;
+  padding: .8rem;
+  border-radius: .8rem;
+}
+
+.pg-login .vantagens-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 1.6rem 0;
+}
+
+.pg-login .vantagens-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: .8rem 2.4rem;
+}
+
+.pg-login .vantagens-list li i {
+  width: 10.4rem;
+  height: 10.4rem;
+  background-color: #021D43;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  border-radius: 50%;
+}
+
+.pg-login .vantagens-list li i span {
+  color: #ffffff;
+  font-size: 7.2rem;
+}
+
+.pg-login .vantagens-list li i .check {
+  width: 3.2rem;
+  height: 3.2rem;
+  padding: .4rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #f37402;
+  border-radius: 50%;
+}
+
+.pg-login .vantagens-list li h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: .8rem;
+}
+
 .pg-login .footer-login {
   width: 100%;
   padding: 3.2rem;
@@ -16355,7 +16587,7 @@ header.socio .btn-fan i span {
 }
 
 .pg-login .footer-login a {
-  height: 3.2rem;
+  height: 2.4rem;
 }
 
 .pg-login .footer-login a img {

@@ -1,3 +1,5 @@
+@import "layout/table-vantagens";
+
 .pg-criar-conta {
     text-align: center;
 
@@ -92,6 +94,16 @@
                     .member-card {
                         display: inline-block;
                         transition: all .3s ease-in-out;
+                    }
+                }
+
+                @include xxs {
+                    right: 0;
+
+                    .member-card {
+                        width: 32rem;
+                        transform: translate(-80%, 30px);
+                        animation-name: none;
                     }
                 }
             }
