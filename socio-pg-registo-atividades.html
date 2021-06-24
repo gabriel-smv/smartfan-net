@@ -12,7 +12,7 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 </head>
 
-<body style="--color-clube:#04b46b;">
+<body class="socio sporting-cp" style="--color-clube:#04b46b;">
     <!-- HEADER / SÓCIO -->
     <header class="socio">
         <div class="container">
@@ -334,20 +334,20 @@
             </div>
         </section>
 
-        <section class="main-content socio">
+        <section class="main-content">
 
             <div class="container">
                 <div class="row">
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
-                            <li class="navbar-item active">
+                            <li class="navbar-item">
                                 <a href="socio-dados.html">
                                     <i><span class="icon-user"></span></i>
                                     Os teus dados
                                 </a>
                             </li>
 
-                            <li class="navbar-item">
+                            <li class="navbar-item active">
                                 <a href="socio-pg-registo-atividades.html">
                                     <i><span class="icon-registo-atividades"></span></i>
                                     Registo de actividade
@@ -381,19 +381,19 @@
                                 aria-expanded="false"><span class="icon-menu"></span></a>
 
                             <h2>
-                                <i><span class="icon-user"></span></i>
-                                Os teus dados
+                                <i><span class="icon-registo-atividades"></span></i>
+                                Registo de actividade
                             </h2>
 
                             <ul class="navbar-mobile-dropdown dropdown-menu">
-                                <li class="navbar-item active">
+                                <li class="navbar-item">
                                     <a href="socio-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         Os teus dados
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
+                                <li class="navbar-item active">
                                     <a href="socio-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         Registo de actividade
@@ -424,156 +424,393 @@
                         </div>
                     </nav>
 
-                    <section class="pg-padrao pg-perfil-socio">
+                    <section class="pg-padrao pg-registo-atividades">
                         <div class="content-wrapper">
                             <a href="../smartfan2.0/socio-pg-area-socio.html" class="btn-voltar-cards">
-                                <i><span class="icon-back-cards"></span></i> Área de Sócio
+                                <i><span class="icon-back-cards"></span></i> Voltar
                             </a>
 
-                            <h2>Os teus dados</h2>
+                            <h2>Registo de actividade</h2>
 
-                            <section class="infos-socio col-lg-8 col-12">
-                                <div class="infos-socio-wrapper">
-                                    <div class="infos-socio-img">
-                                        <img src="images/user-placeholder.png" alt="">
-                                        <i><span class="icon-meus-clubes"></span></i>
+                            <section class="tabs tabs-atividades col-lg-8 col-12">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" data-bs-toggle="tab"
+                                            data-bs-target="#pagamentos" type="button" role="tab" aria-selected="true">
+                                            <div class="area-select"></div>
+                                            <span>Os meus pagamentos</span>
+                                            <a href="#" class="dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false"><span class="icon-arrow-down"></span></a>
+
+                                            <ul class="dropdown-menu dropdown-menu-end">
+                                                <li><a class="dropdown-item" href="#">Todos</a></li>
+                                                <li><a class="dropdown-item" href="#">Loja</a></li>
+                                                <li><a class="dropdown-item" href="#">Quotas</a></li>
+                                                <li><a class="dropdown-item" href="#">Bilhetes</a></li>
+                                                <li><a class="dropdown-item" href="#">Lugar Cativo</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="#">Grupo</a></li>
+                                            </ul>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#actividade"
+                                            type="button" role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>A minha actividade</span>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#bilhetes"
+                                            type="button" role="tab" aria-selected="false">
+                                            <div class="area-select"></div>
+                                            <span>Os meus bilhetes</span>
+                                        </button>
+                                    </li>
+                                </ul>
+
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="pagamentos" role="tabpanel">
+                                        <ul class="pagamentos-list">
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-quotas"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Pagamento de quota <span>dez/2020</span></h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Paga em <span>4 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>5,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-ticket-outline"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra de bilhete futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Sporting CP</span> x <span>Rio Ave FC</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>6 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>20,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-quotas"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Pagamento de quota <span>jan/2021</span></h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Paga em <span>12 jan 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>5,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-ticket-outline"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra de bilhete futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>29 mar 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>20,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-store"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra na loja</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Camisola Sporting época 2020/2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Compra em <span>23 fev 2021</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>30,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="pagamentos-description">
+                                                    <i><span class="icon-lugar-cativo"></span></i>
+                                                    <div class="pagamentos-description-details">
+                                                        <h5>Compra lugar cativo futebol</h5>
+                                                        <a href="#">
+                                                            <span>Ver recibo em PDF</span>
+                                                            <i><span class="icon-pdf-file"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                                <div class="pagamentos-item">
+                                                    <span>Bancada poente</span>, <span>zona A</span>, <span>setor
+                                                        23</span> <span>lugar 20</span>
+                                                </div>
+
+                                                <div class="pagamentos-date">
+                                                    Paga em <span>4 dez 2020</span>
+                                                </div>
+
+                                                <div class="pagamentos-valor">
+                                                    <span>5,00</span>€
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
 
-                                    <div class="infos-socio-details">
-                                        <h3>Neymar Ninja Jr</h3>
-                                        <ul>
+                                    <div class="tab-pane" id="actividade" role="tabpanel">
+                                        <ul class="atividades-list">
                                             <li>
-                                                <h5>ID</h5>
-                                                <span>1234875</span>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-meus-clubes"></span></i>
+                                                    Criação de conta Sócio
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    4 dez 2020
+                                                </div>
                                             </li>
 
                                             <li>
-                                                <h5>Conta</h5>
-                                                <span>SÓCIO</span>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-grupo"></span></i>
+                                                    Criação de grupo Smartmove
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    8 dez 2020
+                                                </div>
                                             </li>
 
                                             <li>
-                                                <h5>Antiguidade</h5>
-                                                <span>Janeiro 2021</span>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-meus-clubes"></span></i>
+                                                    Alteração de perfil
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    12 jan 2021
+                                                </div>
                                             </li>
 
                                             <li>
-                                                <h5>Clube associado</h5>
-                                                <span>Sporting CP</span>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-grupo"></span></i>
+                                                    Removação de grupo Smartmove
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    23 mar 2021
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="atividades-description">
+                                                    <i><span class="icon-grupo"></span></i>
+                                                    Criação de grupo Quotas
+                                                </div>
+
+                                                <div class="atividades-date">
+                                                    23 mar 2021
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="tab-pane" id="bilhetes" role="tabpanel">
+                                        <ul class="bilhetes-list">
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Futebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    4 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>30,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>Sporting CP</span> x <span>Boavista FC</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Andebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    8 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>30,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>SC Braga</span> x <span>Sporting CP</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Futebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    11 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>25,00</span>€
+                                                </div>
+                                            </li>
+
+                                            <li>
+                                                <div class="bilhetes-description">
+                                                    <a href="#">
+                                                        <i><span class="icon-pdf-file"></span></i>
+                                                        Bilhete em PDF
+                                                    </a>
+                                                </div>
+
+                                                <div class="bilhetes-event">
+                                                    <span>Sporting CP</span> x <span>Vitória FC</span>
+                                                </div>
+
+                                                <div class="bilhetes-modalidade">
+                                                    <span>Basquetebol</span>
+                                                </div>
+
+                                                <div class="bilhetes-campeonato">
+                                                    <span>Liga NOS</span>
+                                                </div>
+
+                                                <div class="bilhetes-date">
+                                                    24 dez 2020
+                                                </div>
+
+                                                <div class="bilhetes-valor">
+                                                    <span>10,00</span>€
+                                                </div>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </section>
 
-                            <form class="col-lg-8  col-12">
-
-                                <div class="dados-conta">
-                                    <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label for="email">E-mail</label>
-                                        <input type="email" name="email" id="email" placeholder="Default input"
-                                            disabled>
-                                        <span class="input-validate">Obrigatório*</span>
-
-                                        <a href="#" class="btn-link">Alterar e-mail</a>
-                                    </div>
-
-                                    <div class="container-input col-lg-6 col-md-6 col-sm-6 col-12">
-                                        <label for="password">Password</label>
-                                        <input type="password" name="password" id="password" placeholder="Default input"
-                                            disabled>
-                                        <span class="input-validate">Obrigatório*</span>
-
-                                        <a href="#" class="btn-link">Alterar password</a>
-                                    </div>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="name">Nome</label>
-                                    <input type="text" name="name" id="name" placeholder="Default input">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="lastname">Sobrenome</label>
-                                    <input type="text" name="lastname" id="lastname" placeholder="Default input">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="birthday">Data de nascimento</label>
-                                    <input type="date" name="birthday" id="birthday" placeholder="Default input">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="sexo">Sexo</label>
-                                    <select name="sexo" id="sexo">
-                                        <option value="">Selecione</option>
-                                        <option value="male">Masculino</option>
-                                        <option value="female">Feminino</option>
-                                        <option value="outro">Outro</option>
-                                    </select>
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="nif">NIF</label>
-                                    <input type="text" name="nif" id="nif">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="pais">País</label>
-                                    <select name="pais" id="pais">
-                                        <option value="">Selecione</option>
-                                        <option value="br">Brasil</option>
-                                        <option value="pt">Portugal</option>
-                                        <option value="outro">Outro</option>
-                                    </select>
-                                </div>
-
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="endereco">Endereço</label>
-                                    <input type="text" name="endereco" id="endereco">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="cp">Código Postal</label>
-                                    <input type="text" name="cp" id="cp">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <!-- <label for="name"></label> -->
-                                    <input type="text" value="Localidade">
-                                </div>
-
-                                <div class="container-input col-lg-6 col-md-6 col-12">
-                                    <label for="localidade">Localidade</label>
-                                    <input type="text" name="localidade" id="localidade">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telemovel-pais">País telemóvel</label>
-                                    <input type="text" name="telemovel-pais" id="telemovel-pais">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telemovel">Telemóvel</label>
-                                    <input type="text" name="telemovel" id="telemovel">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telefone-pais">País telefone</label>
-                                    <input type="text" name="telefone-pais" id="telefone-pais">
-                                </div>
-
-                                <div class="container-input col-lg-3 col-md-3 col-sm-6 col-12">
-                                    <label for="telefone">Telefone</label>
-                                    <input type="text" name="telefone" id="telefone">
-                                </div>
-
-                                <p class="last-change">Ultima actualização: 12 de março 2021, 12:00</p>
-
-                                <div class="container-btn">
-                                    <a href="#" class="btn btn-secondary no-round">Gravar dados pessoais</a>
-                                </div>
-                            </form>
                         </div>
                     </section>
                 </div>

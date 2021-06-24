@@ -12,9 +12,9 @@
     <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
 </head>
 
-<body>
-    <!-- HEADER / USUÁRIO LOGADO -->
-    <header>
+<body class="socio sporting-cp" style="--color-clube:#04b46b;">
+    <!-- HEADER / SÓCIO -->
+    <header class="socio">
         <div class="container">
             <div class="row">
                 <div class="menu-hamburguer col-1">
@@ -64,7 +64,7 @@
 
                 <ul class="btn-list col-lg-8 col-md-6 col-4">
                     <li class="btn-item no-mobile">
-                        <a href="../smartfan2.0/pg-bilheteira-geral.html" class="btn btn-header">
+                        <a href="#" class="btn btn-header">
                             <i><span class="icon-ticket-fill"></span></i> Bilheteira Geral
                         </a>
                     </li>
@@ -78,7 +78,8 @@
                     <li class="btn-item dropdown">
                         <a href="#" class="btn btn-header btn-fan dropdown-toggle" data-bs-toggle="dropdown"
                             role="button" aria-expanded="false">
-                            <i><span class="icon-fan-fill"></span></i>
+                            <i><span class="icon-meus-clubes"></span></i>
+                            <img src="images/sporting-cp.png" alt="">
                         </a>
 
                         <!-- USUÁRIO COM CLUBE DO CORAÇÃO -->
@@ -202,7 +203,7 @@
                                         </li>
                                     </ul>
 
-                                    <a href="fan-clube-coracao.html" class="btn btn-secondary">
+                                    <a href="#" class="btn btn-secondary">
                                         <i><span class="icon-config"></span></i> Gerir os meus clubes
                                     </a>
                                 </div>
@@ -219,7 +220,7 @@
                                 <div class="clube-coracao-name">
                                     <h2>Clube do coração</h2>
 
-                                    <a href="fan-clube-coracao.html" class="btn btn-secondary">
+                                    <a href="#" class="btn btn-secondary">
                                         <i><span class="icon-heart"></span></i>
                                         Clube do coração
                                     </a>
@@ -228,14 +229,14 @@
 
                             <ul class="fan-dropdown-nav">
                                 <li>
-                                    <a href="../smartfan2.0/fan-comprar-bilhetes.html">
+                                    <a href="pg-comprar-bilhetes.html">
                                         <i><span class="icon-ticket-outline"></span></i>
                                         <p>Compra de Bilhetes</p>
                                     </a>
                                 </li>
 
                                 <li>
-                                    <a href="../smartfan2.0/fan-pg-area-fan.html">
+                                    <a href="pg-area-fan.html">
                                         <i><span class="icon-fan-outline"></span></i>
                                         <p>Área de Fan</p>
                                     </a>
@@ -262,32 +263,29 @@
                             </div>
 
                             <ul class="user-nav">
-                                <li class="col-12">
-                                    <a href="fan-dados.html">
+                                <li class="col-lg-6 col-md-6 col-6">
+                                    <a href="socio-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         <span>Conta</span>
                                     </a>
                                 </li>
+
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="fan-clube-coracao.html">
-                                        <i><span class="icon-heart"></span></i>
-                                        <span>Clubes</span>
-                                    </a>
-                                </li>
-                                <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="fan-pg-registo-atividades.html">
+                                    <a href="socio-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         <span>Actividade</span>
                                     </a>
                                 </li>
+
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="fan-pg-alertas-notificacoes.html">
+                                    <a href="socio-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         <span>Alertas/Notificações</span>
                                     </a>
                                 </li>
+
                                 <li class="col-lg-6 col-md-6 col-6">
-                                    <a href="fan-config.html">
+                                    <a href="socio-pg-config.html">
                                         <i><span class="icon-config"></span></i>
                                         <span>Configurações</span>
                                     </a>
@@ -305,43 +303,31 @@
     </header>
 
     <main>
-        <section class="banner-fan">
+        <section class="banner-fan socio">
             <div class="container">
                 <div class="row">
-                    <div class="column-01 col-12">
+                    <div class="column-01 col-lg-7 col-12">
                         <div class="img-profile-wrapper">
                             <a href="#">
                                 <i style="display: none;"><span class="icon-add-club"></span></i>
                                 <img src="images/user-placeholder.png" alt="">
-                                <i class="icone-clube-adepto"><span class="icon-fan-fill"></span></i>
+                                <i class="icone-clube-adepto"><span class="icon-meus-clubes"></span></i>
                             </a>
                         </div>
 
                         <div class="banner-content">
-                            <h3>Olá, <span>Neymar Jr.</span> <span class="fan-categoria">(ADEPTO)</span></h3>
+                            <h3>Olá, <span>Neymar Jr.</span> <span class="fan-categoria">(SÓCIO)</span></h3>
 
-                            <ul class="clubes-fan">
-                                <li>
-                                    <a href="#">
-                                        <img src="images/sporting-cp.png" alt="">
-                                    </a>
-                                    <i><span class="icon-heart"></span></i>
-                                </li>
+                            <div class="detalhes-socio">
+                                <a href="#">
+                                    <img src="images/sporting-cp.png" alt="">
+                                </a>
 
-                                <li>
-                                    <a href="#">
-                                        <img src="images/rioave-fc.png" alt="">
-                                    </a>
-                                    <i><span class="icon-like"></span></i>
-                                </li>
-
-                                <li>
-                                    <a href="#">
-                                        <img src="images/boavista-fc.png" alt="">
-                                    </a>
-                                    <i><span class="icon-like"></span></i>
-                                </li>
-                            </ul>
+                                <div class="detalhes-socio-info">
+                                    <h5>Sporting Clube de Portugal</h5>
+                                    <h5>Sócio nº <span>165653.9</span></h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -355,35 +341,35 @@
                     <nav class="navbar col-12">
                         <ul class="navbar-list no-mobile">
                             <li class="navbar-item">
-                                <a href="fan-dados.html">
+                                <a href="socio-dados.html">
                                     <i><span class="icon-user"></span></i>
                                     Os teus dados
                                 </a>
                             </li>
 
                             <li class="navbar-item">
-                                <a href="fan-clube-coracao.html">
-                                    <i><span class="icon-heart"></span></i>
-                                    Clube do coração
-                                </a>
-                            </li>
-
-                            <li class="navbar-item">
-                                <a href="fan-pg-registo-atividades.html">
+                                <a href="socio-pg-registo-atividades.html">
                                     <i><span class="icon-registo-atividades"></span></i>
                                     Registo de actividade
                                 </a>
                             </li>
 
+                            <!-- <li class="navbar-item">
+                                <a href="#">
+                                    <i><span class="icon-grupo"></span></i>
+                                    Grupo de amigos
+                                </a>
+                            </li> -->
+
                             <li class="navbar-item active">
-                                <a href="fan-pg-alertas-notificacoes.html">
+                                <a href="socio-pg-alertas-notificacoes.html">
                                     <i><span class="icon-mensagem"></span></i>
                                     Alertas / Notificações
                                 </a>
                             </li>
 
                             <li class="navbar-item">
-                                <a href="fan-config.html">
+                                <a href="socio-pg-config.html">
                                     <i><span class="icon-config"></span></i>
                                     Configurações
                                 </a>
@@ -401,35 +387,35 @@
 
                             <ul class="navbar-mobile-dropdown dropdown-menu">
                                 <li class="navbar-item">
-                                    <a href="fan-dados.html">
+                                    <a href="socio-dados.html">
                                         <i><span class="icon-user"></span></i>
                                         Os teus dados
                                     </a>
                                 </li>
 
                                 <li class="navbar-item">
-                                    <a href="fan-clube-coracao.html">
-                                        <i><span class="icon-heart"></span></i>
-                                        Clube do coração
-                                    </a>
-                                </li>
-
-                                <li class="navbar-item">
-                                    <a href="fan-pg-registo-atividades.html">
+                                    <a href="socio-pg-registo-atividades.html">
                                         <i><span class="icon-registo-atividades"></span></i>
                                         Registo de actividade
                                     </a>
                                 </li>
 
-                                <li class="navbar-item active">
-                                    <a href="fan-pg-alertas-notificacoes.html">
+                                <!-- <li class="navbar-item">
+                                    <a href="#">
+                                        <i><span class="icon-grupo"></span></i>
+                                        Grupo de amigos
+                                    </a>
+                                </li> -->
+
+                                <li class="navbar-item">
+                                    <a href="socio-pg-alertas-notificacoes.html">
                                         <i><span class="icon-mensagem"></span></i>
                                         Alertas / Notificações
                                     </a>
                                 </li>
 
-                                <li class="navbar-item">
-                                    <a href="fan-config.html">
+                                <li class="navbar-item active">
+                                    <a href="socio-pg-config.html">
                                         <i><span class="icon-config"></span></i>
                                         Configurações
                                     </a>
@@ -440,7 +426,7 @@
 
                     <section class="pg-padrao pg-alertas-notificacoes">
                         <div class="content-wrapper">
-                            <a href="../smartfan2.0/fan-pg-area-fan.html" class="btn-voltar-cards">
+                            <a href="../smartfan2.0/socio-pg-area-socio.html" class="btn-voltar-cards">
                                 <i><span class="icon-back-cards"></span></i> Voltar
                             </a>
 
@@ -472,7 +458,7 @@
                                         </a>
                                     </li>
 
-                                    <li class="nav-item item-config" role="presentation">
+                                    <li class="nav-item" role="presentation">
                                         <a class="btn btn-secondary" data-bs-toggle="tab"
                                             data-bs-target="#configuracoes" href="#" role="tab" aria-selected="false">
                                             <i><span class="icon-config"></span></i>
@@ -485,7 +471,40 @@
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="notificacoes" role="tabpanel">
                                         <ul class="alertas-list">
+                                            <li class="alertas-item">
+                                                <div class="item-type col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <span>Notificação</span>
+                                                    </div>
+                                                </div>
 
+                                                <div class="item-infos col-sm-8 col-12">
+                                                    <div class="item-wrapper">
+                                                        <ul class="item-infos-list">
+                                                            <li class="item-infos-date">
+                                                                <span><span>7 mar 2021</span></span>
+                                                            </li>
+
+                                                            <li class="item-infos-details">
+                                                                <span>Quota a aguardar pagamento MB</span>
+                                                            </li>
+
+                                                            <li class="item-infos-footer">
+                                                                <a href="#">Ver detalhes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-delete col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <a href="#">
+                                                            <i><span class="icon-trash"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -530,6 +549,42 @@
                                                     </div>
                                                 </div>
                                             </li>
+
+
+                                            <li class="alertas-item">
+                                                <div class="item-type col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <span>Alerta</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-infos col-sm-8 col-12">
+                                                    <div class="item-wrapper">
+                                                        <ul class="item-infos-list">
+                                                            <li class="item-infos-date">
+                                                                <span><span><span>8 mar 2021</span></span></span>
+                                                            </li>
+
+                                                            <li class="item-infos-details">
+                                                                <span>4 quotas em atraso</span>
+                                                            </li>
+
+                                                            <li class="item-infos-footer">
+                                                                <a href="#">Ver detalhes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-delete col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <a href="#">
+                                                            <i><span class="icon-trash"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -561,6 +616,76 @@
                                                                 <span class="active">Bilheteria
                                                                     Aberta</span>/<span>Bilheteria
                                                                     Fechada</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-delete col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <a href="#">
+                                                            <i><span class="icon-trash"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="alertas-item">
+                                                <div class="item-type col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <span>Notificação</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-infos col-sm-8 col-12">
+                                                    <div class="item-wrapper">
+                                                        <ul class="item-infos-list">
+                                                            <li class="item-infos-date">
+                                                                <span><span>7 mar 2021</span></span>
+                                                            </li>
+
+                                                            <li class="item-infos-details">
+                                                                <span>Quota a aguardar pagamento MB</span>
+                                                            </li>
+
+                                                            <li class="item-infos-footer">
+                                                                <a href="#">Ver detalhes</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-delete col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <a href="#">
+                                                            <i><span class="icon-trash"></span></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="alertas-item">
+                                                <div class="item-type col-sm-2 col-6">
+                                                    <div class="item-wrapper">
+                                                        <i><span class="icon-mensagem"></span></i>
+                                                        <span>Agenda</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item-infos col-sm-8 col-12">
+                                                    <div class="item-wrapper">
+                                                        <ul class="item-infos-list">
+                                                            <li class="item-infos-date">
+                                                                <span><span><span>8 mar 2021</span></span></span>
+                                                            </li>
+
+                                                            <li class="item-infos-details">
+                                                                <span>4 quotas em atraso</span>
+                                                            </li>
+
+                                                            <li class="item-infos-footer">
+                                                                <a href="#">Ver detalhes</a>
                                                             </li>
                                                         </ul>
                                                     </div>
@@ -631,179 +756,14 @@
                                                     <div class="criar-alerta-wrapper">
                                                         <form>
                                                             <div class="criar-alerta-clube col-lg-5 col-12">
-                                                                <a href="#" class="dropdown-toggle"
-                                                                    data-bs-toggle="dropdown" role="button"
-                                                                    aria-expanded="false">
+                                                                <div class="alerta-clube-img">
+                                                                    <img src="images/sporting-cp.png" alt="">
+                                                                </div>
 
-                                                                    <div class="alerta-clube-infos">
-                                                                        <h4>Escolhe o clube</h4>
-                                                                    </div>
-
-                                                                    <i><span class="icon-arrow-down"></span></i>
-                                                                </a>
-
-                                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/boavista-fc.png"
-                                                                                    alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Boavista FC</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/cd-nacional.png"
-                                                                                    alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>CD Nacional</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/estoril-praia.png"
-                                                                                    alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Estoril Praia</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/fc-porto.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>FC Porto</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/gd-chaves.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>GD Chaves</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/gilvicente-fc.png"
-                                                                                    alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Gil Vicente FC</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/rioave-fc.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Rio Ave FC</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/sc-braga.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>SC Braga</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/sc-covilha.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>SC Covilhã</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/sporting-cp.png"
-                                                                                    alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Sporting CP</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/varzim-sc.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Varzim SC</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/vitoria-fc.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Vitória FC</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-
-                                                                    <li>
-                                                                        <a href="#">
-                                                                            <div class="alerta-clube-img">
-                                                                                <img src="images/vitoria-sc.png" alt="">
-                                                                            </div>
-
-                                                                            <div class="alerta-clube-infos">
-                                                                                <h4>Vitória SC</h4>
-                                                                            </div>
-                                                                        </a>
-                                                                    </li>
-                                                                </ul>
+                                                                <div class="alerta-clube-infos">
+                                                                    <h4>Sporting Clube de Portugal</h4>
+                                                                    <h6>Bilhetes para venda</h6>
+                                                                </div>
                                                             </div>
 
                                                             <div class="item-futebol col-lg-2 col-sm-4 col-12">
