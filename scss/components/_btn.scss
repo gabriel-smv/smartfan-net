@@ -1,8 +1,3 @@
-body {
-    --color-clube: #263F62;
-    --color-hover: #F0F4F6;
-}
-
 button {
     background-color: transparent;
 }
@@ -12,8 +7,8 @@ button {
     padding: 1.2rem 2.4rem;
     @include flex(row, center, center, center);
     border-radius: 3.2rem;
-    border: 1px solid var(--color-clube);
-    color: var(--color-clube);
+    border: 1px solid #263F62;
+    color: #263F62;
     font-family: $font-01;
     @include font(1.6rem, 400, 1.3em);
     text-align: center;
@@ -26,7 +21,7 @@ button {
         span {
             display: block;
             font-size: 2.4rem;
-            color: var(--color-clube);
+            color: #263F62;
             transition: $transition-01;
         }
     }
@@ -49,8 +44,8 @@ button {
     &-primary {
         width: auto;
         color: $white-01;
-        border: 1px solid var(--color-clube);
-        background-color: var(--color-clube);
+        border: 1px solid #263F62;
+        background-color: #263F62;
         transition: $transition-01;
 
         i {
@@ -62,19 +57,19 @@ button {
 
         &:hover,
         &:focus {
-            background-color: var(--color-hover);
-            color: var(--color-clube);
-            border-color: var(--color-hover);
+            background-color: #F0F4F6;
+            color: #263F62;
+            border-color: #F0F4F6;
             transition: $transition-01;
             outline: none;
 
             span {
-                color: var(--color-clube);
+                color: #263F62;
             }
 
             i {
                 span {
-                    color: var(--color-clube);
+                    color: #263F62;
                 }
             }
         }
@@ -82,39 +77,50 @@ button {
 
     &-secondary {
         width: auto;
-        color: var(--color-clube);
-        border: 1px solid var(--color-clube);
+        color: #263F62;
+        border: 1px solid #263F62;
         transition: $transition-01;
 
         i {
             span {
                 display: block;
-                color: var(--color-clube);
+                color: #263F62;
             }
         }
 
         &:hover,
         &:focus {
-            background-color: var(--color-hover);
-            color: var(--color-clube);
+            background-color: #F0F4F6;
+            color: #263F62;
             transition: $transition-01;
             outline: none;
 
             span {
-                color: var(--color-clube);
+                color: #263F62;
             }
 
             i {
                 span {
-                    color: var(--color-clube);
+                    color: #263F62;
                 }
             }
         }
     }
 
-    // &-header {
-    //     --color-clube: #FFF;
-    // }
+    &-header {
+        border: 1px solid #ACC2D3;
+        color: #ACC2D3;
+
+        span {
+            color: #ACC2D3;
+        }
+
+        i {
+            span {
+                color: #ACC2D3;
+            }
+        }
+    }
 
     &-full {
         width: 100%;
@@ -125,10 +131,8 @@ button {
     }
 
     &-link {
-        --color-clube: #263F62;
-
         width: auto;
-        color: var(--color-clube);
+        color: #263F62;
         @include font(1.4rem, 400, 1.2em);
         text-align: center;
         position: relative;
@@ -143,7 +147,7 @@ button {
             content: '';
             width: 100%;
             height: 2px;
-            background: var(--color-clube);
+            background: #263F62;
             @include absolute(auto, auto, 0, 0);
             transform: scale(1, 1);
             transform-origin: 0 0;
@@ -151,7 +155,7 @@ button {
         }
 
         &:hover {
-            color: var(--color-clube);
+            color: #263F62;
             text-decoration: none;
 
             &:before {
@@ -161,7 +165,7 @@ button {
         }
 
         &:focus {
-            color: var(--color-clube);
+            color: #263F62;
             text-decoration: none;
         }
     }
@@ -175,9 +179,3 @@ button {
         }
     }
 }
-
-// .socio {
-//     .btn-header {
-//         --color-clube: #FFF;
-//     }
-// }

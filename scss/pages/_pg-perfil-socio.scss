@@ -211,7 +211,7 @@
             .container-input {
                 .btn-link {
                     margin-bottom: 0;
-                    @include absolute(auto, 0, 0, auto);
+                    @include absolute(auto, 1.6rem, -4px, auto);
                 }
             }
         }
